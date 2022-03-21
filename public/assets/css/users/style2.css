@@ -1,0 +1,368 @@
+/* universal start */
+
+.judul1 {
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 74px;
+    letter-spacing: 0em;
+    text-align: left;
+    -webkit-text-fill-color: white;
+}
+
+.judul2 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 74px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.text-lg {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    opacity: 70%;
+
+    color: white;
+    margin-top: 24px;
+}
+
+.text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: justified;
+    color: #282938;
+}
+
+.de-note {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.de-note2 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 0;
+
+    margin-bottom: 38px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.bg-biru {
+    background: linear-gradient(37.35deg, #1C1E53 24.25%, #2026A9 88.46%);
+}
+
+@media (max-width: 992px) {
+    .judul1 {
+        font-size: 42px;
+        line-height: 52px;
+    }
+
+    .judul2 {
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    .text-lg {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .de-note {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 600px) {}
+
+@media (max-width: 400px) {}
+
+/* universal end  */
+
+/* registrasi start a*/
+
+#registrasi .row {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 58px;
+}
+
+#registrasi .row>* {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#registrasi .row h6 {
+    color: black;
+}
+
+#registrasi .bg-biru {
+    padding: 178px;
+}
+
+#registrasi label {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+
+    color: black;
+}
+
+#registrasi input {
+    width: 100%;
+    height: 36.88px;
+    left: 354px;
+    top: 339.5px;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-bottom: 21.12px;
+
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#registrasi .nama {
+    padding-right: 43px;
+}
+
+#registrasi .email {
+    padding-left: 43px;
+}
+
+
+#registrasi .tombol-registrasi {
+    background-color: rgba(245, 222, 25, 0.84);
+    padding: 11px;
+    width: 95%;
+    border-radius: 8px;
+    margin-top: 54.48px;
+    margin-bottom: 37px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#registrasi .tombol-registrasi a {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0em;
+    color: black;
+    text-decoration: none;
+}
+
+#registrasi .tombol-registrasi:hover {
+    box-shadow: 0px 0px 4px 4px rgba(245, 222, 25, 0.1);
+}
+
+
+
+
+@media (max-width: 1400) {}
+
+@media (max-width: 1200) {}
+
+@media (max-width: 992px) {
+    #registrasi .nama {
+        padding-right: 0;
+    }
+
+    #registrasi .email {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    #registrasi .bg-biru {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    #registrasi .bg-biru {
+        padding: 20px;
+    }
+
+    #registrasi .row {
+        padding: 30px;
+    }
+}
+
+/* registrasi end */
+
+/* login form start */
+
+#login-form .bg-biru {
+    padding: 100px;
+}
+
+#login-form .login-kartu {
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 47px 77.2px 47px 77.2px;
+}
+
+#login-form input {
+    width: 100%;
+    height: 57.27px;
+    left: 354px;
+    top: 339.5px;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0em;
+    color: black;
+
+}
+
+#login-form input::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.27);
+}
+
+/*support mozilla*/
+#login-form input:-moz-input-placeholder {
+    color: rgba(0, 0, 0, 0.27);
+}
+
+/*support internet explorer*/
+#login-form input:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.27);
+}
+
+#login-form input.email {
+    margin-top: 56.26px;
+}
+
+
+
+#login-form .lupa-pass {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    text-decoration: none;
+    color: black;
+    top: -56.26px;
+}
+
+/* #login-form .row>* {
+    padding: 0;
+} */
+
+#login-form .textakun {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: black;
+}
+
+#login-form .tombol-login {
+    background-color: rgba(245, 222, 25, 0.84);
+    padding: 8px;
+    width: 35%;
+    height: 65px;
+    border-radius: 8px;
+    margin-top: 12.32px;
+}
+
+#login-form .tombol-login a {
+    text-decoration: none;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+}
+
+#login-form .tombol-login:hover {
+    box-shadow: 0px 0px 4px 4px rgba(245, 222, 25, 0.2);
+}
+
+#login-form .lupa-pass:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1600px) {
+    /* #login-form .bg-biru {
+        padding-left: 260px;
+        padding-right: 260px;
+    } */
+}
+
+@media (max-width: 1400px) {
+    /* #login-form .bg-biru {
+        padding: 70px;
+    } */
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+    #login-form .tombol-login {
+        height: 54px;
+        width: 40%;
+        padding: 2px;
+    }
+
+    #login-form .bg-biru {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    #login-form .login-kartu {
+        padding: 20px;
+    }
+}
+
+/* login form end */
