@@ -61,7 +61,9 @@
     text-align: left;
     padding: 0;
 
-    margin-bottom: 38px;
+    margin-top: 73px;
+    margin-bottom: 105px;
+    color: white;
 }
 
 .center {
@@ -69,9 +71,9 @@
     justify-content: center;
 }
 
-.bg-biru {
+/* .bg-biru {
     background: linear-gradient(37.35deg, #1C1E53 24.25%, #2026A9 88.46%);
-}
+} */
 
 @media (max-width: 992px) {
     .judul1 {
@@ -108,10 +110,10 @@
 
 /* registrasi start a*/
 
-#registrasi .row {
+/* #registrasi .row {
     background-color: rgba(255, 255, 255, 0.5);
     padding: 58px;
-}
+} */
 
 #registrasi .row>* {
     padding-left: 0;
@@ -122,23 +124,47 @@
     color: black;
 }
 
-#registrasi .bg-biru {
-    padding: 178px;
+#registrasi .login-bg {
+    background-image: url(login-bg.png);
+    background-size: cover;
 }
 
+#registrasi .login-login {
+    position: absolute;
+    margin-top: 72px;
+    right: 0;
+    margin-right: 8%;
+}
+
+#registrasi .login-login a {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #F5DE19;
+    text-decoration: none;
+}
+
+/* #registrasi .bg-biru {
+    padding: 178px;
+} */
+
 #registrasi label {
-    font-size: 25px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 38px;
+    line-height: 16px;
     letter-spacing: 0em;
+    text-align: left;
 
-    color: black;
+    color: white;
 }
 
 #registrasi input {
     width: 100%;
-    height: 36.88px;
+    height: 50px;
     left: 354px;
     top: 339.5px;
 
@@ -149,23 +175,32 @@
     margin-bottom: 21.12px;
 
     padding: 10px;
-    font-size: 24px;
+    padding-left: 19px;
+
+    font-size: 14px;
+    font-style: normal;
     font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: black;
 }
 
-#registrasi .nama {
-    padding-right: 43px;
+#registrasi .nama-message {
+    padding-right: 90px;
 }
 
-#registrasi .email {
-    padding-left: 43px;
+#registrasi .Username-Konfirmasi-pss {
+    padding-left: 90px;
 }
 
 
 #registrasi .tombol-registrasi {
     background-color: rgba(245, 222, 25, 0.84);
-    padding: 11px;
-    width: 95%;
+    height: 50px;
+    width: 75%;
+    padding: 5px;
     border-radius: 8px;
     margin-top: 54.48px;
     margin-bottom: 37px;
@@ -173,17 +208,76 @@
 }
 
 #registrasi .tombol-registrasi a {
-    font-size: 28px;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 42px;
+    font-weight: 600;
+    line-height: 38px;
     letter-spacing: 0em;
+
     color: black;
     text-decoration: none;
 }
 
 #registrasi .tombol-registrasi:hover {
     box-shadow: 0px 0px 4px 4px rgba(245, 222, 25, 0.1);
+}
+
+#registrasi input::-webkit-input-placeholder {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
+    color: rgba(0, 0, 0, 0.27);
+    vertical-align: top;
+    text-align: left;
+}
+
+/*support mozilla*/
+#registrasi input:-moz-input-placeholder {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
+    color: rgba(0, 0, 0, 0.27);
+    vertical-align: top;
+    text-align: left;
+}
+
+/*support internet explorer*/
+#registrasi input:-ms-input-placeholder {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: rgba(0, 0, 0, 0.27);
+}
+
+#registrasi .textakun {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 74px;
+    margin-bottom: 218px;
+
+    color: white;
+}
+
+#registrasi .textakun a {
+    color: #F5DE19;
 }
 
 
@@ -193,88 +287,189 @@
 
 @media (max-width: 1200) {}
 
-@media (max-width: 992px) {
-    #registrasi .nama {
-        padding-right: 0;
+@media (max-width: 991px) {
+    #registrasi .nama-message {
+        padding-right: 20px;
     }
 
-    #registrasi .email {
-        padding-left: 0;
+    #registrasi .Username-Konfirmasi-pss {
+        padding-left: 20px;
+    }
+
+    #registrasi .login-login {
+        margin-right: 14%;
     }
 }
 
 @media (max-width: 768px) {
-    #registrasi .bg-biru {
+    #registrasi .nama-message {
+        padding-right: 0;
+    }
+
+    #registrasi .Username-Konfirmasi-pss {
+        padding-left: 0;
+    }
+
+    /* #registrasi .bg-biru {
         padding: 30px;
+    } */
+    #registrasi .login-login {
+        margin-right: 15%px;
     }
 }
 
 @media (max-width: 576px) {
-    #registrasi .bg-biru {
+    /* #registrasi .bg-biru {
         padding: 20px;
-    }
+    } */
 
     #registrasi .row {
-        padding: 30px;
+        padding: 0px 30px 0px 30px;
+    }
+
+    #registrasi .login-login {
+        margin-right: 35px;
     }
 }
 
 /* registrasi end */
 
 /* login form start */
-
-#login-form .bg-biru {
-    padding: 100px;
+#login-form .login-bg {
+    background-image: url(login-bg.png);
+    background-size: cover;
 }
 
-#login-form .login-kartu {
+#login-form .login-login {
+    position: absolute;
+    margin-top: 72px;
+    right: 0;
+    margin-right: 8%;
+}
+
+#login-form .login-login a {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #F5DE19;
+    text-decoration: none;
+}
+
+/* #login-form .bg-biru {
+    padding: 100px;
+} */
+
+/* #login-form .login-kartu {
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 47px 77.2px 47px 77.2px;
-}
+} */
 
 #login-form input {
     width: 100%;
-    height: 57.27px;
+    height: 50px;
     left: 354px;
     top: 339.5px;
 
     background: #FFFFFF;
     border: 1px solid #000000;
     box-sizing: border-box;
-    border-radius: 8px;
+    border-radius: 10px;
     text-align: center;
 
-    font-size: 30px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 45px;
+    line-height: 16px;
     letter-spacing: 0em;
-    color: black;
+    text-align: left;
 
+    padding: 17px;
+
+    color: black;
+}
+
+#login-form label {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: white;
 }
 
 #login-form input::-webkit-input-placeholder {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
     color: rgba(0, 0, 0, 0.27);
+    vertical-align: top;
+    text-align: left;
 }
 
 /*support mozilla*/
 #login-form input:-moz-input-placeholder {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
     color: rgba(0, 0, 0, 0.27);
+    vertical-align: top;
+    text-align: left;
 }
 
 /*support internet explorer*/
 #login-form input:-ms-input-placeholder {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
     color: rgba(0, 0, 0, 0.27);
 }
 
+#login-form input.name {
+    margin-bottom: 17px;
+}
+
 #login-form input.email {
-    margin-top: 56.26px;
+    margin-bottom: 13px;
+}
+
+#login-form .lupa-pass {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: white;
+    text-decoration: none;
+}
+
+#login-form a.lupa-pass:hover {
+    color: rgb(255, 255, 0.5);
 }
 
 
-
-#login-form .lupa-pass {
+/* #login-form .lupa-pass {
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
@@ -285,40 +480,47 @@
     text-decoration: none;
     color: black;
     top: -56.26px;
-}
+} */
 
 /* #login-form .row>* {
     padding: 0;
 } */
 
 #login-form .textakun {
-    font-size: 25px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 38px;
+    line-height: 21px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
+    margin-top: 74px;
+    margin-bottom: 218px;
 
-    color: black;
+    color: white;
+}
+
+#login-form .textakun a {
+    color: #F5DE19;
 }
 
 #login-form .tombol-login {
     background-color: rgba(245, 222, 25, 0.84);
     padding: 8px;
-    width: 35%;
-    height: 65px;
+    width: 100%;
+    height: 50px;
     border-radius: 8px;
-    margin-top: 12.32px;
+    margin-top: 41px;
+
 }
 
 #login-form .tombol-login a {
-    text-decoration: none;
-    font-size: 32px;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 48px;
+    font-weight: 600;
+    line-height: 38px;
     letter-spacing: 0em;
-    text-align: left;
+
+    text-decoration: none;
     color: black;
 }
 
@@ -351,17 +553,24 @@
     #login-form .tombol-login {
         height: 54px;
         width: 40%;
-        padding: 2px;
     }
 
-    #login-form .bg-biru {
+    /* #login-form .bg-biru {
         padding: 20px;
+    } */
+
+    #login-form .login-login {
+        margin-right: 18%;
     }
 }
 
 @media (max-width: 576px) {
     #login-form .login-kartu {
         padding: 20px;
+    }
+
+    #login-form .login-login {
+        margin-right: 20px;
     }
 }
 
