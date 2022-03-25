@@ -24,3 +24,14 @@ Route::get('/registrasi', function () {
 Route::get('/login', function () {
     return view('users.login');
 });
+
+Route::get('/transaksi', function () {
+    return view('users.transaksi');
+});
+Route::get('/transaksi2', function () {
+    return view('users.transaksi2');
+});
+
+Route::get('/konfirmasi-pass', function () {
+    return view('users.konfirmasi-pass');
+});

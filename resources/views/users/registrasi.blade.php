@@ -3,45 +3,77 @@
 @section('container')
 
 <section id="registrasi">
-    <div class="login-login">
-        <tr>
-            <td><img src="image/login-log in.svg" alt=""></td>
-            <td><a href="#"> &ensp;Log In</a></td>
-        </tr>
+    <div class="">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="denote">
+                    <p>De Note.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="registrasi-contact-home text center">
+                    <a class="register-home" href="#">Home</a>
+                    <a class="register-contact" href="#">Contact Us</a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="punya-akun">
+                                <a class="text center" href="#">Sudah punya akun?</a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="tombol-masuk">
+                                <a href="">
+                                    <div class="tombol-masuk2">
+                                        Masuk
+                                    </div>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </div>
-    <div class="login-bg">
-        <div class="container">
-            <div class="">
-                <div class="row">
-                    <p class="de-note2">De Note</p>
-                    <div class="nama-message col-lg-6 col-md-6">
-                        <label>Nama Lengkap</label>
-                        <input class="name" type="name" placeholder="Nama Lengkap">
-                        <label>Email</label>
-                        <input class="email" type="email" placeholder="example@example.com">
-                        <label>No Telepon</label>
-                        <input class="message" type="message" placeholder="No Telepon">
-                    </div>
-                    <div class="Username-Konfirmasi-pss col-lg-6 col-md-6">
-                        <label>Username</label>
-                        <input class="Username" type="Username" placeholder="Username">
-                        <label>Password</label>
-                        <input class="Password" type="Password" placeholder="Password">
-                        <label>Konfirmasi Password</label>
-                        <input class="Konfirmasi-pss" type="Konfimasi Password" placeholder="Konfimasi Password">
-                    </div>
-                    <div class="center">
-                        <div class="tombol-registrasi text center">
-                            <a href="#">Register</a>
+
+    <div class="nav2">
+
+    </div>
+    <div class="container">
+        <div class="text center row">
+            <div class="registrasi-form col-lg-6 col-md-12">
+                <p class="judul">Buat Akun Baru Anda!</p>
+                <form action="">
+                    <input class="name" type="text" placeholder="Nama Lengkap">
+                    <input class="email" type="text" placeholder="Email">
+                    <input class="message" type="text" placeholder="No Telepon">
+                    <input class="Username" type="text" placeholder="Username">
+                    <input class="Password" type="password" placeholder="Password">
+                    <input class="Konfirmasi-pss" type="password" placeholder="Konfimasi Password">
+                </form>
+                <div class="tombol">
+                    <a href="#">
+                        <div class="tombol2">
+                            Buat Akun
                         </div>
-                    </div>
-                    <div class="center">
-                        <p class="textakun">Sudah punya akun?? <a href="#">Login</a></p>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
+    <div class="nav3">
+
+    </div>
+    <div class="registrasi-Copyright row">
+        <div class="text center col-6">
+            <p class="copy">Copyright © 2022 De Note. | All rights reserved</p>
+        </div>
+        <div class="text center col-6">
+            <p class="dev">Develop By Tupai Tech Intern Team</p>
+        </div>
     </div>
 </section>
 

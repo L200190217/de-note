@@ -2,7 +2,7 @@
 
 @section('container')
 
-<section id="login-form">
+<section id="konfirmasi-pass">
     <div class="">
         <div class="row">
             <div class="col-lg-4">
@@ -45,18 +45,17 @@
     <div class="container">
         <div class="text center row">
             <div class="registrasi-form col-lg-6 col-md-12">
-                <p class="judul">Selamat Datang Kembali Masuk Untuk Melanjutkan!</p>
+                <p class="judul">Lupa Password Anda?</p>
+                <p class="konfirmasi-pass-text">Masukkan alamat email Anda di bawah ini dan
+                    kami akan mengirimkan email dengan kata sandi
+                </p>
                 <form action="">
-                    <input class="Username" type="text" placeholder="Username">
-                    <input class="Password" type="password" placeholder="Password">
+                    <input class="Username" type="text" placeholder="Masukkan Email Anda">
                 </form>
-                <div class="lupa-pass">
-                    <p>Lupa Password?</p>
-                </div>
                 <div class="tombol">
                     <a href="#">
                         <div class="tombol2">
-                            Log In
+                            Kirim email pemulihan
                         </div>
                     </a>
                 </div>
