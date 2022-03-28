@@ -14,20 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('users.auth.login');
+});
+
+Route::get('/home', function () {
     return view('users.home');
-});
-
-Route::get('/registrasi', function () {
-    return view('users.registrasi');
-});
-
-Route::get('/login', function () {
-    return view('users.login');
 });
 
 Route::get('/transaksi', function () {
     return view('users.transaksi');
 });
+
 Route::get('/transaksi2', function () {
     return view('users.transaksi2');
 });
