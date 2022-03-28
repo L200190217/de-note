@@ -21,14 +21,14 @@
                     <tr>
                         <td>
                             <div class="punya-akun">
-                                <a class="text center" href="#">Sudah punya akun?</a>
+                                <a class="text center" href="{{ route('register') }}">Belum punya akun?</a>
                             </div>
                         </td>
                         <td>
                             <div class="tombol-masuk">
-                                <a href="">
+                                <a href="{{ route('register') }}">
                                     <div class="tombol-masuk2">
-                                        Masuk
+                                        Daftar
                                     </div>
                                 </a>
                             </div>
@@ -46,20 +46,27 @@
         <div class="text center row">
             <div class="registrasi-form col-lg-6 col-md-12">
                 <p class="judul">Selamat Datang Kembali Masuk Untuk Melanjutkan!</p>
-                <form action="">
-                    <input class="Username" type="text" placeholder="Username">
-                    <input class="Password" type="password" placeholder="Password">
-                </form>
-                <div class="lupa-pass">
-                    <p>Lupa Password?</p>
-                </div>
-                <div class="tombol">
-                    <a href="#">
+                <form action="{{ route('login') }}" method="post">
+                    @csrf
+                    <input class="Username @error('username') is-invalid @enderror" type="text" name="username"
+                        placeholder="Username">
+                    @error('username')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
+                    <input class="Password @error('password') is-invalid @enderror" type="password" name="password"
+                        placeholder="Password">
+                    @error('password')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
+                    <div class="lupa-pass">
+                        <p>Lupa Password?</p>
+                    </div>
+                    <button type="submit" class="tombol w-100">
                         <div class="tombol2">
                             Log In
                         </div>
-                    </a>
-                </div>
+                    </button>
+                </form>
             </div>
         </div>
     </div>
