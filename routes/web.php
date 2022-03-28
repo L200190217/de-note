@@ -32,6 +32,18 @@ Route::get('/transaksi2', function () {
     return view('users.transaksi2');
 });
 
+Route::get('/transaksi3', function () {
+    return view('users.transaksi3');
+});
+
 Route::get('/konfirmasi-pass', function () {
     return view('users.konfirmasi-pass');
+});
+
+Route::get('/ubahTransaksiPemasukan', function () {
+    return view('users.ubahTransaksiPemasukan');
+});
+
+Route::get('/ubahTransaksiPengeluaran', function () {
+    return view('users.ubahTransaksiPengeluaran');
 });
