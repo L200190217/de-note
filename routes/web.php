@@ -44,3 +44,15 @@ Route::get('/ubahTransaksiPemasukan', function () {
 Route::get('/ubahTransaksiPengeluaran', function () {
     return view('users.ubahTransaksiPengeluaran');
 });
+
+Route::get('/catatTransaksi', function () {
+    return view('users.catatTransaksi');
+});
+
+Route::get('/laporanTransaksi', function () {
+    return view('users.laporanTransaksi');
+});
+
+Route::get('/laporanTransaksi2', function () {
+    return view('users.laporanTransaksi2');
+});

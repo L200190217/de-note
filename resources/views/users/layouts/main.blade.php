@@ -23,9 +23,8 @@
 
     <!--Font Awesome (added because you use icons in your prepend/append)-->
     <link rel="stylesheet" href="https://formden.com/static/cdn/font-awesome/4.4.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     <!-- Inline CSS based on choices in "Settings" tab -->
     <style>
@@ -54,6 +53,7 @@
     <!-- Bootstrap CSS --> --}}
 
     <link rel="stylesheet" href="{{ asset('assets/css/users/style2.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/users/style3.css') }}">
     <!-- <link rel="stylesheet" href="{{ asset('assets/css/users/style.css') }}"> -->
 
 
@@ -76,8 +76,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
     <!-- ubah transaksi pemasukan tanggal end -->
 
+    <!-- untuk catatTransaksi start -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- untuk catatTransaksi end -->
+
+
+
+
     <script>
-        // ubah transaksi pemasukan tanggal
+        //tabel transaksi
+        $('.js-pscroll').each(function() {
+            var ps = new PerfectScrollbar(this);
+
+            $(window).on('resize', function() {
+                ps.update();
+            })
+        });
+    </script>
+
+    <!-- bar page start -->
+    <script src="{{ asset('assets/js/transaksiJs/jquery.min.js') }}"></script>
+    <script src="{{ asset('assets/js/transaksiJs/jquery.dataTables.js') }}"></script>
+    <script src="{{ asset('assets/js/transaksiJs/dataTables.bootstrap.js') }}"></script>
+    <script>
+        $(document).ready(function() {
+            $('#dataTables-example').dataTable();
+        });
+    </script>
+    <!-- bar page end -->
+
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+
+    <script>
         $(document).ready(function() {
             var date_input = $('input[name="date"]');
             var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
@@ -88,18 +120,9 @@
                 autoclose: true,
             })
         })
-
-        let userDate = document.getElementById('userDate').value.split('-'),
-            parsedDate = new Date((`${userDate[1]}-${userDate[2]}-${userDate[0]}`));
-        //tabel transaksi
-        $('.js-pscroll').each(function() {
-            var ps = new PerfectScrollbar(this);
-
-            $(window).on('resize', function() {
-                ps.update();
-            })
-        });
     </script>
+
+
 
 
 </body>
