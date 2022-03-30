@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\IncomeController;
+use App\Http\Controllers\OutcomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,25 +35,29 @@ Route::get('/transaksi3', function () {
     return view('users.transaksi3');
 });
 
-Route::get('/konfirmasi-pass', function () {
+Route::get('/lupa-password', function () {
     return view('users.konfirmasi-pass');
 });
 
 Route::get('/ubahTransaksiPemasukan', function () {
     return view('users.ubahTransaksiPemasukan');
 });
+Route::post('/ubahTransaksiPemasukan', [IncomeController::class, 'edit'])->name('incomeEdit');
 
 Route::get('/ubahTransaksiPengeluaran', function () {
     return view('users.ubahTransaksiPengeluaran');
 });
+Route::post('/ubahTransaksiPengeluaran', [OutcomeController::class, 'edit'])->name('outcomeEdit');
 
 Route::get('/catatTransaksi', function () {
     return view('users.catatTransaksi');
 });
+Route::post('/catatTransaksi/income', [IncomeController::class, 'store'])->name('incomeStore');
+Route::post('/catatTransaksi/outcome', [OutcomeController::class, 'store'])->name('outcomeStore');
 
 Route::get('/laporanTransaksi', function () {
     return view('users.laporanTransaksi');
-});
+})->name('laporanTransaksi');
 
 Route::get('/utang', function () {
     return view('users.utang');
