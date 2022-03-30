@@ -19,6 +19,16 @@
     text-align: left;
 }
 
+.text-lg2 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
 .text-lg {
     font-size: 18px;
     font-style: normal;
@@ -110,6 +120,12 @@
     .text-lg {
         font-size: 16px;
         line-height: 24px;
+    }
+
+    .text-lg2 {
+        font-size: 20px;
+        line-height: 32px;
+
     }
 
     .de-note {
@@ -1347,6 +1363,10 @@
 
 /* laporanTransaksi start */
 
+#laporanTransaksi {
+    overflow: hidden;
+}
+
 #laporanTransaksi .products-card-2 {
     background-color: #363AA7;
 }
@@ -1381,6 +1401,7 @@
 }
 
 #laporanTransaksi .judul {
+    position: relative;
     font-size: 36px;
     font-style: normal;
     font-weight: 600;
@@ -1388,6 +1409,7 @@
     letter-spacing: 0em;
     text-align: center;
     color: black;
+    z-index: 2;
 }
 
 #laporanTransaksi .products-card-1 {
@@ -1416,7 +1438,27 @@
     background-color: #DCC81F;
 }
 
+#laporanTransaksi .tombol-catat p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+
+
+}
+
+#laporanTransaksi .tombol-catat img {
+    margin-right: 15px;
+    margin-top: -4px;
+
+}
+
 /* laporanTransaksi tabel start */
+
+#laporanTransaksi .table-bordered>:not(caption)>* {
+    border-bottom: solid 2px #E9ECF8;
+}
 
 .form-inline .form-control {
     width: 100%;
@@ -1525,6 +1567,7 @@ li#dataTables-example_previous.paginate_button.previous:hover {
     float: right;
     font-family: fontawesome;
     padding-right: 10px;
+    color: #F5DE19;
 }
 
 #laporanTransaksi table.dataTable thead .sorting_desc:after {
@@ -1532,6 +1575,7 @@ li#dataTables-example_previous.paginate_button.previous:hover {
     float: right;
     font-family: fontawesome;
     padding-right: 10px;
+    color: #F5DE19;
 }
 
 #laporanTransaksi table.dataTable thead .sorting,
@@ -1557,15 +1601,703 @@ table.dataTable thead .sorting_desc_disabled {
 }
 
 #laporanTransaksi .column1 {
-    width: 10%;
+    width: 15%;
 }
 
+#laporanTransaksi .column2 {
+    width: 15%;
+}
+
+#laporanTransaksi .column3 {
+    width: 15%;
+}
+
+/* hiden button segitiga start */
+#laporanTransaksi table.dataTable thead .column4.sorting:after {
+    color: transparent;
+}
+
+#laporanTransaksi table.dataTable thead .column4.sorting_asc:after {
+    color: transparent;
+}
+
+#laporanTransaksi table.dataTable thead .column4.sorting_desc:after {
+    color: transparent;
+}
+
+/* hiden button segitiga end */
+
+#laporanTransaksi .container-table100 {
+    background-color: transparent;
+
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+#laporanTransaksi .bungkus {
+    width: calc(100vw - 60px);
+    overflow: auto;
+}
 
 
 /* laporanTransaksi tabel end */
 
+@media (max-width: 1600px) {}
+
+@media (max-width: 1200px) {
+    #laporanTransaksi p.rupiah {
+        font-size: 28px;
+        line-height: 20px;
+
+    }
+
+    #laporanTransaksi h3.text {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #laporanTransaksi .bungkus {
+        display: flex;
+        justify-content: center;
+    }
+
+    #laporanTransaksi .container-table100 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 992px) {
+    #laporanTransaksi .tombol-kembali a {
+        margin-left: 12%;
+    }
+
+    #laporanTransaksi .judul {
+        font-size: 34px;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 768px) {}
+
 
 /* laporanTransaksi end */
+
+
+
+
+
+/* utang start */
+
+#utang .limiter {
+    margin-top: -600px;
+}
+
+#utang .text-lg2 {
+    color: black;
+}
+
+#utang .rupiah {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: #363AA7;
+}
+
+#utang .judul2 {
+    text-align: center;
+    color: white;
+    padding-top: 110px;
+}
+
+
+#utang .bg-biru {
+    background-image: url(utang-bg.png);
+    background-size: cover;
+    height: 1111px;
+}
+
+#utang img {
+    width: 95px;
+}
+
+
+#utang .kotak3 {
+    background-image: url(utang-bg-2.png);
+    background-size: cover;
+    height: 316px;
+    margin-top: 108px;
+    padding: 63px 159px 63px 159px;
+    border-radius: 10px;
+    width: 70%;
+    text-align: center;
+}
+
+#utang .container {
+    display: flex;
+    justify-content: center;
+}
+
+#utang .kotak2 img {
+    width: 200px;
+}
+
+#utang .kotak {
+    padding: 50px;
+}
+
+#utang .text {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #1C1E53;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#utang .bg-biru .utang-gambar {
+    width: 50px;
+    margin-bottom: 35px;
+    margin-right: -18px;
+}
+
+#utang .gambar2 {
+    position: absolute;
+}
+
+#utang .gambar3 {
+    position: absolute;
+    right: 0;
+}
+
+#utang .gambar4 {
+    position: absolute;
+    right: 0;
+    margin-top: 440px;
+}
+
+#home .tombol:hover {
+    background-color: #F5DE19;
+}
+
+#home .tombol:hover a {
+    color: black;
+}
+
+#utang .column4 .transaksi-titik2 {
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+}
+
+#utang .column4 .transaksi-titik2 img {
+    width: 24px;
+}
+
+#utang .tombol-catat p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: black;
+}
+
+
+
+
+@media (max-width: 1600px) {
+    #utang .limiter {
+        margin-top: -450px;
+    }
+}
+
+@media (max-width: 1400px) {
+    #utang .kotak3 {
+        padding: 63px 50px 63px 50px;
+    }
+}
+
+@media (max-width: 1200px) {
+    #utang .kotak3 {
+        padding: 63px 20px 63px 70px;
+    }
+
+    #utang .limiter {
+        margin-top: -350px;
+    }
+}
+
+@media (max-width: 991px) {
+    #utang .kotak3 {
+        padding: 63px 70px 63px 70px;
+        height: 450px;
+    }
+
+    #utang .kotak {
+        padding: 40px 80px 40px 80px;
+    }
+
+    #utang .gambar4 {
+        margin-top: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    #utang .kotak {
+        padding: 40px 15px 40px 15px;
+    }
+}
+
+@media (max-width: 576px) {}
+
+@media (max-width: 500px) {
+    #utang .kotak3 {
+        padding: 63px 0px 63px 0px;
+        height: 450px;
+    }
+
+    #utang .kotak {
+        padding: 40px 40px 40px 40px;
+    }
+}
+
+@media (max-width: 400px) {}
+
+
+
+/* utang tabel start */
+
+#utang .table-bordered>:not(caption)>* {
+    border-bottom: solid 2px #E9ECF8;
+}
+
+#utang {
+    overflow: hidden;
+}
+
+#utang .products-card-2 {
+    background-color: #363AA7;
+}
+
+#utang h3.text {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    margin-top: 26px;
+
+}
+
+#utang p.rupiah {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: #363AA7;
+    margin-top: 20px;
+
+}
+
+#utang .products-card-3 .foto-g {
+    height: 215px;
+}
+
+#utang .judul {
+    position: relative;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;
+    z-index: 2;
+}
+
+#utang .products-card-1 {
+    margin-top: 30px;
+}
+
+#utang .laporanTransaksi-gambar1 {
+    position: absolute;
+}
+
+#utang .laporanTransaksi-gambar2 {
+    position: absolute;
+    right: 0;
+
+}
+
+#utang .tombol-kembali {
+    margin-left: -50px;
+}
+
+#utang .tombol-catat:hover {
+    background-color: #DCC81F;
+}
+
+#utang .tombol-catat p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+
+
+}
+
+#utang .tombol-catat img {
+    margin-right: 15px;
+    margin-top: -4px;
+
+}
+
+/* utang tabel start */
+
+.form-inline .form-control {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#utang .table100.ver1 td {
+    padding-left: 20px;
+}
+
+#utang th.column1 {
+    padding-left: 20px;
+}
+
+#utang th.column2 {
+    padding-left: 20px;
+}
+
+#utang th.column3 {
+    padding-left: 20px;
+}
+
+#utang th.column4 {
+    padding-left: 20px;
+}
+
+#utang .input-group {
+    padding-right: 10px;
+}
+
+#utang .input-group {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* #utang .tombol-catat {}
+ */
+
+#utang .pencarian .form-control {
+    margin-right: 288px
+}
+
+#utang .table-bordered td,
+.table-bordered th {
+    border: none;
+}
+
+#utang .table-bordered {
+    border: none;
+}
+
+#utang th {
+    height: 40px;
+}
+
+#utang .tombol-catat {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    background-color: #F5DE19;
+    color: black;
+    text-decoration: none;
+
+    height: 36px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#utang .tombol-catat1 {
+    padding-right: 5px;
+}
+
+#utang a {
+    text-decoration: none;
+}
+
+#utang .tombol-laporan {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: #F5DE19;
+    text-decoration: none;
+
+    height: 36px;
+    width: 100%;
+    border-radius: 10px;
+    border: solid 2px #F5DE19;
+    padding-top: -20px;
+}
+
+#utang .tabel-atas {
+    background-color: #363AA7;
+}
+
+#utang th.cell100 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: white;
+}
+
+#utang .table100.ver1 td {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1C1E53;
+}
+
+#utang .table100.ver1 td.column2 {
+    color: #14804A;
+}
+
+#utang .table100.ver1 td.column3 {
+    color: #D12953;
+}
+
+#utang th.column0 {
+    /* padding-right: 70px; */
+    width: 70px;
+}
+
+#utang .table100.ver1 td {
+    background-color: #F2F5FF;
+}
+
+#utang .table100.ver1 td {
+    background-color: #F2F5FF;
+}
+
+
+
+
+
+
+/* previous dan next start */
+.pagination>li>a,
+.pagination>li>span {
+    margin-right: 20px;
+    /* border: 1px solid #ddd; */
+    padding: 0px;
+    color: transparent;
+}
+
+li#dataTables-example_next.paginate_button.next {
+    height: 20px;
+    width: 24px;
+    background-image: url(laporanTransaksi-Button\ kanan.svg);
+}
+
+li#dataTables-example_next.paginate_button.next:hover {
+    opacity: 80%;
+    background-image: url(laporanTransaksi-Button\ kanan.svg);
+}
+
+li#dataTables-example_previous.paginate_button.previous {
+    margin-right: 10px;
+    height: 20px;
+    width: 24px;
+    background-image: url(laporanTransaksi-Button\ kiri.svg);
+}
+
+li#dataTables-example_previous.paginate_button.previous:hover {
+    opacity: 80%;
+    background-image: url(laporanTransaksi-Button\ kiri.svg);
+}
+
+#utang .pagination {
+    margin-bottom: 20px;
+    margin-left: 690px;
+}
+
+#utang table.dataTable thead .sorting:after {
+    content: "\f0dc";
+    background-color: transparent;
+    float: right;
+    font-family: 'FontAwesome';
+    color: white;
+    /* margin-right: 10px; */
+    padding-right: 10px;
+}
+
+#utang table.dataTable thead .sorting_asc:after {
+    content: "\f0de";
+    float: right;
+    font-family: fontawesome;
+    padding-right: 10px;
+    color: #F5DE19;
+}
+
+#utang table.dataTable thead .sorting_desc:after {
+    content: "\f0dd";
+    float: right;
+    font-family: fontawesome;
+    padding-right: 10px;
+    color: #F5DE19;
+}
+
+#utang table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc_disabled {
+    background: transparent;
+}
+
+#utang th.column1 {
+    padding-right: 15px;
+    width: 70px;
+}
+
+#utang th.column2 {
+    width: 70px;
+}
+
+#utang th.column3 {
+    padding-right: 20px;
+    width: 70px;
+}
+
+#utang .column1 {
+    width: 25%;
+}
+
+#utang .column2 {
+    width: 25%;
+}
+
+#utang .column3 {
+    width: 15%;
+}
+
+/* hiden button segitiga start */
+#utang table.dataTable thead .column4.sorting:after {
+    color: transparent;
+}
+
+#utang table.dataTable thead .column4.sorting_asc:after {
+    color: transparent;
+}
+
+#utang table.dataTable thead .column4.sorting_desc:after {
+    color: transparent;
+}
+
+/* hiden button segitiga end */
+
+#utang .container-table100 {
+    background-color: transparent;
+
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+#utang .bungkus {
+    width: calc(100vw - 60px);
+    overflow: auto;
+}
+
+
+/* utang tabel end */
+
+@media (max-width: 1600px) {}
+
+@media (max-width: 1200px) {
+    #utang p.rupiah {
+        font-size: 28px;
+        line-height: 20px;
+
+    }
+
+    #utang h3.text {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #utang .bungkus {
+        display: flex;
+        justify-content: center;
+    }
+
+    #utang .container-table100 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 992px) {
+    #utang .tombol-kembali a {
+        margin-left: 12%;
+    }
+
+    #utang .judul {
+        font-size: 34px;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 768px) {}
+
+
+/* utang tabel end */
+
+
+
+/* utang end */
+
 
 
 

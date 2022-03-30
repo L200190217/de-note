@@ -53,6 +53,6 @@ Route::get('/laporanTransaksi', function () {
     return view('users.laporanTransaksi');
 });
 
-Route::get('/laporanTransaksi2', function () {
-    return view('users.laporanTransaksi2');
+Route::get('/utang', function () {
+    return view('users.utang');
 });
