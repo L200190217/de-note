@@ -816,6 +816,12 @@
 }
 
 #ubahTransaksiPemasukan .tombol {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
     text-align: center;
     background-color: #F5DE19;
     padding: 15px;
@@ -1023,6 +1029,12 @@
 }
 
 #ubahTransaksiPengeluaran .tombol {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
     text-align: center;
     background-color: #F5DE19;
     padding: 15px;
@@ -1227,6 +1239,12 @@
 }
 
 #catatTransaksi .tombol {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
     text-align: center;
     background-color: #F5DE19;
     padding: 15px;
@@ -2300,6 +2318,1496 @@ table.dataTable thead .sorting_desc_disabled {
 
 
 
+
+/* catatUtang start */
+
+#catatUtang label {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+
+}
+
+#catatUtang {
+    background-image: url(catatUtang-bg.png);
+    background-size: cover;
+}
+
+#catatUtang .catatUtang-gambar1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+
+}
+
+#catatUtang .catatUtang-gambar2 {
+    position: absolute;
+    margin-bottom: -82px;
+    bottom: 0;
+}
+
+#catatUtang .judul3 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;
+    margin-bottom: -5px;
+}
+
+#catatUtang .judul3-1 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #363AA7;
+
+}
+
+#catatUtang .row {
+    margin: 0;
+}
+
+#catatUtang .container {
+    padding-top: 166px;
+}
+
+#catatUtang input {
+    width: 100%;
+    height: 50px;
+    left: 354px;
+    top: 339.5px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(122, 122, 122, 0.2) !important;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    padding: 17px;
+    margin-bottom: 30px;
+    color: black;
+}
+
+#catatUtang textarea {
+    width: 100%;
+    height: 50px;
+    left: 354px;
+    top: 339.5px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(122, 122, 122, 0.2) !important;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    padding: 17px;
+    margin-bottom: 30px;
+    color: black;
+    height: 126px;
+}
+
+#catatUtang .registrasi-form {
+    background-color: white;
+    margin-top: 30.46px;
+    border: 3px solid rgba(27, 28, 42, 0.6);
+    padding: 39px 99px 60px 99px;
+    border-radius: 10px;
+    z-index: 2;
+    margin-bottom: 100px;
+}
+
+#catatUtang .tombol {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    text-align: center;
+    background-color: #F5DE19;
+    padding: 15px;
+    border: 1px solid rgba(122, 122, 122, 0.2);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+#catatUtang .tombol:hover {
+    background-color: #DCC81F;
+}
+
+#catatUtang .tombol a {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: black;
+    text-decoration: none;
+}
+
+/*support google chrome*/
+#catatUtang .catatan::-webkit-input-placeholder {
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#catatUtang input::-webkit-input-placeholder {
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+#catatUtang .tombol3 {
+    border-radius: 10px;
+    width: 80%;
+    height: 50px;
+    background-color: #2264E5;
+    text-align: center;
+    padding: 10px;
+}
+
+#catatUtang .tombol3-1 a {
+    display: flex;
+    justify-content: end;
+}
+
+#catatUtang .pelanggan {
+    display: flex;
+    justify-content: center;
+}
+
+.bagitabel .col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media (max-width: 1600px) {}
+
+@media (max-width: 1400px) {}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+    #catatUtang .judul3 {
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    #catatUtang .judul3-1 {
+        font-size: 36px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 576px) {
+    #catatUtang .registrasi-form {
+        padding: 27px 40px 36px 40px;
+    }
+
+    #catatUtang .registrasi-form {
+        margin-top: 43px;
+    }
+
+    #catatUtang .catatUtang-gambar2 {
+        margin-bottom: -60px;
+    }
+
+}
+
+
+/* catatUtang end */
+
+
+/* tambahNamaPelanggan start */
+
+#tambahNamaPelanggan label {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+
+}
+
+#tambahNamaPelanggan {
+    background-image: url(tambahNamaPelanggan-bg.png);
+    background-size: cover;
+}
+
+#tambahNamaPelanggan .tambahNamaPelanggan-gambar1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    margin-bottom: 256px;
+
+}
+
+#tambahNamaPelanggan .judul3 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;
+    margin-bottom: -5px;
+}
+
+#tambahNamaPelanggan .judul3-1 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #363AA7;
+
+}
+
+#tambahNamaPelanggan .row {
+    margin: 0;
+}
+
+#tambahNamaPelanggan .container {
+    padding-top: 110px;
+}
+
+#tambahNamaPelanggan input {
+    width: 100%;
+    height: 50px;
+    left: 354px;
+    top: 339.5px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(122, 122, 122, 0.2) !important;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    padding: 17px;
+    color: black;
+}
+
+#tambahNamaPelanggan textarea {
+    width: 100%;
+    height: 50px;
+    left: 354px;
+    top: 339.5px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(122, 122, 122, 0.2) !important;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    padding: 17px;
+    margin-bottom: 30px;
+    color: black;
+    height: 126px;
+}
+
+#tambahNamaPelanggan .registrasi-form {
+    background-color: white;
+    margin-top: 79px;
+    border: 3px solid rgba(27, 28, 42, 0.6);
+    padding: 128px 99px 128px 99px;
+    border-radius: 10px;
+    z-index: 2;
+    margin-bottom: 100px;
+}
+
+#tambahNamaPelanggan .tombol {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
+
+    text-align: center;
+    background-color: #F5DE19;
+    padding: 15px;
+    border: 1px solid rgba(122, 122, 122, 0.2);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+#tambahNamaPelanggan .tombol:hover {
+    background-color: #DCC81F;
+}
+
+#tambahNamaPelanggan .tombol a {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: black;
+    text-decoration: none;
+}
+
+/*support google chrome*/
+#tambahNamaPelanggan .catatan::-webkit-input-placeholder {
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#tambahNamaPelanggan input::-webkit-input-placeholder {
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+#tambahNamaPelanggan .tombol3 {
+    border-radius: 10px;
+    width: 80%;
+    height: 50px;
+    background-color: #2264E5;
+    text-align: center;
+    padding: 10px;
+}
+
+#tambahNamaPelanggan .tombol3-1 a {
+    display: flex;
+    justify-content: end;
+}
+
+#tambahNamaPelanggan .pelanggan {
+    display: flex;
+    justify-content: center;
+}
+
+.bagitabel .col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media (max-width: 1600px) {}
+
+@media (max-width: 1400px) {}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+    #tambahNamaPelanggan .judul3 {
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    #tambahNamaPelanggan .judul3-1 {
+        font-size: 36px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 576px) {
+    #tambahNamaPelanggan .registrasi-form {
+        padding: 27px 40px 36px 40px;
+    }
+
+    #tambahNamaPelanggan .registrasi-form {
+        margin-top: 43px;
+    }
+
+    #tambahNamaPelanggan .catatUtang-gambar2 {
+        margin-bottom: -60px;
+    }
+
+}
+
+
+/* tambahNamaPelanggan end */
+
+
+/* catatUtang2 start */
+
+#catatUtang2 label {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+
+}
+
+#catatUtang2 {
+    background-image: url(catatUtang2-bg.png);
+    background-size: cover;
+}
+
+#catatUtang2 .ubahTransaksiPemasukan-gambar1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+
+#catatUtang2 .ubahTransaksiPemasukan-gambar2 {
+    position: absolute;
+    top: 0;
+    margin-top: 856px;
+}
+
+#catatUtang2 .judul3 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;
+    margin-bottom: -5px;
+}
+
+#catatUtang2 .judul3-1 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #363AA7;
+
+}
+
+#catatUtang2 .row {
+    margin: 0;
+}
+
+#catatUtang2 .container {
+    padding-top: 166px;
+}
+
+#catatUtang2 input {
+    width: 100%;
+    height: 50px;
+    left: 354px;
+    top: 339.5px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(122, 122, 122, 0.2) !important;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    padding: 17px;
+    margin-bottom: 30px;
+    color: black;
+}
+
+#catatUtang2 textarea {
+    width: 100%;
+    height: 50px;
+    left: 354px;
+    top: 339.5px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(122, 122, 122, 0.2) !important;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    padding: 17px;
+    margin-bottom: 30px;
+    color: black;
+    height: 126px;
+}
+
+#catatUtang2 .registrasi-form {
+    position: relative;
+    background-color: white;
+    margin-top: 30px;
+    border: 3px solid #363AA7;
+    padding: 39px 99px 60px 99px;
+    /* padding: 39px 39px 93px 39px; */
+    border-radius: 10px;
+    z-index: 2;
+    margin-bottom: 100px;
+}
+
+#catatUtang2 .tombol {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    text-align: center;
+    background-color: #F5DE19;
+    padding: 15px;
+    border: 1px solid rgba(122, 122, 122, 0.2);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+#catatUtang2 .tombol:hover {
+    background-color: #DCC81F;
+}
+
+#catatUtang2 .tombol a {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: black;
+    text-decoration: none;
+}
+
+/*support google chrome*/
+#catatUtang2 .catatan::-webkit-input-placeholder {
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#catatUtang2 input::-webkit-input-placeholder {
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+/* untuk tombol atas */
+
+#catatUtang2 #pills-home-tab {
+    border: solid 2px #363AA7;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#catatUtang2 #pills-profile-tab {
+    border: solid 2px #363AA7;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#catatUtang2 .btn-check:focus+.btn,
+.btn:focus {
+    box-shadow: none;
+}
+
+#catatUtang2 .btn {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    background-color: white;
+    color: #363AA7;
+    width: 100%;
+}
+
+#catatUtang2 .btn:hover {
+    background-color: #363aa7dc;
+    color: white;
+}
+
+#catatUtang2 .nav {
+    width: 100%;
+    margin-top: 30px;
+}
+
+#catatUtang2 .btn-group {
+    width: 100%;
+    height: 63px;
+}
+
+#catatUtang2 .btn.active {
+    color: white;
+    background-color: #363AA7;
+}
+
+
+@media (max-width: 1600px) {}
+
+@media (max-width: 1400px) {}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+    #catatUtang2 .judul3 {
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    #catatUtang2 .judul3-1 {
+        font-size: 36px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 576px) {
+    #catatUtang2 .registrasi-form {
+        padding: 27px 40px 36px 40px;
+    }
+
+    #catatUtang2 .registrasi-form {
+        margin-top: 43px;
+    }
+
+    #catatUtang2 .ubahTransaksiPemasukan-gambar2 {
+        margin-top: 802px;
+    }
+
+}
+
+
+/* catatUtang2 end */
+
+/* catatIuran start */
+
+#catatIuran label {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+
+}
+
+#catatIuran {
+    background-image: url(catatIuran-bg.png);
+    background-size: cover;
+}
+
+#catatIuran .catatIuran-gambar1 {
+    position: absolute;
+    margin-top: 470px;
+
+}
+
+#catatIuran .catatIuran-gambar2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    margin-bottom: 25px;
+}
+
+#catatIuran .judul3 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;
+    margin-bottom: -5px;
+}
+
+#catatIuran .judul3-1 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #363AA7;
+
+}
+
+#catatIuran .row {
+    margin: 0;
+}
+
+#catatIuran .container {
+    padding-top: 166px;
+}
+
+#catatIuran input {
+    width: 100%;
+    height: 50px;
+    left: 354px;
+    top: 339.5px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(122, 122, 122, 0.2) !important;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    padding: 17px;
+    margin-bottom: 30px;
+    color: black;
+}
+
+#catatIuran textarea {
+    width: 100%;
+    height: 50px;
+    left: 354px;
+    top: 339.5px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(122, 122, 122, 0.2) !important;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    padding: 17px;
+    margin-bottom: 30px;
+    color: black;
+    height: 126px;
+}
+
+#catatIuran .registrasi-form {
+    background-color: white;
+    margin-top: 30.46px;
+    border: 3px solid rgba(27, 28, 42, 0.6);
+    padding: 39px 99px 60px 99px;
+    border-radius: 10px;
+    z-index: 2;
+    margin-bottom: 100px;
+}
+
+#catatIuran .tombol {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    text-align: center;
+    background-color: #F5DE19;
+    padding: 15px;
+    border: 1px solid rgba(122, 122, 122, 0.2);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+#catatIuran .tombol:hover {
+    background-color: #DCC81F;
+}
+
+#catatIuran .tombol a {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: black;
+    text-decoration: none;
+}
+
+/*support google chrome*/
+#catatIuran .catatan::-webkit-input-placeholder {
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#catatIuran input::-webkit-input-placeholder {
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+#catatIuran .tombol3 {
+    border-radius: 10px;
+    width: 80%;
+    height: 50px;
+    background-color: #2264E5;
+    text-align: center;
+    padding: 10px;
+}
+
+#catatIuran .tombol3-1 a {
+    display: flex;
+    justify-content: end;
+}
+
+#catatIuran .pelanggan {
+    display: flex;
+    justify-content: center;
+}
+
+.bagitabel .col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media (max-width: 1600px) {}
+
+@media (max-width: 1400px) {}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+    #catatIuran .judul3 {
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    #catatIuran .judul3-1 {
+        font-size: 36px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 576px) {
+    #catatIuran .registrasi-form {
+        padding: 27px 40px 36px 40px;
+    }
+
+    #catatIuran .registrasi-form {
+        margin-top: 43px;
+    }
+
+    #catatIuran .catatIuran-gambar2 {
+        margin-bottom: 48px;
+    }
+
+}
+
+
+/* catatIuran end */
+
+
+
+/* tambahNamaAnggota start */
+
+#tambahNamaAnggota label {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+
+}
+
+#tambahNamaAnggota {
+    background-image: url(tambahNamaAnggota-bg.png);
+    background-size: cover;
+}
+
+#tambahNamaAnggota .tambahNamaAnggota-gambar1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+
+}
+
+#tambahNamaAnggota .judul3 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;
+    margin-bottom: -5px;
+}
+
+#tambahNamaAnggota .judul3-1 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #363AA7;
+
+}
+
+#tambahNamaAnggota .row {
+    margin: 0;
+}
+
+#tambahNamaAnggota .container {
+    padding-top: 110px;
+}
+
+#tambahNamaAnggota input {
+    width: 100%;
+    height: 50px;
+    left: 354px;
+    top: 339.5px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(122, 122, 122, 0.2) !important;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    padding: 17px;
+    color: black;
+}
+
+#tambahNamaAnggota textarea {
+    width: 100%;
+    height: 50px;
+    left: 354px;
+    top: 339.5px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(122, 122, 122, 0.2) !important;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    padding: 17px;
+    margin-bottom: 30px;
+    color: black;
+    height: 126px;
+}
+
+#tambahNamaAnggota .registrasi-form {
+    background-color: white;
+    margin-top: 79px;
+    border: 3px solid rgba(27, 28, 42, 0.6);
+    padding: 128px 99px 128px 99px;
+    border-radius: 10px;
+    z-index: 2;
+    margin-bottom: 100px;
+}
+
+#tambahNamaAnggota .tombol {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
+
+    text-align: center;
+    background-color: #F5DE19;
+    padding: 15px;
+    border: 1px solid rgba(122, 122, 122, 0.2);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+#tambahNamaAnggota .tombol:hover {
+    background-color: #DCC81F;
+}
+
+#tambahNamaAnggota .tombol a {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: black;
+    text-decoration: none;
+}
+
+/*support google chrome*/
+#tambahNamaAnggota .catatan::-webkit-input-placeholder {
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#tambahNamaAnggota input::-webkit-input-placeholder {
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+#tambahNamaAnggota .tombol3 {
+    border-radius: 10px;
+    width: 80%;
+    height: 50px;
+    background-color: #2264E5;
+    text-align: center;
+    padding: 10px;
+}
+
+#tambahNamaAnggota .tombol3-1 a {
+    display: flex;
+    justify-content: end;
+}
+
+#tambahNamaAnggota .pelanggan {
+    display: flex;
+    justify-content: center;
+}
+
+.bagitabel .col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media (max-width: 1600px) {}
+
+@media (max-width: 1400px) {}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+    #tambahNamaAnggota .judul3 {
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    #tambahNamaAnggota .judul3-1 {
+        font-size: 36px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 576px) {
+    #tambahNamaAnggota .registrasi-form {
+        padding: 27px 40px 36px 40px;
+    }
+
+    #tambahNamaAnggota .registrasi-form {
+        margin-top: 43px;
+    }
+
+    #tambahNamaAnggota .catatUtang-gambar2 {
+        margin-bottom: -60px;
+    }
+
+}
+
+
+/* tambahNamaAnggota end */
+
+
+
+/* tambahNamaAgenda start */
+
+#tambahNamaAgenda label {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+
+}
+
+#tambahNamaAgenda {
+    background-image: url(tambahNamaAgenda-bg.png);
+    background-size: cover;
+}
+
+#tambahNamaAgenda .tambahNamaAgenda-gambar1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 695px;
+    z-index: 0;
+
+}
+
+#tambahNamaAgenda .judul3 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;
+    margin-bottom: -5px;
+}
+
+#tambahNamaAgenda .judul3-1 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #363AA7;
+
+}
+
+#tambahNamaAgenda .row {
+    margin: 0;
+}
+
+#tambahNamaAgenda .container {
+    padding-top: 110px;
+}
+
+#tambahNamaAgenda input {
+    width: 100%;
+    height: 50px;
+    left: 354px;
+    top: 339.5px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(122, 122, 122, 0.2) !important;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    padding: 17px;
+    color: black;
+}
+
+#tambahNamaAgenda input.pelanggan {
+    margin-bottom: 30px;
+}
+
+#tambahNamaAgenda .mulai {
+    padding-right: 5px;
+}
+
+#tambahNamaAgenda .akhir {
+    padding-left: 5px;
+}
+
+#tambahNamaAgenda textarea {
+    width: 100%;
+    height: 50px;
+    left: 354px;
+    top: 339.5px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(122, 122, 122, 0.2) !important;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    padding: 17px;
+    margin-bottom: 30px;
+    color: black;
+    height: 126px;
+}
+
+#tambahNamaAgenda .registrasi-form {
+    background-color: white;
+    margin-top: 79px;
+    border: 3px solid rgba(27, 28, 42, 0.6);
+    padding: 62px 99px 62px 99px;
+    border-radius: 10px;
+    z-index: 2;
+    margin-bottom: 100px;
+}
+
+#tambahNamaAgenda .tombol {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
+
+    text-align: center;
+    background-color: #F5DE19;
+    padding: 15px;
+    border: 1px solid rgba(122, 122, 122, 0.2);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+#tambahNamaAgenda .tombol:hover {
+    background-color: #DCC81F;
+}
+
+#tambahNamaAgenda .tombol a {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: black;
+    text-decoration: none;
+}
+
+/*support google chrome*/
+#tambahNamaAgenda .catatan::-webkit-input-placeholder {
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#tambahNamaAgenda input::-webkit-input-placeholder {
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+#tambahNamaAgenda .tombol3 {
+    border-radius: 10px;
+    width: 80%;
+    height: 50px;
+    background-color: #2264E5;
+    text-align: center;
+    padding: 10px;
+}
+
+#tambahNamaAgenda .tombol3-1 a {
+    display: flex;
+    justify-content: end;
+}
+
+#tambahNamaAgenda .pelanggan {
+    display: flex;
+    justify-content: center;
+}
+
+.bagitabel .col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media (max-width: 1600px) {}
+
+@media (max-width: 1400px) {}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+    #tambahNamaAgenda .judul3 {
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    #tambahNamaAgenda .judul3-1 {
+        font-size: 36px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 576px) {
+    #tambahNamaAgenda .registrasi-form {
+        padding: 27px 40px 36px 40px;
+    }
+
+    #tambahNamaAgenda .registrasi-form {
+        margin-top: 43px;
+    }
+
+    #tambahNamaAgenda .catatUtang-gambar2 {
+        margin-bottom: -60px;
+    }
+
+}
+
+
+/* tambahNamaAgenda end */
 
 
 

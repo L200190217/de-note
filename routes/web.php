@@ -62,3 +62,27 @@ Route::get('/laporanTransaksi', function () {
 Route::get('/utang', function () {
     return view('users.utang');
 });
+
+Route::get('/catatUtang', function () {
+    return view('users.catatUtang');
+});
+
+Route::get('/catatUtang2', function () {
+    return view('users.catatUtang2');
+});
+
+Route::get('/tambahNamaPelanggan', function () {
+    return view('users.tambahNamaPelanggan');
+});
+
+Route::get('/catatIuran', function () {
+    return view('users.catatIuran');
+});
+
+Route::get('/tambahNamaAnggota', function () {
+    return view('users.tambahNamaAnggota');
+});
+
+Route::get('/tambahNamaAgenda', function () {
+    return view('users.tambahNamaAgenda');
+});
