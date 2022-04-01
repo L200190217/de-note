@@ -35,6 +35,10 @@ Route::get('/transaksi3', function () {
     return view('users.transaksi3');
 });
 
+Route::get('/transaksi4', function () {
+    return view('users.transaksi4');
+});
+
 Route::get('/lupa-password', function () {
     return view('users.konfirmasi-pass');
 });
