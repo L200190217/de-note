@@ -3820,9 +3820,9 @@ table.dataTable thead .sorting_desc_disabled {
 }
 
 #transaksi .kuning1 {
-    width: 35px;
-    margin-left: 23px;
-    margin-bottom: 7px;
+    width: 41px;
+    margin-left: 10px;
+    margin-bottom: 18px;
 }
 
 #transaksi .kuning2 {
@@ -3913,7 +3913,7 @@ table.dataTable thead .sorting_desc_disabled {
 
 /* tabel */
 #transaksi .limiter {
-    margin-top: -300px;
+    margin-top: -280px;
 }
 
 .container-table100 {
@@ -4040,7 +4040,7 @@ td {
 }
 
 #transaksi th.column0 {
-    padding-right: 100px;
+    padding-right: 11px;
     width: 70px;
 }
 
@@ -4050,7 +4050,7 @@ td {
 }
 
 #transaksi th.column2 {
-    padding-right: 142px;
+    padding-right: 12px;
     width: 70px;
 }
 
@@ -4209,6 +4209,294 @@ td {
 
 
 /* products akhir */
+
+
+/* transaksi versi 4 start */
+
+#transaksi {
+    overflow: hidden;
+}
+
+#transaksi .container-table100 {
+    background-color: transparent;
+
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+#transaksi .bungkus {
+    width: calc(100vw - 60px);
+    overflow: auto;
+}
+
+#hilang5 {
+    display: none;
+}
+
+#hilang5 .fa-solid {
+    position: absolute;
+    font-size: 36px;
+    margin: 79px 20px 20px 155px;
+
+}
+
+.hilang5 {
+    display: inline !important;
+}
+
+#transaksi .tombol-catat1 {
+    padding-right: 10px;
+}
+
+#transaksi .column5 .transaksi-titik2 img {
+    height: 27px;
+}
+
+
+#transaksi .products-card-3 .foto-g {
+    height: 215px;
+}
+
+#transaksi .products-card-1 {
+    margin-top: 113px;
+}
+
+#transaksi .kotak {
+    padding-top: 160px;
+}
+
+
+/* transaksi tabel start */
+
+#transaksi .cell100.column0 {
+    padding-bottom: 12px;
+}
+
+
+#transaksi .table-bordered>:not(caption)>* {
+    border-bottom: solid 2px #E9ECF8;
+}
+
+.form-inline .form-control {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#transaksi .table100.ver1 td {
+    padding-left: 20px;
+}
+
+#transaksi th.column1 {
+    padding-left: 20px;
+}
+
+#transaksi th.column2 {
+    padding-left: 20px;
+}
+
+#transaksi th.column3 {
+    padding-left: 20px;
+}
+
+#transaksi th.column4 {
+    padding-left: 20px;
+}
+
+#transaksi .pencarian.input-group {
+    width: 265px;
+}
+
+#transaksi .input-group {
+    padding-right: 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#transaksi .table-bordered td,
+.table-bordered th {
+    border: none;
+}
+
+#transaksi .table-bordered {
+    border: none;
+}
+
+
+
+
+
+
+/* previous dan next start */
+.pagination>li>a,
+.pagination>li>span {
+    margin-right: 20px;
+    /* border: 1px solid #ddd; */
+    padding: 0px;
+    color: transparent;
+}
+
+li#dataTables-example_next.paginate_button.next {
+    height: 20px;
+    width: 24px;
+    background-image: url(laporanTransaksi-Button\ kanan.svg);
+}
+
+li#dataTables-example_next.paginate_button.next:hover {
+    opacity: 80%;
+    background-image: url(laporanTransaksi-Button\ kanan.svg);
+}
+
+li#dataTables-example_previous.paginate_button.previous {
+    margin-right: 10px;
+    height: 20px;
+    width: 24px;
+    background-image: url(laporanTransaksi-Button\ kiri.svg);
+}
+
+li#dataTables-example_previous.paginate_button.previous:hover {
+    opacity: 80%;
+    background-image: url(laporanTransaksi-Button\ kiri.svg);
+}
+
+#transaksi .pagination {
+    margin-bottom: 20px;
+    margin-left: 690px;
+}
+
+#transaksi table.dataTable thead .sorting:after {
+    content: "\f0dc";
+    background-color: transparent;
+    float: right;
+    font-family: 'FontAwesome';
+    color: white;
+    /* margin-right: 10px; */
+    padding-right: 10px;
+}
+
+#transaksi table.dataTable thead .sorting_asc:after {
+    content: "\f0de";
+    float: right;
+    font-family: fontawesome;
+    padding-right: 10px;
+    color: #F5DE19;
+}
+
+#transaksi table.dataTable thead .sorting_desc:after {
+    content: "\f0dd";
+    float: right;
+    font-family: fontawesome;
+    padding-right: 10px;
+    color: #F5DE19;
+}
+
+#transaksi table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc_disabled {
+    background: transparent;
+}
+
+#transaksi th.column1 {
+    padding-right: 15px;
+    width: 70px;
+}
+
+#transaksi th.column2 {
+    width: 70px;
+}
+
+#transaksi th.column3 {
+    padding-right: 20px;
+    width: 70px;
+}
+
+#transaksi .column0 {
+    width: 5%;
+}
+
+#transaksi .column1 {
+    width: 15%;
+}
+
+#transaksi .column2 {
+    width: 15%;
+}
+
+#transaksi .column3 {
+    width: 15%;
+}
+
+/* hiden button segitiga start */
+#transaksi table.dataTable thead .column4.sorting:after {
+    color: transparent;
+}
+
+#transaksi table.dataTable thead .column4.sorting_asc:after {
+    color: transparent;
+}
+
+#transaksi table.dataTable thead .column4.sorting_desc:after {
+    color: transparent;
+}
+
+#transaksi table.dataTable thead .column0.sorting:after {
+    display: none;
+    color: transparent;
+}
+
+#transaksi table.dataTable thead .column0.sorting_asc:after {
+    display: none;
+    color: transparent;
+}
+
+#transaksi table.dataTable thead .column0.sorting_desc:after {
+    display: none;
+    color: transparent;
+}
+
+/* hiden button segitiga end */
+
+
+
+@media (max-width: 1600px) {}
+
+@media (max-width: 1400px) {}
+
+@media (min-width: 1200px) {
+    #transaksi .container-table100 {
+        display: flex;
+        justify-content: center;
+    }
+
+    #transaksi .bungkus {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 992px) {
+    #transaksi .limiter {
+        margin-top: -100px;
+    }
+
+    #transaksi .aqua-gradient {
+        height: 985px;
+    }
+}
+
+@media (max-width: 768px) {
+    #transaksi .limiter {
+        margin-top: -50;
+    }
+
+    #transaksi .aqua-gradient {
+        height: 1300px;
+    }
+}
+
+@media (max-width: 576px) {}
 
 
 
