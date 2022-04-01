@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Outcome extends Model
+class Agenda extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'date', 'total_outcome', 'note'
+        'name', 'start_date', 'end_date'
     ];
 }

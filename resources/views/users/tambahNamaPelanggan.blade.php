@@ -20,9 +20,10 @@
                 <h3 class="judul3-1">Pelanggan.</h3>
             </div>
             <div class="registrasi-form col-lg-7 col-md-10">
-                <form action="" method="POST">
-                    <label for="total">Nama Pelanggan</label>
-                    <input class="pelanggan" type="text" name="" placeholder="masukkan nama pelanggan baru">
+                <form action="{{ route('memberStore') }}" method="POST">
+                    @csrf
+                    <label for="name">Nama Pelanggan</label>
+                    <input class="pelanggan" type="text" name="name" placeholder="masukkan nama pelanggan baru">
                     <button class="tombol w-100" type="submit">
                         <div class="tombol2">
                             Simpan

@@ -2,15 +2,14 @@
 
 namespace App\Models;
 
-use Illuminate\Support\Carbon;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 
-class Income extends Model
+class Member extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'date', 'total_income', 'note'
+        'name'
     ];
 }

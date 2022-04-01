@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\IncomeController;
-use App\Http\Controllers\OutcomeController;
+use App\Http\Controllers\AgendaController;
+use App\Http\Controllers\MemberController;
+use App\Http\Controllers\TransactionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -42,22 +43,20 @@ Route::get('/lupa-password', function () {
 Route::get('/ubahTransaksiPemasukan', function () {
     return view('users.ubahTransaksiPemasukan');
 });
-Route::post('/ubahTransaksiPemasukan', [IncomeController::class, 'edit'])->name('incomeEdit');
+Route::post('/ubahTransaksiPemasukan', [TransactionController::class, 'edit'])->name('incomeEdit');
 
 Route::get('/ubahTransaksiPengeluaran', function () {
     return view('users.ubahTransaksiPengeluaran');
 });
-Route::post('/ubahTransaksiPengeluaran', [OutcomeController::class, 'edit'])->name('outcomeEdit');
+Route::post('/ubahTransaksiPengeluaran', [TransactionController::class, 'edit'])->name('outcomeEdit');
 
 Route::get('/catatTransaksi', function () {
     return view('users.catatTransaksi');
 });
-Route::post('/catatTransaksi/income', [IncomeController::class, 'store'])->name('incomeStore');
-Route::post('/catatTransaksi/outcome', [OutcomeController::class, 'store'])->name('outcomeStore');
+Route::post('/catatTransaksi/income', [TransactionController::class, 'income'])->name('incomeStore');
+Route::post('/catatTransaksi/outcome', [TransactionController::class, 'outcome'])->name('outcomeStore');
 
-Route::get('/laporanTransaksi', function () {
-    return view('users.laporanTransaksi');
-})->name('laporanTransaksi');
+Route::get('/laporanTransaksi', [TransactionController::class, 'index'])->name('laporanTransaksi');
 
 Route::get('/utang', function () {
     return view('users.utang');
@@ -82,7 +81,7 @@ Route::get('/catatIuran', function () {
 Route::get('/tambahNamaAnggota', function () {
     return view('users.tambahNamaAnggota');
 });
+Route::post('/tambahNamaAnggota', [MemberController::class, 'store'])->name('memberStore');
 
-Route::get('/tambahNamaAgenda', function () {
-    return view('users.tambahNamaAgenda');
-});
+Route::get('/tambahNamaAgenda', [AgendaController::class, 'index'])->name('agenda');
+Route::post('/tambahNamaAgenda', [AgendaController::class, 'store'])->name('agendaStore');
