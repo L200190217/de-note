@@ -90,3 +90,8 @@ Route::get('/tambahNamaAnggota', function () {
 Route::get('/tambahNamaAgenda', function () {
     return view('users.tambahNamaAgenda');
 });
+
+
+Route::get('/coba', function () {
+    return view('users.coba');
+});
