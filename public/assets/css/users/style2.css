@@ -106,6 +106,19 @@
     margin: 10px;
 }
 
+.tombol-login2 {
+    color: white;
+}
+
+.tombol-login img {
+    margin-right: 15px;
+    width: 47.3px;
+}
+
+.tombol-login {
+    text-decoration: none;
+}
+
 @media (max-width: 992px) {
     .judul1 {
         font-size: 42px;
@@ -148,6 +161,207 @@
 @media (max-width: 400px) {}
 
 /* universal end  */
+
+/* navbar start */
+
+#navbar {
+    background-color: #1C1E53;
+}
+
+#navbar .denote {
+    color: white;
+}
+
+
+#navbar .home {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    margin-right: 16px;
+
+    color: white;
+}
+
+#navbar .contact {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    margin-left: 16px;
+
+
+    color: #BBBBCB;
+}
+
+#navbar .kotak {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#navbar .text1 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    padding: 10px;
+
+}
+
+#navbar .text2 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    padding: 10px;
+
+}
+
+#navbar .text3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    padding: 10px;
+
+}
+
+/* 
+#navbar .text1:hover {
+    color: white;
+} */
+
+#navbar .menu img {
+    width: 47.4px;
+}
+
+#navbar .home1 {
+    margin-top: 10px;
+}
+
+#navbar .denote {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar .tombol-login {
+    display: flex;
+    justify-content: end;
+    /* padding-right: 15px; */
+}
+
+@media (max-width: 1400px) {}
+
+@media (min-width: 1200px) {
+    /* .col-xl-4 {
+        flex: 0 0 auto !important;
+        width: 50% !important;
+    } */
+
+
+
+    /* #navbar .tombol-login {
+        display: flex;
+        justify-content: end;
+    } */
+}
+
+
+@media (max-width: 1300px) {
+    .col-xl-1 {
+        width: 100%;
+    }
+
+    .col-xl-4 {
+        width: 50%;
+    }
+
+    #navbar .tombol-login {
+        padding-right: 36px;
+    }
+}
+
+@media (min-width: 1301px) {
+    .col-xl-1 {
+        width: 8.33333333%;
+    }
+}
+
+@media (max-width: 1199px) {
+    #navbar .tombol-login {
+        /* padding-right: 36px; */
+        margin-top: 10px;
+    }
+
+
+}
+
+@media (max-width: 991px) {
+    #navbar .menu {
+        padding-left: 36px;
+        margin-top: 15px;
+    }
+
+    #navbar .tombol-login {
+        margin-top: 0px;
+    }
+
+    #navbar .denote {
+        display: flex;
+        justify-content: start;
+    }
+
+    /* .col-xl-1 {
+        width: 8.33333333%;
+    } */
+    .col-md-2 {
+        width: 16.66666667%;
+    }
+
+    .col-xl-4 {
+        width: 83.33333333%;
+    }
+}
+
+@media (max-width: 768px) {
+    #navbar .tombol-login {
+        /* padding-right: 15px; */
+    }
+
+}
+
+/* @media (max-width: 572px) {
+    .col-xl-1 {
+        width: 100%;
+    }
+} */
+
+@media (max-width: 610px) {
+    .col-xl-1 {
+        width: 100%;
+    }
+
+    .col-xl-4 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {}
+
+
+/* navbar end */
+
 
 /* registrasi start a*/
 
@@ -2581,6 +2795,7 @@ table.dataTable thead .sorting_desc_disabled {
 #tambahNamaPelanggan {
     background-image: url(tambahNamaPelanggan-bg.png);
     background-size: cover;
+    background-position: center;
 }
 
 #tambahNamaPelanggan .tambahNamaPelanggan-gambar1 {
@@ -2588,7 +2803,7 @@ table.dataTable thead .sorting_desc_disabled {
     left: 0;
     bottom: 0;
     z-index: 0;
-    margin-bottom: 256px;
+    margin-bottom: -450px;
 
 }
 
@@ -2622,7 +2837,7 @@ table.dataTable thead .sorting_desc_disabled {
     padding-top: 110px;
 }
 
-#tambahNamaPelanggan input {
+#tambahNamaPelanggan input.pelanggan {
     width: 100%;
     height: 50px;
     left: 354px;
@@ -2677,7 +2892,7 @@ table.dataTable thead .sorting_desc_disabled {
     padding: 128px 99px 128px 99px;
     border-radius: 10px;
     z-index: 2;
-    margin-bottom: 100px;
+    margin-bottom: 34px;
 }
 
 #tambahNamaPelanggan .tombol {
@@ -2801,6 +3016,314 @@ table.dataTable thead .sorting_desc_disabled {
     }
 
 }
+
+/* tambahNamaPelanggan tabel start */
+
+#tambahNamaPelanggan .limiter {
+    position: relative;
+    z-index: 2;
+}
+
+#tambahNamaPelanggan .nama {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+
+}
+
+#tambahNamaPelanggan .table-bordered>:not(caption)>* {
+    border-bottom: solid 2px #E9ECF8;
+}
+
+#tambahNamaPelanggan {
+    overflow: hidden;
+}
+
+#tambahNamaPelanggan .products-card-2 {
+    background-color: #363AA7;
+}
+
+#tambahNamaPelanggan h3.text {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    margin-top: 26px;
+
+}
+
+#tambahNamaPelanggan p.rupiah {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: #363AA7;
+    margin-top: 20px;
+
+}
+
+#tambahNamaPelanggan .products-card-3 .foto-g {
+    height: 215px;
+}
+
+#tambahNamaPelanggan .judul {
+    position: relative;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;
+    z-index: 2;
+}
+
+#tambahNamaPelanggan .products-card-1 {
+    margin-top: 30px;
+}
+
+#tambahNamaPelanggan .laporanTransaksi-gambar1 {
+    position: absolute;
+}
+
+#tambahNamaPelanggan .laporanTransaksi-gambar2 {
+    position: absolute;
+    right: 0;
+
+}
+
+#tambahNamaPelanggan .tombol-kembali {
+    margin-left: -50px;
+}
+
+#tambahNamaPelanggan .tombol-catat:hover {
+    background-color: #DCC81F;
+}
+
+#tambahNamaPelanggan .tombol-catat p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+}
+
+#tambahNamaPelanggan .tombol-catat img {
+    margin-right: 15px;
+    margin-top: -4px;
+
+}
+
+.form-inline .form-control {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#tambahNamaPelanggan .table100.ver1 td {
+    padding-left: 20px;
+}
+
+#tambahNamaPelanggan th.column1 {
+    padding-left: 20px;
+}
+
+#tambahNamaPelanggan th.column2 {
+    padding-left: 20px;
+}
+
+#tambahNamaPelanggan th.column3 {
+    padding-left: 20px;
+}
+
+#tambahNamaPelanggan th.column4 {
+    padding-left: 20px;
+}
+
+#tambahNamaPelanggan .input-group {
+    padding-right: 10px;
+}
+
+#tambahNamaPelanggan .input-group {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#tambahNamaPelanggan .table-bordered td,
+.table-bordered th {
+    border: none;
+}
+
+#tambahNamaPelanggan .table-bordered {
+    border: none;
+}
+
+#tambahNamaPelanggan th {
+    height: 40px;
+}
+
+#tambahNamaPelanggan .tabel-atas {
+    background-color: #363AA7;
+}
+
+#tambahNamaPelanggan th.cell100 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: white;
+}
+
+#tambahNamaPelanggan .table100.ver1 td {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1C1E53;
+}
+
+#tambahNamaPelanggan .table100.ver1 td.column2 {
+    color: #14804A;
+}
+
+#tambahNamaPelanggan .table100.ver1 td.column3 {
+    color: #D12953;
+}
+
+#tambahNamaPelanggan th.column0 {
+    width: 70px;
+}
+
+#tambahNamaPelanggan .table100.ver1 td {
+    background-color: #F2F5FF;
+}
+
+#tambahNamaPelanggan .table100.ver1 td {
+    background-color: #F2F5FF;
+}
+
+#tambahNamaPelanggan .pagination {
+    margin-bottom: 20px;
+    margin-left: 690px;
+}
+
+#tambahNamaPelanggan table.dataTable thead .sorting:after {
+    content: "\f0dc";
+    background-color: transparent;
+    float: right;
+    font-family: 'FontAwesome';
+    color: white;
+    /* margin-right: 10px; */
+    padding-right: 10px;
+}
+
+#tambahNamaPelanggan table.dataTable thead .sorting_asc:after {
+    content: "\f0de";
+    float: right;
+    font-family: fontawesome;
+    padding-right: 10px;
+    color: #F5DE19;
+}
+
+#tambahNamaPelanggan table.dataTable thead .sorting_desc:after {
+    content: "\f0dd";
+    float: right;
+    font-family: fontawesome;
+    padding-right: 10px;
+    color: #F5DE19;
+}
+
+#tambahNamaPelanggan table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc_disabled {
+    background: transparent;
+}
+
+#tambahNamaPelanggan th.column1 {
+    padding-right: 15px;
+    width: 70px;
+}
+
+#tambahNamaPelanggan th.column2 {
+    width: 70px;
+}
+
+#tambahNamaPelanggan th.column3 {
+    padding-right: 20px;
+    width: 70px;
+}
+
+#tambahNamaPelanggan .column1 {
+    width: 25%;
+}
+
+#tambahNamaPelanggan .column2 {
+    width: 25%;
+}
+
+#tambahNamaPelanggan .column3 {
+    width: 15%;
+}
+
+/* hiden button segitiga start */
+#tambahNamaPelanggan table.dataTable thead .column4.sorting:after {
+    color: transparent;
+}
+
+#tambahNamaPelanggan table.dataTable thead .column4.sorting_asc:after {
+    color: transparent;
+}
+
+#tambahNamaPelanggan table.dataTable thead .column4.sorting_desc:after {
+    color: transparent;
+}
+
+/* hiden button segitiga end */
+
+#tambahNamaPelanggan .container-table100 {
+    background-color: transparent;
+
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+#tambahNamaPelanggan .bungkus {
+    width: calc(100vw - 60px);
+    overflow: auto;
+}
+
+@media (min-width: 1200px) {
+    #tambahNamaPelanggan .bungkus {
+        display: flex;
+        justify-content: center;
+    }
+
+    #tambahNamaPelanggan .container-table100 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+/* tambahNamaPelanggan tabel end */
 
 
 /* tambahNamaPelanggan end */
@@ -3332,6 +3855,8 @@ table.dataTable thead .sorting_desc_disabled {
 #tambahNamaAnggota {
     background-image: url(tambahNamaAnggota-bg.png);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #tambahNamaAnggota .tambahNamaAnggota-gambar1 {
@@ -3372,7 +3897,7 @@ table.dataTable thead .sorting_desc_disabled {
     padding-top: 110px;
 }
 
-#tambahNamaAnggota input {
+#tambahNamaAnggota input.pelanggan {
     width: 100%;
     height: 50px;
     left: 354px;
@@ -3427,7 +3952,7 @@ table.dataTable thead .sorting_desc_disabled {
     padding: 128px 99px 128px 99px;
     border-radius: 10px;
     z-index: 2;
-    margin-bottom: 100px;
+    margin-bottom: 34px;
 }
 
 #tambahNamaAnggota .tombol {
@@ -3550,7 +4075,313 @@ table.dataTable thead .sorting_desc_disabled {
         margin-bottom: -60px;
     }
 
+    #tambahNamaAnggota .registrasi-form {
+        margin-bottom: 14px;
+    }
+
 }
+
+/* tambahNamaAnggota tabel start */
+#tambahNamaAnggota .nama {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+
+}
+
+#tambahNamaAnggota .table-bordered>:not(caption)>* {
+    border-bottom: solid 2px #E9ECF8;
+}
+
+#tambahNamaAnggota {
+    overflow: hidden;
+}
+
+#tambahNamaAnggota .products-card-2 {
+    background-color: #363AA7;
+}
+
+#tambahNamaAnggota h3.text {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    margin-top: 26px;
+
+}
+
+#tambahNamaAnggota p.rupiah {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: #363AA7;
+    margin-top: 20px;
+
+}
+
+#tambahNamaAnggota .products-card-3 .foto-g {
+    height: 215px;
+}
+
+#tambahNamaAnggota .judul {
+    position: relative;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;
+    z-index: 2;
+}
+
+#tambahNamaAnggota .products-card-1 {
+    margin-top: 30px;
+}
+
+#tambahNamaAnggota .laporanTransaksi-gambar1 {
+    position: absolute;
+}
+
+#tambahNamaAnggota .laporanTransaksi-gambar2 {
+    position: absolute;
+    right: 0;
+
+}
+
+#tambahNamaAnggota .tombol-kembali {
+    margin-left: -50px;
+}
+
+#tambahNamaAnggota .tombol-catat:hover {
+    background-color: #DCC81F;
+}
+
+#tambahNamaAnggota .tombol-catat p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+}
+
+#tambahNamaAnggota .tombol-catat img {
+    margin-right: 15px;
+    margin-top: -4px;
+
+}
+
+.form-inline .form-control {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#tambahNamaAnggota .table100.ver1 td {
+    padding-left: 20px;
+}
+
+#tambahNamaAnggota th.column1 {
+    padding-left: 20px;
+}
+
+#tambahNamaAnggota th.column2 {
+    padding-left: 20px;
+}
+
+#tambahNamaAnggota th.column3 {
+    padding-left: 20px;
+}
+
+#tambahNamaAnggota th.column4 {
+    padding-left: 20px;
+}
+
+#tambahNamaAnggota .input-group {
+    padding-right: 10px;
+}
+
+#tambahNamaAnggota .input-group {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#tambahNamaAnggota .table-bordered td,
+.table-bordered th {
+    border: none;
+}
+
+#tambahNamaAnggota .table-bordered {
+    border: none;
+}
+
+#tambahNamaAnggota th {
+    height: 40px;
+}
+
+#tambahNamaAnggota .tabel-atas {
+    background-color: #363AA7;
+}
+
+#tambahNamaAnggota th.cell100 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: white;
+}
+
+#tambahNamaAnggota .table100.ver1 td {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1C1E53;
+}
+
+#tambahNamaAnggota .table100.ver1 td.column2 {
+    color: #14804A;
+}
+
+#tambahNamaAnggota .table100.ver1 td.column3 {
+    color: #D12953;
+}
+
+#tambahNamaAnggota th.column0 {
+    width: 70px;
+}
+
+#tambahNamaAnggota .table100.ver1 td {
+    background-color: #F2F5FF;
+}
+
+#tambahNamaAnggota .table100.ver1 td {
+    background-color: #F2F5FF;
+}
+
+#tambahNamaAnggota .pagination {
+    margin-bottom: 20px;
+    margin-left: 690px;
+}
+
+#tambahNamaAnggota table.dataTable thead .sorting:after {
+    content: "\f0dc";
+    background-color: transparent;
+    float: right;
+    font-family: 'FontAwesome';
+    color: white;
+    /* margin-right: 10px; */
+    padding-right: 10px;
+}
+
+#tambahNamaAnggota table.dataTable thead .sorting_asc:after {
+    content: "\f0de";
+    float: right;
+    font-family: fontawesome;
+    padding-right: 10px;
+    color: #F5DE19;
+}
+
+#tambahNamaAnggota table.dataTable thead .sorting_desc:after {
+    content: "\f0dd";
+    float: right;
+    font-family: fontawesome;
+    padding-right: 10px;
+    color: #F5DE19;
+}
+
+#tambahNamaAnggota table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc_disabled {
+    background: transparent;
+}
+
+#tambahNamaAnggota th.column1 {
+    padding-right: 15px;
+    width: 70px;
+}
+
+#tambahNamaAnggota th.column2 {
+    width: 70px;
+}
+
+#tambahNamaAnggota th.column3 {
+    padding-right: 20px;
+    width: 70px;
+}
+
+#tambahNamaAnggota .column1 {
+    width: 25%;
+}
+
+#tambahNamaAnggota .column2 {
+    width: 25%;
+}
+
+#tambahNamaAnggota .column3 {
+    width: 15%;
+}
+
+/* hiden button segitiga start */
+#tambahNamaAnggota table.dataTable thead .column4.sorting:after {
+    color: transparent;
+}
+
+#tambahNamaAnggota table.dataTable thead .column4.sorting_asc:after {
+    color: transparent;
+}
+
+#tambahNamaAnggota table.dataTable thead .column4.sorting_desc:after {
+    color: transparent;
+}
+
+/* hiden button segitiga end */
+
+#tambahNamaAnggota .container-table100 {
+    background-color: transparent;
+
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+#tambahNamaAnggota .bungkus {
+    width: calc(100vw - 60px);
+    overflow: auto;
+}
+
+@media (min-width: 1200px) {
+    #tambahNamaAnggota .bungkus {
+        display: flex;
+        justify-content: center;
+    }
+
+    #tambahNamaAnggota .container-table100 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+/* tambahNamaAnggota tabel end */
 
 
 /* tambahNamaAnggota end */

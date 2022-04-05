@@ -80,5 +80,16 @@ Route::get('/tambahNamaAnggota', function () {
 });
 Route::post('/tambahNamaAnggota', [MemberController::class, 'store'])->name('memberStore');
 
+<<<<<<< HEAD
 Route::get('/tambahNamaAgenda', [AgendaController::class, 'index'])->name('agenda');
 Route::post('/tambahNamaAgenda', [AgendaController::class, 'store'])->name('agendaStore');
+=======
+Route::get('/tambahNamaAgenda', function () {
+    return view('users.tambahNamaAgenda');
+});
+
+
+Route::get('/coba', function () {
+    return view('users.coba');
+});
+>>>>>>> 655deb4fdf1e9acf6fc90193fe9517eb4f1bcb8b
