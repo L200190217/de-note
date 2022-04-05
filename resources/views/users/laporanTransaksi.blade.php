@@ -7,7 +7,7 @@
         <img src="image/laporanTransaksi-gambar2.svg" alt="">
     </div>
     <div class="tombol-kembali">
-        <a href="#">
+        <a href="{{ route('index') }}">
             <table>
                 <tr>
                     <td><img src="image/kembali.svg" alt=""></td>
@@ -27,7 +27,7 @@
                             <div class="products-judul2">
                                 <img src="image/laporanTransaksi-profits 2.svg" alt="">
                                 <h3 class="text">Total Pemasukan</h3>
-                                <p class="rupiah">Rp 5.000.000,-</p>
+                                <p class="rupiah">Rp {{ $jumlahIncome }},-</p>
                                 <img class="foto-g" src="image/laporanTransaksi-profits 1.svg" alt="">
                             </div>
                         </div>
@@ -40,7 +40,7 @@
                             <div class="products-judul2">
                                 <img src="image/laporanTransaksi-loss 2.svg" alt="">
                                 <h3 class="text">Total Pengeluaran</h3>
-                                <p class="rupiah">Rp 1.000.000,-</p>
+                                <p class="rupiah">Rp {{ $jumlahOutcome }},-</p>
                                 <img class="foto-g" src="image/laporanTransaksi-loss 1.svg" alt="">
                             </div>
                         </div>
@@ -53,7 +53,7 @@
                             <div class="products-judul2">
                                 <img src="image/laporanTransaksi-dollar 2.svg" alt="">
                                 <h3 class="text">Total Keseluruhan</h3>
-                                <p class="rupiah">Rp 4.000.000,-</p>
+                                <p class="rupiah">Rp {{ $jumlah }},-</p>
                                 <img class="foto-g" src="image/laporanTransaksi-dollar 1.svg" alt="">
                             </div>
 
@@ -130,7 +130,7 @@
                                         <td class="cell100 column1">{{ $tr->date }}</td>
                                         <td class="cell100 column2">Rp {{ $tr->total_income }},-</td>
                                         <td class="cell100 column3">Rp {{ $tr->total_outcome }},-</td>
-                                        <td class="cell100 column4">Gaji Bulanan</td>
+                                        <td class="cell100 column4">{{ $tr->note }}</td>
                                     </tr>
                                     @endforeach
                                 </tbody>

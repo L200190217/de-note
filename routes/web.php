@@ -1,9 +1,10 @@
 <?php
 
+use App\Models\Transaction;
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AgendaController;
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\TransactionController;
-use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,27 +37,19 @@ Route::get('/transaksi3', function () {
     return view('users.transaksi3');
 });
 
-Route::get('/transaksi4', function () {
-    return view('users.transaksi4');
-});
+Route::get('/transaksi4', [TransactionController::class, 'transaction'])->name('index');
 
 Route::get('/lupa-password', function () {
     return view('users.konfirmasi-pass');
 });
 
-Route::get('/ubahTransaksiPemasukan', function () {
-    return view('users.ubahTransaksiPemasukan');
-});
-Route::post('/ubahTransaksiPemasukan', [TransactionController::class, 'edit'])->name('incomeEdit');
+Route::get('/ubahTransaksiPemasukan', [TransactionController::class, 'editIncomeView'])->name('editIncome');
+Route::post('/ubahTransaksiPemasukan/{id}', [TransactionController::class, 'edit'])->name('incomeEdit');
 
-Route::get('/ubahTransaksiPengeluaran', function () {
-    return view('users.ubahTransaksiPengeluaran');
-});
-Route::post('/ubahTransaksiPengeluaran', [TransactionController::class, 'edit'])->name('outcomeEdit');
+Route::get('/ubahTransaksiPengeluaran',  [TransactionController::class, 'editOutcomeView'])->name('editOutcome');
+Route::post('/ubahTransaksiPengeluaran/{id}', [TransactionController::class, 'edit'])->name('outcomeEdit');
 
-Route::get('/catatTransaksi', function () {
-    return view('users.catatTransaksi');
-});
+Route::get('/catatTransaksi', [TransactionController::class, 'create'])->name('transaction');
 Route::post('/catatTransaksi/income', [TransactionController::class, 'income'])->name('incomeStore');
 Route::post('/catatTransaksi/outcome', [TransactionController::class, 'outcome'])->name('outcomeStore');
 

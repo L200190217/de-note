@@ -5,7 +5,7 @@
 <section id="transaksi">
 
     <div class="card-up aqua-gradient">
-        <h1>Transaksi<img class="kuning1" src="image/kuning.svg" alt=""></h1>
+        <h1>Transaksi<img class="kuning1" src="image/kuning.svg" alt="">{{ Auth::id() }}</h1>
         <img class="kuning2" src="image/kuning.png" alt="">
 
         <div class="container">
@@ -18,7 +18,7 @@
                             <div class="products-judul2">
                                 <img src="image/transaksi-profits.png" alt="">
                                 <h3 class="text">Total Pemasukan</h3>
-                                <p class="rupiah-masuk">Rp 5.000.000,-</p>
+                                <p class="rupiah-masuk">Rp {{ $jumlahIncome }},-</p>
                                 <img class="foto-g" src="image/transaksi-galaeri1.png" alt="">
                             </div>
                         </div>
@@ -31,8 +31,8 @@
                         <div class="products-card-3">
                             <div class="products-judul2">
                                 <img src="image/transaksi-loss.png" alt="">
-                                <h3 class="text">Total Pemasukan</h3>
-                                <p class="rupiah-keluar">Rp 5.000.000,-</p>
+                                <h3 class="text">Total Pengeluaran</h3>
+                                <p class="rupiah-keluar">Rp {{ $jumlahOutcome }},-</p>
                                 <img class="foto-g" src="image/transaksi-galaeri2.png" alt="">
                             </div>
                         </div>
@@ -45,8 +45,8 @@
                         <div class="products-card-3">
                             <div class="products-judul2">
                                 <img src="image/transaksi-dollar.svg" alt="">
-                                <h3 class="text">Total Pemasukan</h3>
-                                <p class="rupiah-total">Rp 5.000.000,-</p>
+                                <h3 class="text">Total Keseluruhan</h3>
+                                <p class="rupiah-total">Rp {{ $jumlah }},-</p>
                                 <img class="foto-g" src="image/transaksi-galaeri3.png" alt="">
                             </div>
 
@@ -73,8 +73,10 @@
                                     <div class="tabel-atas2 row">
                                         <div class="col-2">
                                             <div class="input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-filter"></i></span>
-                                                <input class="form-control" id="date" name="date" placeholder="Tanggal Mulai" type="text" />
+                                                <span class="input-group-text" id="basic-addon1"><i
+                                                        class="fa-solid fa-filter"></i></span>
+                                                <input class="form-control" id="date" name="date"
+                                                    placeholder="Tanggal Mulai" type="text" />
                                             </div>
                                             <div class="per-halaman">
                                                 <p>Rekam per halaman</p>
@@ -82,39 +84,46 @@
                                         </div>
                                         <div class="col-2">
                                             <div class="input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-filter"></i></span>
-                                                <input class="form-control" id="date" name="date" placeholder="Tanggal Mulai" type="text" />
+                                                <span class="input-group-text" id="basic-addon1"><i
+                                                        class="fa-solid fa-filter"></i></span>
+                                                <input class="form-control" id="date" name="date"
+                                                    placeholder="Tanggal Mulai" type="text" />
                                             </div>
                                         </div>
                                         <div class="pencarian col-4">
                                             <div class="input-group pencarian mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
-                                                <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
+                                                <span class="input-group-text" id="basic-addon1"><i
+                                                        class="fa-solid fa-magnifying-glass"></i></span>
+                                                <input type="text" class="form-control" placeholder="Search"
+                                                    aria-label="Username" aria-describedby="basic-addon1">
                                             </div>
                                         </div>
                                         <div class="tombol-catat1 col-2">
-                                            <a href="#">
+                                            <a href="{{ route('transaction') }}">
                                                 <div class="tombol-catat">
                                                     <p>Catat Transaksi</p>
                                                 </div>
                                             </a>
                                         </div>
                                         <div class="col-2">
-                                            <a href="#">
+                                            <a href="{{ route('laporanTransaksi') }}">
                                                 <div class="tombol-laporan">
                                                     <p>Laporan Transaksi</p>
                                                 </div>
                                             </a>
                                             <div id="hilang5">
                                                 <!-- <div id="result"></div> -->
-                                                <a href="#"><i class="fa-solid fa-trash-can" style="color: white;"></i></a>
+                                                <a href="#"><i class="fa-solid fa-trash-can"
+                                                        style="color: white;"></i></a>
                                             </div>
 
                                         </div>
                                     </div>
                                     <tr class="row100 head">
                                         <th class="cell100 column0">
-                                            <input class="form-check-input checkbox-1x ml-3" type="checkbox" id="vehicle1" onchange="checkAll(this)" name="chk[]" value="Bike" data-exval="1">
+                                            <input class="form-check-input checkbox-1x ml-3" type="checkbox"
+                                                id="vehicle1" onchange="checkAll(this)" name="chk[]" value="Bike"
+                                                data-exval="1">
                                         </th>
                                         <th class="cell100 column1">Tanggal</th>
                                         <th class="cell100 column2">Pemasukan</th>
@@ -128,281 +137,27 @@
 
                             <div class="table100-body js-pscroll" id="checkbox-wrap">
                                 <tbody id="boxes">
+                                    @foreach ($transaksi as $tr)
                                     <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">10 Maret 2022</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column3">Rp 0,-</td>
-                                        <td class="cell100 column4">Gaji Bulanan</td>
-                                        <td class="cell100 column5"><a href="#">
-                                                <div class="transaksi-titik2"> <img class="transaksi-titik" src="image/transaksi-edit.svg" alt=""></div>
+                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox"
+                                                id="vehicle2" name="chk[]" value="{{ $tr->id }}" data-exval="1"></td>
+                                        <td class="cell100 column1">{{ $tr->date }}</td>
+                                        <td class="cell100 column2">Rp {{ $tr->total_income }},-</td>
+                                        <td class="cell100 column3">Rp {{ $tr->total_outcome }},-</td>
+                                        <td class="cell100 column4">{{ $tr->note }}</td>
+                                        <td class="cell100 column5"><a href="<?php 
+                                            if($tr->status == 'Pemasukan'){
+                                                echo route('editIncome', $tr->id);
+                                            }else{
+                                                echo route('editOutcome', $tr->id);
+                                            }
+                                        ?>">
+                                                <div class="transaksi-titik2"> <img class="transaksi-titik"
+                                                        src="image/transaksi-edit.svg" alt=""></div>
                                             </a>
                                         </td>
                                     </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle3" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">11 Maret 2022</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column3">Rp 0,-</td>
-                                        <td class="cell100 column4">Gaji Bulanan</td>
-                                        <td class="cell100 column5"><a href="#">
-                                                <div class="transaksi-titik2"> <img class="transaksi-titik" src="image/transaksi-edit.svg" alt=""></div>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle1" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">12 Maret 2022</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column3">Rp 0,-</td>
-                                        <td class="cell100 column4">Gaji Bulanan</td>
-                                        <td class="cell100 column5"><a href="#">
-                                                <div class="transaksi-titik2"> <img class="transaksi-titik" src="image/transaksi-edit.svg" alt=""></div>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle1" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">13 Maret 2022</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column3">Rp 0,-</td>
-                                        <td class="cell100 column4">Gaji Bulanan</td>
-                                        <td class="cell100 column5"><a href="#">
-                                                <div class="transaksi-titik2"> <img class="transaksi-titik" src="image/transaksi-edit.svg" alt=""></div>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle1" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">14 Maret 2022</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column3">Rp 0,-</td>
-                                        <td class="cell100 column4">Gaji Bulanan</td>
-                                        <td class="cell100 column5"><a href="#">
-                                                <div class="transaksi-titik2"> <img class="transaksi-titik" src="image/transaksi-edit.svg" alt=""></div>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle1" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">15 Maret 2022</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column3">Rp 0,-</td>
-                                        <td class="cell100 column4">Gaji Bulanan</td>
-                                        <td class="cell100 column5"><a href="#">
-                                                <div class="transaksi-titik2"> <img class="transaksi-titik" src="image/transaksi-edit.svg" alt=""></div>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle1" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">16 Maret 2022</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column3">Rp 0,-</td>
-                                        <td class="cell100 column4">Gaji Bulanan</td>
-                                        <td class="cell100 column5"><a href="#">
-                                                <div class="transaksi-titik2"> <img class="transaksi-titik" src="image/transaksi-edit.svg" alt=""></div>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle1" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">17 Maret 2022</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column3">Rp 0,-</td>
-                                        <td class="cell100 column4">Gaji Bulanan</td>
-                                        <td class="cell100 column5"><a href="#">
-                                                <div class="transaksi-titik2"> <img class="transaksi-titik" src="image/transaksi-edit.svg" alt=""></div>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle1" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">18 Maret 2022</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column3">Rp 0,-</td>
-                                        <td class="cell100 column4">Gaji Bulanan</td>
-                                        <td class="cell100 column5"><a href="#">
-                                                <div class="transaksi-titik2"> <img class="transaksi-titik" src="image/transaksi-edit.svg" alt=""></div>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle1" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">18 Maret 2022</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column3">Rp 0,-</td>
-                                        <td class="cell100 column4">Gaji Bulanan</td>
-                                        <td class="cell100 column5"><a href="#">
-                                                <div class="transaksi-titik2"> <img class="transaksi-titik" src="image/transaksi-edit.svg" alt=""></div>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle1" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">18 Maret 2022</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column3">Rp 0,-</td>
-                                        <td class="cell100 column4">Gaji Bulanan</td>
-                                        <td class="cell100 column5"><a href="#">
-                                                <div class="transaksi-titik2"> <img class="transaksi-titik" src="image/transaksi-edit.svg" alt=""></div>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle1" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">18 Maret 2022</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column3">Rp 0,-</td>
-                                        <td class="cell100 column4">Gaji Bulanan</td>
-                                        <td class="cell100 column5"><a href="#">
-                                                <div class="transaksi-titik2"> <img class="transaksi-titik" src="image/transaksi-edit.svg" alt=""></div>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle1" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">10 Maret 2022</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column3">Rp 0,-</td>
-                                        <td class="cell100 column4">Gaji Bulanan</td>
-                                        <td class="cell100 column5"><a href="#">
-                                                <div class="transaksi-titik2"> <img class="transaksi-titik" src="image/transaksi-edit.svg" alt=""></div>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle1" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">10 Maret 2022</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column3">Rp 0,-</td>
-                                        <td class="cell100 column4">Gaji Bulanan</td>
-                                        <td class="cell100 column5"><a href="#">
-                                                <div class="transaksi-titik2"> <img class="transaksi-titik" src="image/transaksi-edit.svg" alt=""></div>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle1" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">10 Maret 2022</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column3">Rp 0,-</td>
-                                        <td class="cell100 column4">Gaji Bulanan</td>
-                                        <td class="cell100 column5"><a href="#">
-                                                <div class="transaksi-titik2"> <img class="transaksi-titik" src="image/transaksi-edit.svg" alt=""></div>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle1" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">10 Maret 2022</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column3">Rp 0,-</td>
-                                        <td class="cell100 column4">Gaji Bulanan</td>
-                                        <td class="cell100 column5"><a href="#">
-                                                <div class="transaksi-titik2"> <img class="transaksi-titik" src="image/transaksi-edit.svg" alt=""></div>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle1" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">10 Maret 2022</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column3">Rp 0,-</td>
-                                        <td class="cell100 column4">Gaji Bulanan</td>
-                                        <td class="cell100 column5"><a href="#">
-                                                <div class="transaksi-titik2"> <img class="transaksi-titik" src="image/transaksi-edit.svg" alt=""></div>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle1" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">10 Maret 2022</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column3">Rp 0,-</td>
-                                        <td class="cell100 column4">Gaji Bulanan</td>
-                                        <td class="cell100 column5"><a href="#">
-                                                <div class="transaksi-titik2"> <img class="transaksi-titik" src="image/transaksi-edit.svg" alt=""></div>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle1" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">10 Maret 2022</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column3">Rp 0,-</td>
-                                        <td class="cell100 column4">Gaji Bulanan</td>
-                                        <td class="cell100 column5"><a href="#">
-                                                <div class="transaksi-titik2"> <img class="transaksi-titik" src="image/transaksi-edit.svg" alt=""></div>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle1" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">10 Maret 2022</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column3">Rp 0,-</td>
-                                        <td class="cell100 column4">Gaji Bulanan</td>
-                                        <td class="cell100 column5"><a href="#">
-                                                <div class="transaksi-titik2"> <img class="transaksi-titik" src="image/transaksi-edit.svg" alt=""></div>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle1" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">10 Maret 2022</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column3">Rp 0,-</td>
-                                        <td class="cell100 column4">Gaji Bulanan</td>
-                                        <td class="cell100 column5"><a href="#">
-                                                <div class="transaksi-titik2"> <img class="transaksi-titik" src="image/transaksi-edit.svg" alt=""></div>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle1" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">10 Maret 2022</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column3">Rp 0,-</td>
-                                        <td class="cell100 column4">Gaji Bulanan</td>
-                                        <td class="cell100 column5"><a href="#">
-                                                <div class="transaksi-titik2"> <img class="transaksi-titik" src="image/transaksi-edit.svg" alt=""></div>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle1" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">10 Maret 2022</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column3">Rp 0,-</td>
-                                        <td class="cell100 column4">Gaji Bulanan</td>
-                                        <td class="cell100 column5"><a href="#">
-                                                <div class="transaksi-titik2"> <img class="transaksi-titik" src="image/transaksi-edit.svg" alt=""></div>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle1" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">10 Maret 2022</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column3">Rp 0,-</td>
-                                        <td class="cell100 column4">Gaji Bulanan</td>
-                                        <td class="cell100 column5"><a href="#">
-                                                <div class="transaksi-titik2"> <img class="transaksi-titik" src="image/transaksi-edit.svg" alt=""></div>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle1" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">10 Maret 2022</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column3">Rp 0,-</td>
-                                        <td class="cell100 column4">Gaji Bulanan</td>
-                                        <td class="cell100 column5"><a href="#">
-                                                <div class="transaksi-titik2"> <img class="transaksi-titik" src="image/transaksi-edit.svg" alt=""></div>
-                                            </a>
-                                        </td>
-                                    </tr>
+                                    @endforeach
                                 </tbody>
                             </div>
 

@@ -4,23 +4,55 @@ namespace App\Http\Controllers;
 
 use App\Models\Transaction;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class TransactionController extends Controller
 {
     public function index()
     {
         $transaction = Transaction::all();
+        $jumlahIncome = DB::table('transactions')->sum('total_income');
+        $jumlahOutcome = DB::table('transactions')->sum('total_outcome');
+        $jumlah = $jumlahIncome - $jumlahOutcome;
         return view('users.laporanTransaksi', [
             'transaksi' => $transaction,
+            'jumlahIncome' => $jumlahIncome,
+            'jumlahOutcome' => $jumlahOutcome,
+            'jumlah' => $jumlah,
+            'title' => 'Transaction'
+        ]);
+    }
+
+    public function transaction()
+    {
+        $transaction = Transaction::all();
+        $jumlahIncome = DB::table('transactions')->sum('total_income');
+        $jumlahOutcome = DB::table('transactions')->sum('total_outcome');
+        $jumlah = $jumlahIncome - $jumlahOutcome;
+        return view('users.transaksi4', [
+            'transaksi' => $transaction,
+            'jumlahIncome' => $jumlahIncome,
+            'jumlahOutcome' => $jumlahOutcome,
+            'jumlah' => $jumlah,
             'title' => 'Transaction'
         ]);
     }
 
     public function create()
     {
-        return view('outcome.insert', [
+        return view('users.catatTransaksi', [
             'title' => 'Transaction'
         ]);
+    }
+
+    public function editIncomeView()
+    {
+        return view('users.ubahTransaksiPemasukan');
+    }
+
+    public function editOutcomeView()
+    {
+        return view('users.ubahTransaksiPengeluaran');
     }
 
     public function outcome(Request $request)
@@ -39,7 +71,7 @@ class TransactionController extends Controller
             'status' => 'Pengeluaran'
         ]);
 
-        return redirect()->route('laporanTransaksi');
+        return redirect()->route('index');
     }
 
     public function income(Request $request)
@@ -58,7 +90,7 @@ class TransactionController extends Controller
             'status' => 'Pemasukan'
         ]);
 
-        return redirect()->route('laporanTransaksi');
+        return redirect()->route('index');
     }
 
     public function show(Transaction $outcome)
