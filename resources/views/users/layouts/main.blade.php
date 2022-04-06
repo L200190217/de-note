@@ -147,7 +147,6 @@
         function checkAll(ele) {
             var checkboxes = document.getElementsByTagName('input');
             let check = document.querySelectorAll('input[type=checkbox]');
-
             let hilang5 = document.getElementById('hilang5')
 
             console.log(check);
@@ -177,9 +176,48 @@
 
         }
 
+        // $(document).ready(function() {
+        //     $("#boxes input[type='checkbox']").click(function() {
+        //         var total = 0;
+        //         $("#boxes input[type='checkbox']:checked").each(function() {
+        //             total += parseInt($(this).data("exval"), 10);
+        //         });
+        //         $("#result").text(total);
+
+        //         var x = total;
+        //         let hilang5 = document.getElementById('hilang5')
+        //         if (x > 0) {
+        //             hilang5.classList.add('hilang5');
+        //             console.log("benar");
+        //         } else {
+        //             hilang5.classList.remove('hilang5');
+        //             console.log("salah")
+        //         }
+
+        //     });
+        // });
+        function arrayRemove(arr, value){
+            return arr.filter(function(ele){
+                return ele != value;
+            });
+        }
+
         $(document).ready(function() {
-            $("#boxes input[type='checkbox']").click(function() {
-                var total = 0;
+            var checked = []
+            var total = 0;
+            $("#dataTables-example").on('click', "#boxes input[type='checkbox']",function() {
+                if (jQuery.inArray($(this).val(), checked) !== -1) {
+                    checked = arrayRemove(checked, $(this).val());
+                }else{
+                    if($(this).prop("checked") == true){
+                        checked.push($(this).val());
+                    }
+                    else if($(this).prop("checked") == false){
+                        checked = arrayRemove(checked, $(this).val());
+                    }
+                }
+                console.log(checked);
+                
                 $("#boxes input[type='checkbox']:checked").each(function() {
                     total += parseInt($(this).data("exval"), 10);
                 });

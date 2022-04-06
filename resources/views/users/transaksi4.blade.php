@@ -5,7 +5,7 @@
 <section id="transaksi">
 
     <div class="card-up aqua-gradient">
-        <h1>Transaksi<img class="kuning1" src="image/kuning.svg" alt="">{{ Auth::id() }}</h1>
+        <h1>Transaksi<img class="kuning1" src="image/kuning.svg" alt=""></h1>
         <img class="kuning2" src="image/kuning.png" alt="">
 
         <div class="container">
@@ -147,9 +147,9 @@
                                         <td class="cell100 column4">{{ $tr->note }}</td>
                                         <td class="cell100 column5"><a href="<?php 
                                             if($tr->status == 'Pemasukan'){
-                                                echo route('editIncome', $tr->id);
+                                                echo route('editIncome', ['transaksi' => $tr->id]);
                                             }else{
-                                                echo route('editOutcome', $tr->id);
+                                                echo route('editOutcome', ['transaksi' => $tr->id]);
                                             }
                                         ?>">
                                                 <div class="transaksi-titik2"> <img class="transaksi-titik"

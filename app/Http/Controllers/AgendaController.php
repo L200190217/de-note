@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Agenda;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AgendaController extends Controller
 {
@@ -32,6 +33,7 @@ class AgendaController extends Controller
         ]);
 
         Agenda::create([
+            'user_id' => Auth::id(),
             'name' => $request->name,
             'start_date' => date('Y-m-d', strtotime($request->start)),
             'end_date' => date('Y-m-d', strtotime($request->end))
@@ -59,6 +61,7 @@ class AgendaController extends Controller
         ]);
 
         $agenda->update([
+            'user_id' => Auth::id(),
             'name' => $request->name,
             'start_date' => $request->start,
             'end_date' => $request->end

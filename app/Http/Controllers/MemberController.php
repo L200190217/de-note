@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Member;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class MemberController extends Controller
 {
@@ -30,6 +31,7 @@ class MemberController extends Controller
         ]);
 
         Member::create([
+            'user_id' => Auth::id(),
             'name' => $request->name
         ]);
 
@@ -49,6 +51,7 @@ class MemberController extends Controller
     public function update(Request $request, Member $member)
     {
         $request->validate([
+            'user_id' => Auth::id(),
             'name' => 'required|max:60',
         ]);
 

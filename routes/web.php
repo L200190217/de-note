@@ -25,9 +25,9 @@ Route::get('/home', function () {
     return view('users.home');
 });
 
-Route::get('/transaksi', function () {
-    return view('users.transaksi');
-});
+// Route::get('/transaksi', function () {
+//     return view('users.transaksi');
+// });
 
 Route::get('/transaksi2', function () {
     return view('users.transaksi2');
@@ -37,17 +37,17 @@ Route::get('/transaksi3', function () {
     return view('users.transaksi3');
 });
 
-Route::get('/transaksi4', [TransactionController::class, 'transaction'])->name('index');
+Route::get('/transaksi', [TransactionController::class, 'transaction'])->name('index');
 
 Route::get('/lupa-password', function () {
     return view('users.konfirmasi-pass');
 });
 
-Route::get('/ubahTransaksiPemasukan', [TransactionController::class, 'editIncomeView'])->name('editIncome');
-Route::post('/ubahTransaksiPemasukan/{id}', [TransactionController::class, 'edit'])->name('incomeEdit');
+Route::get('/ubahTransaksiPemasukan', [TransactionController::class, 'editIncome'])->name('editIncome');
+Route::post('/ubahTransaksiPemasukan/{transaksi}', [TransactionController::class, 'updateIncome'])->name('incomeEdit');
 
-Route::get('/ubahTransaksiPengeluaran',  [TransactionController::class, 'editOutcomeView'])->name('editOutcome');
-Route::post('/ubahTransaksiPengeluaran/{id}', [TransactionController::class, 'edit'])->name('outcomeEdit');
+Route::get('/ubahTransaksiPengeluaran',  [TransactionController::class, 'editOutcome'])->name('editOutcome');
+Route::post('/ubahTransaksiPengeluaran/{transaksi}', [TransactionController::class, 'updateOutcome'])->name('outcomeEdit');
 
 Route::get('/catatTransaksi', [TransactionController::class, 'create'])->name('transaction');
 Route::post('/catatTransaksi/income', [TransactionController::class, 'income'])->name('incomeStore');
@@ -80,16 +80,5 @@ Route::get('/tambahNamaAnggota', function () {
 });
 Route::post('/tambahNamaAnggota', [MemberController::class, 'store'])->name('memberStore');
 
-<<<<<<< HEAD
 Route::get('/tambahNamaAgenda', [AgendaController::class, 'index'])->name('agenda');
 Route::post('/tambahNamaAgenda', [AgendaController::class, 'store'])->name('agendaStore');
-=======
-Route::get('/tambahNamaAgenda', function () {
-    return view('users.tambahNamaAgenda');
-});
-
-
-Route::get('/coba', function () {
-    return view('users.coba');
-});
->>>>>>> 655deb4fdf1e9acf6fc90193fe9517eb4f1bcb8b

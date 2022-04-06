@@ -5,14 +5,15 @@ namespace App\Http\Controllers;
 use App\Models\Transaction;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 
 class TransactionController extends Controller
 {
     public function index()
     {
-        $transaction = Transaction::all();
-        $jumlahIncome = DB::table('transactions')->sum('total_income');
-        $jumlahOutcome = DB::table('transactions')->sum('total_outcome');
+        $transaction = Transaction::with('user')->where('user_id', Auth::user()->id)->get();
+        $jumlahIncome = Transaction::with('user')->where('user_id', Auth::user()->id)->sum('total_income');
+        $jumlahOutcome = Transaction::with('user')->where('user_id', Auth::user()->id)->sum('total_outcome');
         $jumlah = $jumlahIncome - $jumlahOutcome;
         return view('users.laporanTransaksi', [
             'transaksi' => $transaction,
@@ -25,9 +26,9 @@ class TransactionController extends Controller
 
     public function transaction()
     {
-        $transaction = Transaction::all();
-        $jumlahIncome = DB::table('transactions')->sum('total_income');
-        $jumlahOutcome = DB::table('transactions')->sum('total_outcome');
+        $transaction = Transaction::with('user')->where('user_id', Auth::user()->id)->get();
+        $jumlahIncome = Transaction::with('user')->where('user_id', Auth::user()->id)->sum('total_income');
+        $jumlahOutcome = Transaction::with('user')->where('user_id', Auth::user()->id)->sum('total_outcome');
         $jumlah = $jumlahIncome - $jumlahOutcome;
         return view('users.transaksi4', [
             'transaksi' => $transaction,
@@ -64,6 +65,7 @@ class TransactionController extends Controller
         ]);
 
         Transaction::create([
+            'user_id' => Auth::id(),
             'date' => date('Y-m-d', strtotime($request->date)),
             'total_income' => 0,
             'total_outcome' => $request->total,
@@ -83,6 +85,7 @@ class TransactionController extends Controller
         ]);
 
         Transaction::create([
+            'user_id' => Auth::id(),
             'date' => date('Y-m-d', strtotime($request->date)),
             'total_income' => $request->total,
             'total_outcome' => 0,
@@ -98,12 +101,17 @@ class TransactionController extends Controller
         //
     }
 
-    public function edit(Transaction $outcome)
+    public function editIncome(Transaction $transaksi)
     {
-        return view('outcome.edit', ['outcome' => $outcome, 'title' => 'Transaction']);
+        return view('users.ubahTransaksiPemasukan', ['income' => $transaksi, 'title' => 'Pemasukan']);
     }
 
-    public function update(Request $request, Transaction $outcome)
+    public function editOutcome(Transaction $transaksi)
+    {
+        return view('users.ubahTransaksiPengeluaran', ['outcome' => $transaksi, 'title' => 'Pengeluaran']);
+    }
+
+    public function updateIncome(Request $request, Transaction $transaksi)
     {
         $request->validate([
             'date' => 'required',
@@ -111,7 +119,8 @@ class TransactionController extends Controller
             'note' => 'required|max:150'
         ]);
 
-        $outcome->update([
+        $transaksi->update([
+            'user_id' => Auth::id(),
             'date' => date('Y-m-d', strtotime($request->date)),
             'total_income' => 0,
             'total_outcome' => $request->total,
@@ -119,7 +128,27 @@ class TransactionController extends Controller
             'status' => 'Pengeluaran'
         ]);
 
-        return redirect('/ubahTransaksiPengeluaran');
+        return redirect('/ubahTransaksiPemasukan', ['income' => $transaksi]);
+    }
+
+    public function updateOutcome(Request $request, Transaction $transaksi)
+    {
+        $request->validate([
+            'date' => 'required',
+            'total' => 'required',
+            'note' => 'required|max:150'
+        ]);
+
+        $transaksi->update([
+            'user_id' => Auth::id(),
+            'date' => date('Y-m-d', strtotime($request->date)),
+            'total_income' => 0,
+            'total_outcome' => $request->total,
+            'note' => $request->note,
+            'status' => 'Pengeluaran'
+        ]);
+
+        return redirect('/ubahTransaksiPengeluaran', ['outcome' => $transaksi]);
     }
 
     public function destroy(Transaction $outcome)

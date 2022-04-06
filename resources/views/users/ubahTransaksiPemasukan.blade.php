@@ -26,7 +26,7 @@
                 <h3 class="judul3-1">Pemasukan.</h3>
             </div>
             <div class="registrasi-form col-lg-7 col-md-10">
-                <form action="{{ route('incomeEdit') }}" method="POST">
+                <form action="{{ route('incomeEdit', ['transaksi' => $income->id]) }}" method="POST">
                     @csrf
                     <label for="date">Tanggal</label>
                     <input class="form-control @error('date') is-invalid @enderror" id="date" name="date"
