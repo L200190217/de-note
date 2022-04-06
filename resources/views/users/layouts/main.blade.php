@@ -81,7 +81,19 @@
     </script>
     <!-- untuk catatTransaksi end -->
 
+    <!-- catat utang2 -->
+    <script>
+        $('#pills-home-tab').click(function() {
+            $('#pills-home2').addClass('show active')
+            $('#pills-profile2').removeClass('show active')
+            // console.log('tes1');
+        })
+        $('#pills-profile-tab').click(function() {
+            $('#pills-home2').removeClass('show active')
+            $('#pills-profile2').addClass('show active')
 
+        })
+    </script>
 
 
     <script>

@@ -91,6 +91,22 @@ Route::get('/tambahNamaAgenda', function () {
     return view('users.tambahNamaAgenda');
 });
 
+Route::get('/laporanAgenda', function () {
+    return view('users.laporanAgenda');
+});
+
+Route::get('/agenda', function () {
+    return view('users.agenda');
+});
+
+Route::get('/editCatatUtang', function () {
+    return view('users.editCatatUtang');
+});
+
+Route::get('/editCatatBayar', function () {
+    return view('users.editCatatBayar');
+});
+
 
 Route::get('/coba', function () {
     return view('users.coba');

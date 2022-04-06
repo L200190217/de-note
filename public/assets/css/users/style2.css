@@ -163,7 +163,7 @@
 /* universal end  */
 
 /* navbar start */
-
+/* 
 #navbar {
     background-color: #1C1E53;
 }
@@ -236,11 +236,6 @@
 
 }
 
-/* 
-#navbar .text1:hover {
-    color: white;
-} */
-
 #navbar .menu img {
     width: 47.4px;
 }
@@ -258,24 +253,11 @@
 #navbar .tombol-login {
     display: flex;
     justify-content: end;
-    /* padding-right: 15px; */
 }
 
 @media (max-width: 1400px) {}
 
-@media (min-width: 1200px) {
-    /* .col-xl-4 {
-        flex: 0 0 auto !important;
-        width: 50% !important;
-    } */
-
-
-
-    /* #navbar .tombol-login {
-        display: flex;
-        justify-content: end;
-    } */
-}
+@media (min-width: 1200px) {}
 
 
 @media (max-width: 1300px) {
@@ -300,11 +282,8 @@
 
 @media (max-width: 1199px) {
     #navbar .tombol-login {
-        /* padding-right: 36px; */
         margin-top: 10px;
     }
-
-
 }
 
 @media (max-width: 991px) {
@@ -322,9 +301,6 @@
         justify-content: start;
     }
 
-    /* .col-xl-1 {
-        width: 8.33333333%;
-    } */
     .col-md-2 {
         width: 16.66666667%;
     }
@@ -335,17 +311,9 @@
 }
 
 @media (max-width: 768px) {
-    #navbar .tombol-login {
-        /* padding-right: 15px; */
-    }
+    #navbar .tombol-login {}
 
 }
-
-/* @media (max-width: 572px) {
-    .col-xl-1 {
-        width: 100%;
-    }
-} */
 
 @media (max-width: 610px) {
     .col-xl-1 {
@@ -357,11 +325,580 @@
     }
 }
 
-@media (max-width: 400px) {}
+@media (max-width: 400px) {} */
 
+
+#navbar .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container>div {
+    width: 130px;
+    text-align: center;
+    /* margin-top: 15px */
+    /* line-height: 75px;
+  font-size: 30px; */
+}
+
+#navbar {
+    background-color: #1C1E53;
+    /* width: 100%;
+    overflow-x: hidden; */
+}
+
+#navbar .home1 {
+    /* width: 300px; */
+    /* width: 266px; */
+    width: 445px;
+    margin-top: 8px;
+}
+
+#navbar .home {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+
+    color: white;
+    text-decoration: none;
+    margin-right: 16px;
+}
+
+#navbar .home:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#navbar .contact {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+
+    color: #BBBBCB;
+    text-decoration: none;
+    margin-left: 16px;
+}
+
+#navbar .contact:hover {
+    color: #bbbbcbb4;
+}
+
+#navbar .menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+#navbar .menu p {
+    margin: 0;
+}
+
+#navbar .denote3 {
+    font-size: 24px;
+    font-weight: 700;
+    /* line-height: 28px; */
+    letter-spacing: 0em;
+
+    width: 130px;
+    color: white;
+    margin: 0;
+}
+
+#navbar .transaksi {
+    font-size: 16px;
+    font-weight: 500;
+    /* line-height: 28px; */
+    letter-spacing: 0em;
+
+    margin-left: 12px;
+    text-decoration: none;
+}
+
+#navbar .transaksi a {
+    color: white;
+    text-decoration: none;
+}
+
+#navbar .transaksi a:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#navbar .tombol-login2 {
+    font-size: 16px;
+    font-weight: 500;
+    /* line-height: 24px; */
+    letter-spacing: 0em;
+
+    color: white;
+    /* width: 140px; */
+    width: 192px;
+}
+
+/* #navbar .login2{
+    margin-top: -36px;
+    margin-left: 25px;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    color: black;
+} */
+
+#navbar .btn-primary {
+    border-color: transparent;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+#navbar .btn-primary:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#navbar .menu .trans {
+    width: 47px;
+    margin-right: 6px;
+}
+
+#navbar .login3 {
+    margin-left: 6px;
+}
+
+@media (max-width: 1190px) {
+    #navbar .tombol-login2 {
+        text-align: left;
+        margin-left: 15px;
+    }
+
+    #navbar .home1 {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 574px) {
+    #navbar .home1 {
+        width: 100%;
+        margin-top: 16px;
+    }
+}
+
+/* @media (max-width: 540) {
+    #navbar .transaksi{
+        width: 100%;
+    }
+    #navbar .tombol-login2{
+        width: 152px;
+    }
+
+} */
+
+@media (max-width: 768px) {}
+
+@media (max-width: 600px) {}
+
+/* @media (max-width: 884px) {
+    #navbar .tombol-login2{
+        width: 152px;
+    }
+} */
+
+@media (max-width: 632px) {
+    #navbar .transaksi {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 400px) {}
 
 /* navbar end */
 
+/* footer start */
+
+#footer .bg-biru2 {
+    background-color: #1C1E53;
+    padding: 105px 160px 0 160px;
+}
+
+#footer .row>* {
+    padding: 0;
+}
+
+#footer .text {
+    color: white;
+}
+
+#footer .kartu3 .text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: #282938;
+}
+
+#footer .kartu3 p {
+    opacity: 100%;
+    margin-bottom: 0;
+}
+
+#footer .kartu1 .de-note3 {
+    margin-bottom: 27px;
+}
+
+#footer .text-lg {
+    color: black;
+    margin-top: 0;
+}
+
+#footer .de-note3 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+
+#footer .judul {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+
+#footer img {
+    margin-right: 26.67px;
+}
+
+#footer .kartu1 {
+    position: relative;
+    padding-right: 118px;
+}
+
+#footer .kartu2 {
+    padding-left: 118px;
+}
+
+#footer .kartu3 {
+    padding: 24px;
+    background-color: #F5DE19;
+    margin-top: 43px;
+}
+
+#footer .copy {
+    background-color: white;
+    padding: 32px;
+}
+
+#footer .copy p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: black;
+}
+
+@media (max-width: 1600px) {}
+
+@media (max-width: 1400px) {}
+
+@media (max-width: 1200px) {
+    #footer .kartu1 {
+        padding-right: 20px;
+    }
+
+    #footer .kartu2 {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    #footer .kartu1 {
+        padding-right: 0;
+    }
+
+    #footer .kartu2 {
+        padding-left: 0;
+    }
+
+    #footer .kartu3 {
+        margin-bottom: 0;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #footer .bg-biru2 {
+        padding: 40px 40px 0 40px;
+    }
+}
+
+@media (max-width: 576px) {}
+
+/* footer end */
+
+/* home start  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.tombol {
+    height: 64px;
+    width: 230px;
+    left: 160px;
+    top: 460px;
+    border-radius: 41px;
+    color: #F5DE19;
+    border: solid 2px #F5DE19;
+
+    text-align: center;
+    padding: 12px;
+    background-color: #1C1E53;
+    margin-top: 48px;
+
+}
+
+.tombol a {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #F5DE19;
+    text-decoration: none;
+}
+
+#home .bg-color {
+    position: relative;
+    background-color: #1C1E53;
+    padding: 110px;
+}
+
+#home .bg-color .kotak-biru {
+    position: absolute;
+    right: 0;
+    margin-top: -60px;
+}
+
+#home .bg-kotakWarna {
+    position: relative;
+    background-image: url(home-galeri.png);
+    background-size: cover;
+}
+
+#home .bg-kotakWarna .kuning2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+}
+
+#home .bg-kotakWarna .kuning3 {
+    position: absolute;
+    left: 0;
+    margin-top: 50px;
+
+}
+
+#home .row {
+    margin-right: 0;
+}
+
+@media (max-width: 992px) {
+    #home .row {
+        flex-direction: column-reverse;
+    }
+
+    #home .bg-kotakWarna {
+        height: 400px;
+        width: 100%;
+        background-position: center;
+    }
+
+    #home .bg-color .kotak-biru {
+        display: none;
+    }
+
+    #home .bg-kotakWarna .kuning2 {
+        width: 16%;
+    }
+
+    #home .bg-kotakWarna .kuning3 {
+        width: 16%;
+    }
+}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+    .product-page-card1 {
+        margin-bottom: -50px;
+    }
+
+    .product-page-card2 {
+        margin-bottom: -50px;
+    }
+}
+
+@media (max-width: 600px) {}
+
+@media (max-width: 400px) {
+    #home .bg-kotakWarna {
+        display: none;
+    }
+
+    #home .kotak-biru {
+        display: none;
+    }
+
+    #home .bg-color {
+        padding: 72px;
+    }
+
+    #home .tombol {
+        width: 100%;
+    }
+}
+
+/* home end */
+
+/* home-feature start */
+
+#home-feature .bg-biru {
+    background-color: #1C1E53;
+    height: 178px;
+}
+
+#home-feature img {
+    width: 95px;
+}
+
+
+#home-feature .center {
+    background-image: url(image/home-feature-bg-keyboard.png);
+    background-size: cover;
+    background-color: #F5DE19;
+    /* height: 50%; */
+    margin-top: -100px;
+    padding: 56px;
+    border-radius: 10px;
+}
+
+#home-feature .line1 {
+    border: solid 2px #363AA7;
+    width: 0;
+    height: 43.5px;
+    margin-top: -20%;
+    margin-left: -20px;
+    background-color: #363AA7;
+}
+
+#home-feature .line2 {
+    border: solid 2px #363AA7;
+    width: 0;
+    height: 43.5px;
+    margin-top: -20%;
+    margin-left: -20px;
+    background-color: #363AA7;
+}
+
+#home-feature .text {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #1C1E53;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#home .tombol:hover {
+    background-color: #F5DE19;
+}
+
+#home .tombol:hover a {
+    color: black;
+}
+
+
+@media (max-width: 992px) {
+    #home-feature .line1 {
+        margin-top: -39%;
+    }
+
+    #home-feature .line2 {
+        margin-top: -30%;
+    }
+}
+
+@media (max-width: 768px) {
+    #home-feature .kotak {
+        margin-top: 30px;
+    }
+
+    #home-feature .center {
+        padding: 36px 36px 66px 36px;
+    }
+
+    #home-feature .line1 {
+        margin-top: -40%;
+        margin-left: -16px;
+    }
+
+    #home-feature .line2 {
+        display: none;
+    }
+
+    #home-feature .tangan {
+        display: flex;
+        justify-content: center;
+    }
+
+    #home-feature .tangan2 {
+        margin: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    #home-feature .center {
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+
+    #home-feature .line1 {
+        display: none;
+    }
+
+    #home-feature .tangan {
+        display: flex;
+        justify-content: start;
+    }
+
+    #home-feature .tangan2 {
+        margin: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    #home-feature .center {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+/* home-feature end */
 
 /* registrasi start a*/
 
@@ -1925,7 +2462,7 @@ table.dataTable thead .sorting_desc_disabled {
 /* utang start */
 
 #utang .limiter {
-    margin-top: -600px;
+    margin-top: -450px;
 }
 
 #utang .text-lg2 {
@@ -1968,7 +2505,7 @@ table.dataTable thead .sorting_desc_disabled {
     margin-top: 108px;
     padding: 63px 159px 63px 159px;
     border-radius: 10px;
-    width: 70%;
+    width: 100%;
     text-align: center;
 }
 
@@ -2026,15 +2563,15 @@ table.dataTable thead .sorting_desc_disabled {
     color: black;
 }
 
-#utang .column4 .transaksi-titik2 {
+/* #utang .column4 .transaksi-titik {
     display: flex;
     justify-content: end;
     margin-right: 20px;
-}
+} */
 
-#utang .column4 .transaksi-titik2 img {
+/* #utang .column4 .transaksi-titik img {
     width: 24px;
-}
+} */
 
 #utang .tombol-catat p {
     font-size: 18px;
@@ -2079,7 +2616,7 @@ table.dataTable thead .sorting_desc_disabled {
     }
 
     #utang .kotak {
-        padding: 40px 80px 40px 80px;
+        padding: 40px 180px 40px 180px;
     }
 
     #utang .gambar4 {
@@ -2089,7 +2626,7 @@ table.dataTable thead .sorting_desc_disabled {
 
 @media (max-width: 768px) {
     #utang .kotak {
-        padding: 40px 15px 40px 15px;
+        padding: 40px 85px 40px 85px;
     }
 }
 
@@ -2102,7 +2639,7 @@ table.dataTable thead .sorting_desc_disabled {
     }
 
     #utang .kotak {
-        padding: 40px 40px 40px 40px;
+        padding-left: 25%;
     }
 }
 
@@ -2111,6 +2648,48 @@ table.dataTable thead .sorting_desc_disabled {
 
 
 /* utang tabel start */
+
+/* edit start */
+
+#utang .btn-group button {
+    background-color: transparent;
+    border: none;
+}
+
+#utang .btn-group a {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #2264E5;
+}
+
+#utang .btn-group a:hover {
+    background-color: #E9ECF8;
+    border-radius: 10px;
+}
+
+#utang .btn-group .dropdown-menu {
+    border: none;
+    border-radius: 10px;
+    padding: 0;
+}
+
+#utang .btn-group .transaksi-titik:hover {
+    opacity: 50%;
+}
+
+#utang .btn-group img.transaksi-titik {
+    width: 24px;
+}
+
+#utang .btn-group {
+    display: flex;
+    justify-content: end;
+}
+
+/* edit end */
 
 #utang .table-bordered>:not(caption)>* {
     border-bottom: solid 2px #E9ECF8;
@@ -2212,6 +2791,14 @@ table.dataTable thead .sorting_desc_disabled {
 
 #utang .table100.ver1 td {
     padding-left: 20px;
+}
+
+#utang .column0 {
+    width: 5%;
+}
+
+#utang .cell100.column0 {
+    padding-bottom: 12px;
 }
 
 #utang th.column1 {
@@ -2462,6 +3049,21 @@ table.dataTable thead .sorting_desc_disabled {
 }
 
 #utang table.dataTable thead .column4.sorting_desc:after {
+    color: transparent;
+}
+
+#utang table.dataTable thead .column0.sorting:after {
+    display: none;
+    color: transparent;
+}
+
+#utang table.dataTable thead .column0.sorting_asc:after {
+    display: none;
+    color: transparent;
+}
+
+#utang table.dataTable thead .column0.sorting_desc:after {
+    display: none;
     color: transparent;
 }
 
@@ -3355,9 +3957,8 @@ table.dataTable thead .sorting_desc_disabled {
 }
 
 #catatUtang2 .ubahTransaksiPemasukan-gambar2 {
-    position: absolute;
     top: 0;
-    margin-top: 856px;
+    margin-top: -130px;
 }
 
 #catatUtang2 .judul3 {
@@ -3387,10 +3988,10 @@ table.dataTable thead .sorting_desc_disabled {
 }
 
 #catatUtang2 .container {
-    padding-top: 166px;
+    padding-top: 237px;
 }
 
-#catatUtang2 input {
+#catatUtang2 .registrasi-form input {
     width: 100%;
     height: 50px;
     left: 354px;
@@ -3442,13 +4043,13 @@ table.dataTable thead .sorting_desc_disabled {
 #catatUtang2 .registrasi-form {
     position: relative;
     background-color: white;
-    margin-top: 30px;
+    margin-top: 55px;
     border: 3px solid #363AA7;
     padding: 39px 99px 60px 99px;
     /* padding: 39px 39px 93px 39px; */
     border-radius: 10px;
     z-index: 2;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
 
 #catatUtang2 .tombol {
@@ -3470,7 +4071,7 @@ table.dataTable thead .sorting_desc_disabled {
     background-color: #DCC81F;
 }
 
-#catatUtang2 .tombol a {
+#catatUtang2 .tombol2 {
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -3540,7 +4141,7 @@ table.dataTable thead .sorting_desc_disabled {
 
 #catatUtang2 .nav {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 #catatUtang2 .btn-group {
@@ -3552,6 +4153,53 @@ table.dataTable thead .sorting_desc_disabled {
     color: white;
     background-color: #363AA7;
 }
+
+#catatUtang2 .kotak {
+    width: 45%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #363AA7;
+    /* padding: 15px; */
+    padding-bottom: 15px;
+}
+
+#catatUtang2 .kotak2 {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#catatUtang2 .utang {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: white;
+    padding-right: 12px;
+    margin-bottom: 0;
+    padding-top: 15px;
+}
+
+#catatUtang2 .utang img {
+    margin-right: 27px;
+    margin-top: -9px;
+}
+
+#catatUtang2 .rupiah {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: white;
+    padding-left: 12px;
+    margin-bottom: 0;
+    padding-top: 15px;
+}
+
 
 
 @media (max-width: 1600px) {}
@@ -3589,6 +4237,18 @@ table.dataTable thead .sorting_desc_disabled {
 
 }
 
+/* catatUtang2 tabel start */
+
+#catatUtang2 #transaksi .limiter {
+    margin-top: 0;
+}
+
+#catatUtang2 #transaksi .tombol-catat img {
+    margin-right: 15px;
+    margin-top: -4px;
+}
+
+/* catatUtang2 tabel end */
 
 /* catatUtang2 end */
 
@@ -4640,6 +5300,1744 @@ table.dataTable thead .sorting_desc_disabled {
 
 /* tambahNamaAgenda end */
 
+/* laporanAgenda start */
+
+#laporanAgenda label {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+
+}
+
+#laporanAgenda {
+    background-image: url(tambahNamaAnggota-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#laporanAgenda .tambahNamaAnggota-gambar1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+
+}
+
+#laporanAgenda .judul3 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;
+    margin-bottom: -5px;
+}
+
+#laporanAgenda .judul3-1 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #363AA7;
+
+}
+
+#laporanAgenda .row {
+    margin: 0;
+}
+
+#laporanAgenda .container {
+    padding-top: 110px;
+}
+
+#laporanAgenda input.pelanggan {
+    width: 100%;
+    height: 50px;
+    left: 354px;
+    top: 339.5px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(122, 122, 122, 0.2) !important;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    padding: 17px;
+    color: black;
+}
+
+#laporanAgenda textarea {
+    width: 100%;
+    height: 50px;
+    left: 354px;
+    top: 339.5px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(122, 122, 122, 0.2) !important;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    padding: 17px;
+    margin-bottom: 30px;
+    color: black;
+    height: 126px;
+}
+
+#laporanAgenda .registrasi-form {
+    background-color: white;
+    margin-top: 79px;
+    border: 3px solid rgba(27, 28, 42, 0.6);
+    padding: 128px 99px 128px 99px;
+    border-radius: 10px;
+    z-index: 2;
+    margin-bottom: 34px;
+}
+
+#laporanAgenda .tombol {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
+
+    text-align: center;
+    background-color: #F5DE19;
+    padding: 15px;
+    border: 1px solid rgba(122, 122, 122, 0.2);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+#laporanAgenda .tombol:hover {
+    background-color: #DCC81F;
+}
+
+#laporanAgenda .tombol a {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: black;
+    text-decoration: none;
+}
+
+/*support google chrome*/
+#laporanAgenda .catatan::-webkit-input-placeholder {
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#laporanAgenda input::-webkit-input-placeholder {
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+#laporanAgenda .tombol3 {
+    border-radius: 10px;
+    width: 80%;
+    height: 50px;
+    background-color: #2264E5;
+    text-align: center;
+    padding: 10px;
+}
+
+#laporanAgenda .tombol3-1 a {
+    display: flex;
+    justify-content: end;
+}
+
+#laporanAgenda .pelanggan {
+    display: flex;
+    justify-content: center;
+}
+
+.bagitabel .col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media (max-width: 1600px) {}
+
+@media (max-width: 1400px) {}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+    #laporanAgenda .judul3 {
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    #laporanAgenda .judul3-1 {
+        font-size: 36px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 576px) {
+    #laporanAgenda .registrasi-form {
+        padding: 27px 40px 36px 40px;
+    }
+
+    #laporanAgenda .registrasi-form {
+        margin-top: 43px;
+    }
+
+    #laporanAgenda .catatUtang-gambar2 {
+        margin-bottom: -60px;
+    }
+
+    #laporanAgenda .registrasi-form {
+        margin-bottom: 14px;
+    }
+
+}
+
+/* laporanAgenda tabel start */
+#laporanAgenda .nama {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+
+}
+
+#laporanAgenda .table-bordered>:not(caption)>* {
+    border-bottom: solid 2px #E9ECF8;
+}
+
+#laporanAgenda {
+    overflow: hidden;
+}
+
+#laporanAgenda .products-card-2 {
+    background-color: #363AA7;
+}
+
+#laporanAgenda h3.text {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    margin-top: 26px;
+
+}
+
+#laporanAgenda p.rupiah {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: #363AA7;
+    margin-top: 20px;
+
+}
+
+#laporanAgenda .products-card-3 .foto-g {
+    height: 215px;
+}
+
+#laporanAgenda .judul {
+    position: relative;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;
+    z-index: 2;
+}
+
+#laporanAgenda .products-card-1 {
+    margin-top: 30px;
+}
+
+#laporanAgenda .laporanTransaksi-gambar1 {
+    position: absolute;
+}
+
+#laporanAgenda .laporanTransaksi-gambar2 {
+    position: absolute;
+    right: 0;
+
+}
+
+#laporanAgenda .tombol-kembali {
+    margin-left: -50px;
+}
+
+#laporanAgenda .tombol-catat:hover {
+    background-color: #DCC81F;
+}
+
+#laporanAgenda .tombol-catat p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+}
+
+#laporanAgenda .tombol-catat img {
+    margin-right: 15px;
+    margin-top: -4px;
+
+}
+
+.form-inline .form-control {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#laporanAgenda .table100.ver1 td {
+    padding-left: 20px;
+}
+
+#laporanAgenda th.column1 {
+    padding-left: 20px;
+}
+
+#laporanAgenda th.column2 {
+    padding-left: 20px;
+}
+
+#laporanAgenda th.column3 {
+    padding-left: 20px;
+}
+
+#laporanAgenda th.column4 {
+    padding-left: 20px;
+}
+
+#laporanAgenda .input-group {
+    padding-right: 10px;
+}
+
+#laporanAgenda .input-group {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#laporanAgenda .table-bordered td,
+.table-bordered th {
+    border: none;
+}
+
+#laporanAgenda .table-bordered {
+    border: none;
+}
+
+#laporanAgenda th {
+    height: 40px;
+}
+
+#laporanAgenda .tabel-atas {
+    background-color: #363AA7;
+}
+
+#laporanAgenda th.cell100 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: white;
+}
+
+#laporanAgenda .table100.ver1 td {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1C1E53;
+}
+
+#laporanAgenda .table100.ver1 td.column2 {
+    color: #14804A;
+}
+
+#laporanAgenda .table100.ver1 td.column3 {
+    color: #D12953;
+}
+
+#laporanAgenda th.column0 {
+    width: 70px;
+}
+
+#laporanAgenda .table100.ver1 td {
+    background-color: #F2F5FF;
+}
+
+#laporanAgenda .table100.ver1 td {
+    background-color: #F2F5FF;
+}
+
+#laporanAgenda .pagination {
+    margin-bottom: 20px;
+    margin-left: 690px;
+}
+
+#laporanAgenda table.dataTable thead .sorting:after {
+    content: "\f0dc";
+    background-color: transparent;
+    float: right;
+    font-family: 'FontAwesome';
+    color: white;
+    /* margin-right: 10px; */
+    padding-right: 10px;
+}
+
+#laporanAgenda table.dataTable thead .sorting_asc:after {
+    content: "\f0de";
+    float: right;
+    font-family: fontawesome;
+    padding-right: 10px;
+    color: #F5DE19;
+}
+
+#laporanAgenda table.dataTable thead .sorting_desc:after {
+    content: "\f0dd";
+    float: right;
+    font-family: fontawesome;
+    padding-right: 10px;
+    color: #F5DE19;
+}
+
+#laporanAgenda table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc_disabled {
+    background: transparent;
+}
+
+#laporanAgenda th.column1 {
+    padding-right: 15px;
+    width: 70px;
+}
+
+#laporanAgenda th.column2 {
+    width: 70px;
+}
+
+#laporanAgenda th.column3 {
+    padding-right: 20px;
+    width: 70px;
+}
+
+#laporanAgenda .column1 {
+    width: 25%;
+}
+
+#laporanAgenda .column2 {
+    width: 25%;
+}
+
+#laporanAgenda .column3 {
+    width: 15%;
+}
+
+/* hiden button segitiga start */
+#laporanAgenda table.dataTable thead .column4.sorting:after {
+    color: transparent;
+}
+
+#laporanAgenda table.dataTable thead .column4.sorting_asc:after {
+    color: transparent;
+}
+
+#laporanAgenda table.dataTable thead .column4.sorting_desc:after {
+    color: transparent;
+}
+
+/* hiden button segitiga end */
+
+#laporanAgenda .container-table100 {
+    background-color: transparent;
+
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+#laporanAgenda .bungkus {
+    width: calc(100vw - 60px);
+    overflow: auto;
+}
+
+@media (min-width: 1200px) {
+    #laporanAgenda .bungkus {
+        display: flex;
+        justify-content: center;
+    }
+
+    #laporanAgenda .container-table100 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+/* laporanAgenda tabel end */
+
+
+/* laporanAgenda end */
+
+
+/* agenda start */
+
+#agenda .limiter {
+    margin-top: -450px;
+}
+
+#agenda .text-lg2 {
+    color: black;
+}
+
+#agenda .rupiah {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: #363AA7;
+}
+
+#agenda .judul2 {
+    text-align: center;
+    color: white;
+    padding-top: 110px;
+}
+
+
+#agenda .bg-biru {
+    background-image: url(agenda-bg.png);
+    background-size: cover;
+    height: 1111px;
+}
+
+#agenda img {
+    width: 95px;
+}
+
+
+#agenda .kotak3 {
+    background-image: url(agenda-bg-2.png);
+    background-size: cover;
+    height: 316px;
+    margin-top: 108px;
+    padding: 63px 159px 63px 159px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+#agenda .container {
+    display: flex;
+    justify-content: center;
+}
+
+#agenda .kotak2 img {
+    width: 200px;
+}
+
+#agenda .kotak {
+    padding: 50px;
+}
+
+#agenda .text {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #1C1E53;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#agenda .bg-biru .utang-gambar {
+    width: 50px;
+    margin-bottom: 35px;
+    margin-right: -18px;
+}
+
+#agenda .gambar2 {
+    right: 0;
+    position: absolute;
+}
+
+#agenda .gambar3 {
+    position: absolute;
+    left: 0;
+}
+
+#agenda .gambar4 {
+    width: 17px;
+    padding-bottom: 60px;
+}
+
+#agenda .gambar5 {
+    position: absolute;
+    width: 17px;
+    padding-top: 57px;
+}
+
+#home .tombol:hover {
+    background-color: #F5DE19;
+}
+
+#home .tombol:hover a {
+    color: black;
+}
+
+/* #agenda .column4 .transaksi-titik2 {
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+}
+
+#agenda .column4 .transaksi-titik2 img {
+    width: 24px;
+} */
+
+#agenda .tombol-catat p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: black;
+}
+
+
+
+
+@media (max-width: 1600px) {
+    #agenda .limiter {
+        margin-top: -450px;
+    }
+}
+
+@media (max-width: 1400px) {
+    #agenda .kotak3 {
+        padding: 63px 50px 63px 50px;
+    }
+}
+
+@media (max-width: 1200px) {
+    #agenda .kotak3 {
+        padding: 63px 20px 63px 70px;
+    }
+
+    #agenda .limiter {
+        margin-top: -350px;
+    }
+
+    #agenda .kotak {
+        padding: 49px 120px 40px 160px;
+    }
+}
+
+@media (max-width: 991px) {
+    #agenda .kotak3 {
+        padding: 63px 70px 63px 70px;
+        height: 450px;
+    }
+
+    #agenda .kotak {
+        padding: 40px 180px 40px 180px;
+    }
+
+    #agenda .text-lg2 {
+        color: white;
+    }
+
+    #agenda p.rupiah {
+        color: white !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #agenda .kotak {
+        padding: 40px 85px 40px 85px;
+    }
+}
+
+@media (max-width: 576px) {}
+
+@media (max-width: 500px) {
+    #agenda .kotak3 {
+        padding: 63px 0px 63px 0px;
+        height: 450px;
+    }
+
+    #agenda .kotak {
+        padding-left: 25%;
+    }
+}
+
+@media (max-width: 400px) {}
+
+
+
+/* agenda tabel start */
+/* edit start */
+
+#agenda .btn-group button {
+    background-color: transparent;
+    border: none;
+}
+
+#agenda .btn-group a {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #2264E5;
+}
+
+#agenda .btn-group a:hover {
+    background-color: #E9ECF8;
+    border-radius: 10px;
+}
+
+#agenda .btn-group .dropdown-menu {
+    border: none;
+    border-radius: 10px;
+    padding: 0;
+}
+
+#agenda .btn-group .transaksi-titik:hover {
+    opacity: 50%;
+}
+
+#agenda .btn-group img.transaksi-titik {
+    width: 24px;
+}
+
+#agenda .btn-group {
+    display: flex;
+    justify-content: end;
+}
+
+/* edit end */
+
+#agenda .table-bordered>:not(caption)>* {
+    border-bottom: solid 2px #E9ECF8;
+}
+
+#agenda {
+    overflow: hidden;
+}
+
+#agenda .products-card-2 {
+    background-color: #363AA7;
+}
+
+#agenda h3.text {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    margin-top: 26px;
+
+}
+
+#agenda p.rupiah {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: #363AA7;
+    margin-top: 20px;
+
+}
+
+#agenda .products-card-3 .foto-g {
+    height: 215px;
+}
+
+#agenda .judul {
+    position: relative;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;
+    z-index: 2;
+}
+
+#agenda .products-card-1 {
+    margin-top: 30px;
+}
+
+#agenda .laporanTransaksi-gambar1 {
+    position: absolute;
+}
+
+#agenda .laporanTransaksi-gambar2 {
+    position: absolute;
+    right: 0;
+
+}
+
+#agenda .tombol-kembali {
+    margin-left: -50px;
+}
+
+#agenda .tombol-catat:hover {
+    background-color: #DCC81F;
+}
+
+#agenda .tombol-catat p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+
+
+}
+
+#agenda .tombol-catat img {
+    margin-right: 15px;
+    margin-top: -4px;
+
+}
+
+/* agenda tabel start */
+
+.form-inline .form-control {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#agenda .table100.ver1 td {
+    padding-left: 20px;
+}
+
+#agenda .column0 {
+    width: 5%;
+}
+
+#agenda .cell100.column0 {
+    padding-bottom: 12px;
+}
+
+#agenda th.column1 {
+    padding-left: 20px;
+}
+
+#agenda th.column2 {
+    padding-left: 20px;
+}
+
+#agenda th.column3 {
+    padding-left: 20px;
+}
+
+#agenda th.column4 {
+    padding-left: 20px;
+}
+
+#agenda .input-group {
+    padding-right: 10px;
+}
+
+#agenda .input-group {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* #agenda .tombol-catat {}
+ */
+
+#agenda .pencarian .form-control {
+    margin-right: 288px
+}
+
+#agenda .table-bordered td,
+.table-bordered th {
+    border: none;
+}
+
+#agenda .table-bordered {
+    border: none;
+}
+
+#agenda th {
+    height: 40px;
+}
+
+#agenda .tombol-catat {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    background-color: #F5DE19;
+    color: black;
+    text-decoration: none;
+
+    height: 36px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#agenda .tombol-catat1 {
+    padding-right: 5px;
+}
+
+#agenda a {
+    text-decoration: none;
+}
+
+#agenda .tombol-laporan {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: #F5DE19;
+    text-decoration: none;
+
+    height: 36px;
+    width: 100%;
+    border-radius: 10px;
+    border: solid 2px #F5DE19;
+    padding-top: -20px;
+}
+
+#agenda .tabel-atas {
+    background-color: #363AA7;
+}
+
+#agenda th.cell100 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: white;
+}
+
+#agenda .table100.ver1 td {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1C1E53;
+}
+
+#agenda .table100.ver1 td.column2 {
+    color: #14804A;
+}
+
+#agenda .table100.ver1 td.column3 {
+    color: #D12953;
+}
+
+#agenda th.column0 {
+    /* padding-right: 70px; */
+    width: 70px;
+}
+
+#agenda .table100.ver1 td {
+    background-color: #F2F5FF;
+}
+
+#agenda .table100.ver1 td {
+    background-color: #F2F5FF;
+}
+
+
+
+
+
+
+/* previous dan next start */
+.pagination>li>a,
+.pagination>li>span {
+    margin-right: 20px;
+    /* border: 1px solid #ddd; */
+    padding: 0px;
+    color: transparent;
+}
+
+li#dataTables-example_next.paginate_button.next {
+    height: 20px;
+    width: 24px;
+    background-image: url(laporanTransaksi-Button\ kanan.svg);
+}
+
+li#dataTables-example_next.paginate_button.next:hover {
+    opacity: 80%;
+    background-image: url(laporanTransaksi-Button\ kanan.svg);
+}
+
+li#dataTables-example_previous.paginate_button.previous {
+    margin-right: 10px;
+    height: 20px;
+    width: 24px;
+    background-image: url(laporanTransaksi-Button\ kiri.svg);
+}
+
+li#dataTables-example_previous.paginate_button.previous:hover {
+    opacity: 80%;
+    background-image: url(laporanTransaksi-Button\ kiri.svg);
+}
+
+#agenda .pagination {
+    margin-bottom: 20px;
+    margin-left: 690px;
+}
+
+#agenda table.dataTable thead .sorting:after {
+    content: "\f0dc";
+    background-color: transparent;
+    float: right;
+    font-family: 'FontAwesome';
+    color: white;
+    /* margin-right: 10px; */
+    padding-right: 10px;
+}
+
+#agenda table.dataTable thead .sorting_asc:after {
+    content: "\f0de";
+    float: right;
+    font-family: fontawesome;
+    padding-right: 10px;
+    color: #F5DE19;
+}
+
+#agenda table.dataTable thead .sorting_desc:after {
+    content: "\f0dd";
+    float: right;
+    font-family: fontawesome;
+    padding-right: 10px;
+    color: #F5DE19;
+}
+
+#agenda table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc_disabled {
+    background: transparent;
+}
+
+#agenda th.column1 {
+    padding-right: 15px;
+    width: 70px;
+}
+
+#agenda th.column2 {
+    width: 25% !important;
+}
+
+#agenda th.column3 {
+    padding-right: 20px;
+    width: 70px;
+}
+
+/* #agenda .column1 {
+    width: 25%;
+} */
+
+#agenda .column2 {
+    width: 25%;
+}
+
+#agenda .column3 {
+    width: 15%;
+}
+
+/* hiden button segitiga start */
+#agenda table.dataTable thead .column4.sorting:after {
+    color: transparent;
+}
+
+#agenda table.dataTable thead .column4.sorting_asc:after {
+    color: transparent;
+}
+
+#agenda table.dataTable thead .column4.sorting_desc:after {
+    color: transparent;
+}
+
+#agenda table.dataTable thead .column0.sorting:after {
+    display: none;
+    color: transparent;
+}
+
+#agenda table.dataTable thead .column0.sorting_asc:after {
+    display: none;
+    color: transparent;
+}
+
+#agenda table.dataTable thead .column0.sorting_desc:after {
+    display: none;
+    color: transparent;
+}
+
+#agenda table.dataTable thead .column1.sorting:after {
+    display: none;
+    color: transparent;
+}
+
+#agenda table.dataTable thead .column1.sorting_asc:after {
+    display: none;
+    color: transparent;
+}
+
+#agenda table.dataTable thead .column1.sorting_desc:after {
+    display: none;
+    color: transparent;
+}
+
+/* hiden button segitiga end */
+
+#agenda .container-table100 {
+    background-color: transparent;
+
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+#agenda .bungkus {
+    width: calc(100vw - 60px);
+    overflow: auto;
+}
+
+
+/* agenda tabel end */
+
+@media (max-width: 1600px) {}
+
+@media (max-width: 1200px) {
+    #agenda p.rupiah {
+        font-size: 28px;
+        line-height: 20px;
+
+    }
+
+    #agenda h3.text {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #agenda .bungkus {
+        display: flex;
+        justify-content: center;
+    }
+
+    #agenda .container-table100 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 992px) {
+    #agenda .tombol-kembali a {
+        margin-left: 12%;
+    }
+
+    #agenda .judul {
+        font-size: 34px;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 768px) {}
+
+
+/* agenda tabel end */
+
+
+
+/* agenda end */
+
+/* editCatatUtang start */
+
+#editCatatUtang label {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+
+}
+
+#editCatatUtang {
+    background-image: url(catatUtang2-bg.png);
+    background-size: cover;
+}
+
+#editCatatUtang .catatUtang-gambar1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+
+}
+
+#editCatatUtang .catatUtang-gambar2 {
+    /* position: absolute;
+    margin-bottom: -322px; */
+    bottom: 0;
+}
+
+#editCatatUtang .judul3 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;
+    margin-bottom: -5px;
+}
+
+#editCatatUtang .judul3-1 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #363AA7;
+
+}
+
+#editCatatUtang .row {
+    margin: 0;
+}
+
+#editCatatUtang .container {
+    padding-top: 166px;
+}
+
+#editCatatUtang input {
+    width: 100%;
+    height: 50px;
+    left: 354px;
+    top: 339.5px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(122, 122, 122, 0.2) !important;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    padding: 17px;
+    margin-bottom: 30px;
+    color: black;
+}
+
+#editCatatUtang textarea {
+    width: 100%;
+    height: 50px;
+    left: 354px;
+    top: 339.5px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(122, 122, 122, 0.2) !important;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    padding: 17px;
+    /* margin-bottom: 30px; */
+    color: black;
+    height: 126px;
+}
+
+#editCatatUtang .registrasi-form {
+    background-color: white;
+    margin-top: 80.46px;
+    border: 3px solid #363AA7;
+    padding: 39px 99px 60px 99px;
+    border-radius: 10px;
+    z-index: 2;
+    margin-bottom: -70px;
+}
+
+#editCatatUtang .tombol {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    text-align: center;
+    background-color: #F5DE19;
+    padding: 15px;
+    border: 1px solid rgba(122, 122, 122, 0.2);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+#editCatatUtang .tombol:hover {
+    background-color: #DCC81F;
+}
+
+#editCatatUtang .tombol a {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: black;
+    text-decoration: none;
+}
+
+/*support google chrome*/
+#editCatatUtang .catatan::-webkit-input-placeholder {
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#editCatatUtang input::-webkit-input-placeholder {
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+#editCatatUtang .tombol3 {
+    border-radius: 10px;
+    width: 80%;
+    height: 50px;
+    background-color: #2264E5;
+    text-align: center;
+    padding: 10px;
+}
+
+#editCatatUtang .tombol3-1 a {
+    display: flex;
+    justify-content: end;
+}
+
+#editCatatUtang .pelanggan {
+    display: flex;
+    justify-content: center;
+}
+
+.bagitabel .col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media (max-width: 1600px) {}
+
+@media (max-width: 1400px) {}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+    #editCatatUtang .judul3 {
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    #editCatatUtang .judul3-1 {
+        font-size: 36px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 576px) {
+    #editCatatUtang .registrasi-form {
+        padding: 27px 40px 36px 40px;
+    }
+
+    #editCatatUtang .registrasi-form {
+        margin-top: 43px;
+    }
+
+    /* #editCatatUtang .catatUtang-gambar2 {
+        margin-bottom: -250px;
+    } */
+
+}
+
+
+/* editCatatUtang end */
+
+/* editCatatBayar start */
+
+#editCatatBayar label {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+
+}
+
+#editCatatBayar {
+    background-image: url(catatUtang2-bg.png);
+    background-size: cover;
+}
+
+#editCatatBayar .catatUtang-gambar1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+
+}
+
+#editCatatBayar .catatUtang-gambar2 {
+    /* position: absolute;
+    margin-bottom: -322px; */
+    bottom: 0;
+}
+
+#editCatatBayar .judul3 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;
+    margin-bottom: -5px;
+}
+
+#editCatatBayar .judul3-1 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #363AA7;
+
+}
+
+#editCatatBayar .row {
+    margin: 0;
+}
+
+#editCatatBayar .container {
+    padding-top: 166px;
+}
+
+#editCatatBayar input {
+    width: 100%;
+    height: 50px;
+    left: 354px;
+    top: 339.5px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(122, 122, 122, 0.2) !important;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    padding: 17px;
+    margin-bottom: 30px;
+    color: black;
+}
+
+#editCatatBayar textarea {
+    width: 100%;
+    height: 50px;
+    left: 354px;
+    top: 339.5px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(122, 122, 122, 0.2) !important;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    padding: 17px;
+    /* margin-bottom: 30px; */
+    color: black;
+    height: 126px;
+}
+
+#editCatatBayar .registrasi-form {
+    background-color: white;
+    margin-top: 80.46px;
+    border: 3px solid #363AA7;
+    padding: 39px 99px 60px 99px;
+    border-radius: 10px;
+    z-index: 2;
+    margin-bottom: -70px;
+}
+
+#editCatatBayar .tombol {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    text-align: center;
+    background-color: #F5DE19;
+    padding: 15px;
+    border: 1px solid rgba(122, 122, 122, 0.2);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+#editCatatBayar .tombol:hover {
+    background-color: #DCC81F;
+}
+
+#editCatatBayar .tombol a {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: black;
+    text-decoration: none;
+}
+
+/*support google chrome*/
+#editCatatBayar .catatan::-webkit-input-placeholder {
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#editCatatBayar input::-webkit-input-placeholder {
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+#editCatatBayar .tombol3 {
+    border-radius: 10px;
+    width: 80%;
+    height: 50px;
+    background-color: #2264E5;
+    text-align: center;
+    padding: 10px;
+}
+
+#editCatatBayar .tombol3-1 a {
+    display: flex;
+    justify-content: end;
+}
+
+#editCatatBayar .pelanggan {
+    display: flex;
+    justify-content: center;
+}
+
+.bagitabel .col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media (max-width: 1600px) {}
+
+@media (max-width: 1400px) {}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+    #editCatatBayar .judul3 {
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    #editCatatBayar .judul3-1 {
+        font-size: 36px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 576px) {
+    #editCatatBayar .registrasi-form {
+        padding: 27px 40px 36px 40px;
+    }
+
+    #editCatatBayar .registrasi-form {
+        margin-top: 43px;
+    }
+
+    /* #editCatatBayar .catatUtang-gambar2 {
+        margin-bottom: -250px;
+    } */
+
+}
+
+
+/* editCatatBayar end */
 
 
 /* trasnsaksi start */
