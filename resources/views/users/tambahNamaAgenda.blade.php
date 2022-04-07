@@ -10,17 +10,20 @@
                 <h3 class="judul3-1">Agenda.</h3>
             </div>
             <div class="registrasi-form col-lg-7 col-md-10">
-                <form action="" method="POST">
-                    <label for="total">Nama Agenda</label>
-                    <input class="pelanggan" type="text" name="" placeholder="masukkan nama agenda baru">
+                <form action="{{ route('agendaStore') }}" method="POST">
+                    @csrf
+                    <label for="name">Nama Agenda</label>
+                    <input class="pelanggan" type="text" name="name" placeholder="masukkan nama agenda baru">
                     <div class="row">
                         <div class="mulai col-6">
-                            <label for="date">Tanggal Mulai</label>
-                            <input class="form-control" id="date" name="date" placeholder="pilih tanggal" type="text" autocomplete="off" />
+                            <label for="start">Tanggal Mulai</label>
+                            <input class="form-control" id="date" name="start" placeholder="pilih tanggal" type="text"
+                                autocomplete="off" />
                         </div>
                         <div class="akhir col-6">
-                            <label for="date">Tanggal Akhir</label>
-                            <input class="form-control" id="date" name="date" placeholder="pilih tanggal" type="text" autocomplete="off" />
+                            <label for="end">Tanggal Akhir</label>
+                            <input class="form-control" id="date" name="end" placeholder="pilih tanggal" type="text"
+                                autocomplete="off" />
                         </div>
                     </div>
                     <button class="tombol w-100" type="submit">

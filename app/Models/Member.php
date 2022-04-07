@@ -2,15 +2,20 @@
 
 namespace App\Models;
 
-use Illuminate\Support\Carbon;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Income extends Model
+class Member extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'date', 'total_income', 'note'
+        'name', 'user_id'
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

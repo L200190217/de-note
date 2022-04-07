@@ -1,8 +1,10 @@
 <?php
 
-use App\Http\Controllers\IncomeController;
-use App\Http\Controllers\OutcomeController;
+use App\Models\Transaction;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AgendaController;
+use App\Http\Controllers\MemberController;
+use App\Http\Controllers\TransactionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,9 +25,9 @@ Route::get('/home', function () {
     return view('users.home');
 });
 
-Route::get('/transaksi', function () {
-    return view('users.transaksi');
-});
+// Route::get('/transaksi', function () {
+//     return view('users.transaksi');
+// });
 
 Route::get('/transaksi2', function () {
     return view('users.transaksi2');
@@ -35,33 +37,23 @@ Route::get('/transaksi3', function () {
     return view('users.transaksi3');
 });
 
-Route::get('/transaksi4', function () {
-    return view('users.transaksi4');
-});
+Route::get('/transaksi', [TransactionController::class, 'transaction'])->name('index');
 
 Route::get('/lupa-password', function () {
     return view('users.konfirmasi-pass');
 });
 
-Route::get('/ubahTransaksiPemasukan', function () {
-    return view('users.ubahTransaksiPemasukan');
-});
-Route::post('/ubahTransaksiPemasukan', [IncomeController::class, 'edit'])->name('incomeEdit');
+Route::get('/ubahTransaksiPemasukan', [TransactionController::class, 'editIncome'])->name('editIncome');
+Route::post('/ubahTransaksiPemasukan/{transaksi}', [TransactionController::class, 'updateIncome'])->name('incomeEdit');
 
-Route::get('/ubahTransaksiPengeluaran', function () {
-    return view('users.ubahTransaksiPengeluaran');
-});
-Route::post('/ubahTransaksiPengeluaran', [OutcomeController::class, 'edit'])->name('outcomeEdit');
+Route::get('/ubahTransaksiPengeluaran',  [TransactionController::class, 'editOutcome'])->name('editOutcome');
+Route::post('/ubahTransaksiPengeluaran/{transaksi}', [TransactionController::class, 'updateOutcome'])->name('outcomeEdit');
 
-Route::get('/catatTransaksi', function () {
-    return view('users.catatTransaksi');
-});
-Route::post('/catatTransaksi/income', [IncomeController::class, 'store'])->name('incomeStore');
-Route::post('/catatTransaksi/outcome', [OutcomeController::class, 'store'])->name('outcomeStore');
+Route::get('/catatTransaksi', [TransactionController::class, 'create'])->name('transaction');
+Route::post('/catatTransaksi/income', [TransactionController::class, 'income'])->name('incomeStore');
+Route::post('/catatTransaksi/outcome', [TransactionController::class, 'outcome'])->name('outcomeStore');
 
-Route::get('/laporanTransaksi', function () {
-    return view('users.laporanTransaksi');
-})->name('laporanTransaksi');
+Route::get('/laporanTransaksi', [TransactionController::class, 'index'])->name('laporanTransaksi');
 
 Route::get('/utang', function () {
     return view('users.utang');
@@ -86,10 +78,8 @@ Route::get('/catatIuran', function () {
 Route::get('/tambahNamaAnggota', function () {
     return view('users.tambahNamaAnggota');
 });
+Route::post('/tambahNamaAnggota', [MemberController::class, 'store'])->name('memberStore');
 
-Route::get('/tambahNamaAgenda', function () {
-    return view('users.tambahNamaAgenda');
-});
 
 Route::get('/laporanAgenda', function () {
     return view('users.laporanAgenda');
