@@ -151,9 +151,11 @@ class TransactionController extends Controller
         return redirect('/ubahTransaksiPengeluaran', ['outcome' => $transaksi]);
     }
 
-    public function destroy(Transaction $outcome)
+    public function destroyAll(Request $request, Transaction $transaksi)
     {
-        $outcome->delete();
+        $data = $request->data;
+        return $data;
+        Transaction::whereIn('id', $data)->delete();
         return redirect('/ubahTransaksiPengeluaran');
     }
 }
