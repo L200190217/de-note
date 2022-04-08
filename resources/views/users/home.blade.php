@@ -73,6 +73,80 @@
     </div>
 </section>
 
+<section id="homeTransaksi">
+    <div class="container-fluid">
+        <div class="container">
+
+            <div class="jarak row">
+                <div class="product-page-card1 col-lg-6 col-md-6 ">
+                    <p>De Note.</p>
+                    <h3 class="product-page-judul2">Catat transaksi dan kelola keunganmu</h3>
+                    <p class="text-detail-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <!-- <div class="product-page-card">
+                        
+                        
+                    </div> -->
+                    <div class="tombol-agenda">
+                        <a href="#">Agenda</a>
+                    </div>
+                </div>
+                <div class="product-page-card1 col-lg-6 col-md-6 ">
+                    <img src="image/homeTransaksi1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="homeTransaksi2">
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="jarak row">
+                <div class="product-page-card1 col-lg-6 col-md-6 ">
+                    <img src="image/homeTransaksi2.png" alt="">
+                </div>
+                <div class="product-page-card1 col-lg-6 col-md-6 ">
+                    <p>De Note.</p>
+                    <h3 class="product-page-judul2">Agendakan semua rencana bisnismu</h3>
+                    <p class="text-detail-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <!-- <div class="product-page-card">
+                       
+                       
+                    </div> -->
+                    <div class="tombol-agenda">
+                        <a href="#">Agenda</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="homeTransaksi3">
+    <div class="container-fluid">
+        <div class="container">
+
+            <div class="jarak row">
+                <div class="product-page-card1 col-lg-6 col-md-6 ">
+                    <p>De Note.</p>
+                    <h3 class="product-page-judul2">Atur semua kebutuhan finansialmu dengan bijak</h3>
+                    <p class="text-detail-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <!-- <div class="product-page-card">
+                        
+                        
+                    </div> -->
+                    <div class="tombol-agenda">
+                        <a href="#">Agenda</a>
+                    </div>
+                </div>
+                <div class="product-page-card1 col-lg-6 col-md-6 ">
+                    <img src="image/homeTransaksi3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 @include('users.layouts.footer')
 
 @endsection

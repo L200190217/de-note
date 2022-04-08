@@ -512,6 +512,1036 @@
 
 /* navbar end */
 
+/* dashboardPengguna start */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+} */
+
+#dashboardPengguna .text3 {
+    /* display: flex;
+    align-items: center; */
+    justify-content: space-around;
+    /* padding: 15px 10px; */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+#dashboardPengguna .samping-menu {
+    position: fixed;
+    background: #1C1E53;
+    width: 15vw;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+#dashboardPengguna .brand-name {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dashboardPengguna .brand-name h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-top: 59px;
+    color: white;
+}
+
+#dashboardPengguna li {
+    font-size: 24px;
+    /* padding: 10px 40px; */
+    color: white;
+    /* display: flex;
+    align-items: center; */
+    padding-bottom: 4px;
+}
+
+#dashboardPengguna .tabel1 li {
+    padding-bottom: 0px;
+}
+
+#dashboardPengguna .kotak li:hover {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background: #5F6195;
+    color: white;
+    padding-left: 10px;
+    transition: 0.3s;
+
+}
+
+#dashboardPengguna .kotak2 li:hover {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background: #5F6195;
+    color: white;
+    padding-left: 10px;
+    transition: 0.3s;
+}
+
+#dashboardPengguna .kotak2 .nav {
+    display: flow-root;
+    padding-left: 20%;
+}
+
+
+#dashboardPengguna a {
+    text-decoration: none;
+}
+
+
+#dashboardPengguna .container2 {
+    position: absolute;
+    right: 0;
+    width: 85vw;
+    height: 100vh;
+    background: #f1f1f1;
+}
+
+#dashboardPengguna .header1 {
+    position: relative;
+    top: 0;
+    right: 0;
+    /* width: 80vw; */
+    /* width: 100%; */
+    height: 16vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    margin: 0 0 30px 25px;
+    border-bottom-left-radius: 20px;
+}
+
+#dashboardPengguna .navbar1 {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+#dashboardPengguna .search {
+    flex: 5;
+}
+
+#dashboardPengguna .search p {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+#dashboardPengguna .search b {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+#dashboardPengguna .user {
+    flex: 1;
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+#dashboardPengguna .user .admin {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    margin-bottom: 0;
+
+}
+
+#dashboardPengguna .user .nama {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 0px;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+}
+
+/* #dashboardPengguna .user .gambar1 {
+    position: relative;
+    width: 500px;
+    height: 50px;
+}
+
+#dashboardPengguna .user .gambar1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} */
+
+#dashboardPengguna .konten {
+    position: relative;
+    min-height: 90vh;
+    background: #f1f1f1;
+}
+
+#dashboardPengguna .konten .kartu {
+    padding: 20px 20px 0px 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#dashboardPengguna .konten .kartu .kartu2 {
+    width: 513px;
+    height: 250px;
+    background: white;
+    background-image: url(dashboardPengguna-bg.png);
+    background-size: 519px 288px;
+    margin: 0px 30px 30px 10px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    padding: 19px;
+
+}
+
+#dashboardPengguna .konten .konten2 {
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#dashboardPengguna .konten .konten2 .tabel1 {
+    min-height: 50vh;
+    flex: 5;
+    background: white;
+    margin: 20px 0 25px 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+#dashboardPengguna .konten .konten2 .new-students {
+    flex: 2;
+    background: white;
+    min-height: 50vh;
+    margin: 0 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+#dashboardPengguna .konten .konten2 .new-students table td:nth-child(1) img {
+    height: 40px;
+    width: 40px;
+}
+
+@media screen and (max-width: 1050px) {
+    #dashboardPengguna .samping-menu li {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+
+    #dashboardPengguna ol,
+    ul {
+        padding-left: 10% !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    #dashboardPengguna .kotak span {
+        display: none;
+    }
+
+    #dashboardPengguna .kotak2 span {
+        display: none;
+    }
+
+    #dashboardPengguna .kotak2 li {
+        padding-top: 10px;
+    }
+
+    #dashboardPengguna .kotak li {
+        padding-top: 10px;
+    }
+
+    #dashboardPengguna .samping-menu img {
+        width: 25px !important;
+        margin-bottom: 10px;
+    }
+
+    #dashboardPengguna .samping-menu {
+        text-align: center;
+    }
+
+
+}
+
+@media screen and (max-width: 992px) {
+    #dashboardPengguna .brand-name h1 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    #dashboardPengguna .search p {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    #dashboardPengguna .search b {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    #dashboardPengguna .dash {
+        font-size: 22px !important;
+        line-height: 32px !important;
+    }
+
+    #dashboardPengguna .kartu2 .total {
+        font-size: 22px !important;
+        line-height: 32px !important;
+    }
+
+    #dashboardPengguna .kartu2 .jumlah {
+        font-size: 32px !important;
+        line-height: 24px !important;
+    }
+
+    #dashboardPengguna .copy {
+        font-size: 12px !important;
+        line-height: 20px !important;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    #dashboardPengguna .search {
+        flex: 3;
+    }
+
+    /* #dashboardPengguna .samping-menu li span {
+        display: none;
+    } */
+
+    /* #dashboardPengguna .samping-menu {
+        align-items: center;
+    } */
+
+    /* #dashboardPengguna .samping-menu li img {
+        width: 40px;
+        height: 40px;
+    } */
+
+    /* #dashboardPengguna .samping-menu li:hover {
+        background: #f05462;
+        padding: 8px 38px;
+        border: 2px solid white; */
+}
+
+@media screen and (max-width:536px) {
+    #dashboardPengguna .brand-name h1 {
+        font-size: 16px;
+    }
+
+    #dashboardPengguna .konten .kartu {
+        justify-content: center;
+    }
+
+    #dashboardPengguna .samping-menu li img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* .konten .konten2 .tabel1 table th:nth-child(2),
+    .konten .konten2 .tabel1 table td:nth-child(2) {
+        display: none;
+    } */
+
+    #dashboardPengguna .search {
+        flex: 1;
+    }
+}
+
+#dashboardPengguna .kotak {
+    /* position: absolute; */
+    bottom: 0;
+}
+
+#dashboardPengguna .samping-menu img {
+    margin-right: 17px;
+    width: 17.24px;
+}
+
+#dashboardPengguna .copy {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: white;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+#dashboardPengguna th,
+td {
+    /* padding: 20px 0px 0px 20px !important; */
+    padding: 14px !important;
+}
+
+#dashboardPengguna tr:nth-child(even) {
+    background-color: #F3F6F9;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+#dashboardPengguna .dash {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 30px;
+
+    color: black;
+}
+
+#dashboardPengguna .kartu2 .jumlah {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #363AA7;
+    margin-top: 15px;
+}
+
+#dashboardPengguna .kartu2 .total {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    margin-top: 16px;
+
+    color: black;
+
+}
+
+#dashboardPengguna .garis {
+    border: solid 1px #5F6195;
+    background-color: #5F6195;
+    width: 90%;
+    height: 0;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#dashboardPengguna .garis2 {
+    border: solid 1px #5F6195;
+    background-color: #5F6195;
+    width: 90%;
+    height: 0;
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
+
+#dashboardPengguna .garis1 {
+    display: flex;
+    justify-content: end;
+}
+
+#dashboardPengguna .samping-menu .spasi {
+    margin-bottom: 5px;
+}
+
+#dashboardPengguna .samping-menu span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: white;
+}
+
+#dashboardPengguna ol,
+ul {
+    padding-left: 20%;
+}
+
+#dashboardPengguna .btn:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#dashboardPengguna .btn.active {
+    /* color: white; */
+    /* background-color: #363AA7; */
+    margin-top: 5px;
+    border-bottom: 3px solid #1C1E53;
+    -webkit-box-shadow: 0 4px 2px -4px black;
+}
+
+#dashboardPengguna .employee {
+    margin-left: 25px;
+}
+
+#dashboardPengguna .employee i {
+    color: #757D8A;
+}
+
+#dashboardPengguna .employee .input-group-text {
+    background-color: white;
+    border: none;
+}
+
+#dashboardPengguna .employee .form-control {
+    border-radius: 0px;
+}
+
+
+/* dashboardPengguna end */
+
+/* settingAkun start */
+
+#settingAkun .text3 {
+    justify-content: space-around;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+#settingAkun .samping-menu {
+    position: fixed;
+    background: #1C1E53;
+    width: 15vw;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+#settingAkun .brand-name {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#settingAkun .brand-name h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-top: 59px;
+    color: white;
+}
+
+#settingAkun li {
+    font-size: 24px;
+    color: white;
+    padding-bottom: 4px;
+}
+
+#settingAkun .tabel1 li {
+    padding-bottom: 0px;
+}
+
+#settingAkun .kotak li:hover {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background: #5F6195;
+    color: white;
+    padding-left: 10px;
+    transition: 0.3s;
+
+}
+
+#settingAkun .kotak2 li:hover {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background: #5F6195;
+    color: white;
+    padding-left: 10px;
+    transition: 0.3s;
+}
+
+#settingAkun .kotak2 .nav {
+    display: flow-root;
+    padding-left: 20%;
+}
+
+
+#settingAkun a {
+    text-decoration: none;
+}
+
+
+#settingAkun .container2 {
+    position: absolute;
+    right: 0;
+    width: 85vw;
+    height: 100vh;
+    background: #f1f1f1;
+}
+
+#settingAkun .header1 {
+    position: relative;
+    top: 0;
+    right: 0;
+    height: 16vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    margin: 0 0 30px 25px;
+    border-bottom-left-radius: 20px;
+}
+
+#settingAkun .navbar1 {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+#settingAkun .search {
+    flex: 5;
+}
+
+#settingAkun .search p {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+#settingAkun .search b {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+#settingAkun .user {
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#settingAkun .user .admin {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    margin-bottom: 0;
+
+}
+
+#settingAkun .user .nama {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 0px;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+}
+
+#settingAkun .konten {
+    position: relative;
+    min-height: 90vh;
+    background: #f1f1f1;
+}
+
+#settingAkun .konten .kartu {
+    padding: 20px 20px 0px 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#settingAkun .konten .kartu .kartu2 {
+    width: 513px;
+    height: 250px;
+    background: white;
+    background-image: url(dashboardPengguna-bg.png);
+    background-size: 519px 288px;
+    margin: 0px 30px 30px 10px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    padding: 19px;
+
+}
+
+#settingAkun .konten .konten2 {
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#settingAkun .konten .konten2 .new-students {
+    flex: 2;
+    background: white;
+    min-height: 50vh;
+    margin: 0 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+#settingAkun .konten .konten2 .new-students table td:nth-child(1) img {
+    height: 40px;
+    width: 40px;
+}
+
+@media screen and (max-width: 1050px) {
+    #settingAkun .samping-menu li {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+
+    #settingAkun ol,
+    ul {
+        padding-left: 10% !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    #settingAkun .kotak span {
+        display: none;
+    }
+
+    #settingAkun .kotak2 span {
+        display: none;
+    }
+
+    #settingAkun .kotak2 li {
+        padding-top: 10px;
+    }
+
+    #settingAkun .kotak li {
+        padding-top: 10px;
+    }
+
+    #settingAkun .samping-menu img {
+        width: 25px !important;
+        margin-bottom: 10px;
+    }
+
+    #settingAkun .samping-menu {
+        text-align: center;
+    }
+
+
+}
+
+@media screen and (max-width: 992px) {
+    #settingAkun .brand-name h1 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    #settingAkun .search p {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    #settingAkun .search b {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    #settingAkun .dash {
+        font-size: 22px !important;
+        line-height: 32px !important;
+    }
+
+    #settingAkun .kartu2 .total {
+        font-size: 22px !important;
+        line-height: 32px !important;
+    }
+
+    #settingAkun .kartu2 .jumlah {
+        font-size: 32px !important;
+        line-height: 24px !important;
+    }
+
+    #settingAkun .copy {
+        font-size: 12px !important;
+        line-height: 20px !important;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    #settingAkun .search {
+        flex: 3;
+    }
+}
+
+@media screen and (max-width:536px) {
+    #settingAkun .brand-name h1 {
+        font-size: 16px;
+    }
+
+    #settingAkun .konten .kartu {
+        justify-content: center;
+    }
+
+    #settingAkun .samping-menu li img {
+        width: 30px;
+        height: 30px;
+    }
+
+    #settingAkun .search {
+        flex: 1;
+    }
+}
+
+#settingAkun .kotak {
+    bottom: 0;
+}
+
+#settingAkun .samping-menu img {
+    margin-right: 17px;
+    width: 17.24px;
+}
+
+#settingAkun .copy {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: white;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+#settingAkun th,
+td {
+    padding: 5px !important;
+}
+
+
+#settingAkun .dash {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 30px;
+
+    color: black;
+}
+
+#settingAkun .kartu2 .jumlah {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #363AA7;
+    margin-top: 15px;
+}
+
+#settingAkun .kartu2 .total {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    margin-top: 16px;
+
+    color: black;
+
+}
+
+#settingAkun .garis {
+    border: solid 1px #5F6195;
+    background-color: #5F6195;
+    width: 90%;
+    height: 0;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#settingAkun .garis2 {
+    border: solid 1px #5F6195;
+    background-color: #5F6195;
+    width: 90%;
+    height: 0;
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
+
+#settingAkun .garis1 {
+    display: flex;
+    justify-content: end;
+}
+
+#settingAkun .samping-menu .spasi {
+    margin-bottom: 5px;
+}
+
+#settingAkun .samping-menu span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: white;
+}
+
+/* #settingAkun ol,
+ul {
+    padding-left: 10% !important;
+} */
+
+#settingAkun .btn:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#settingAkun .btn.active {
+    margin-top: 5px;
+    border-bottom: 3px solid #1C1E53;
+    -webkit-box-shadow: 0 4px 2px -4px black;
+}
+
+#settingAkun .employee {
+    margin-left: 25px;
+}
+
+#settingAkun .employee i {
+    color: #757D8A;
+}
+
+#settingAkun .employee .input-group-text {
+    background-color: white;
+    border: none;
+}
+
+#settingAkun .employee .form-control {
+    border-radius: 0px;
+}
+
+/* update */
+#settingAkun input {
+    border: solid 1px #CBD6E2 !important;
+    border-radius: 3px;
+    background-color: #F5F8FA;
+    width: 100%;
+    height: 46px;
+    padding: 10px;
+}
+
+#settingAkun td {
+    width: 78%;
+}
+
+#settingAkun .name {
+    padding-left: 32px !important;
+    width: 22%;
+}
+
+
+#settingAkun .tabel1 .nav {
+    padding-left: 20px !important;
+}
+
+#settingAkun .text3 p {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 14px;
+    margin-left: 13px;
+
+    color: black;
+}
+
+#settingAkun .tabel1 table {
+    margin-bottom: 20px;
+}
+
+#settingAkun .tabel1 .tab-pane {
+    margin-right: 16px;
+}
+
+#settingAkun .tabel1 .inputan {
+    margin-right: 16px;
+}
+
+#settingAkun .simpanakun {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: black;
+    background-color: #F5DE19;
+    border-radius: 10px;
+    padding: 11px 18px 11px 18px;
+}
+
+#settingAkun .simpanakun:hover {
+    background-color: #DCC81F;
+}
+
+#settingAkun .simpanakun1 {
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+    margin-bottom: 139px;
+    margin-right: 8px;
+}
+
+#settingAkun .konten .konten2 .tabel1 {
+    border-radius: 5px;
+    min-height: 50vh;
+    flex: 5;
+    background: white;
+    margin: 0px 0 25px 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* settingAkun end */
+
+
 /* footer start */
 
 #footer .bg-biru2 {
@@ -899,6 +1929,391 @@
 }
 
 /* home-feature end */
+
+/* homeTransaksi awal */
+
+#homeTransaksi .product-page-judul {
+    text-align: center;
+}
+
+#homeTransaksi .product-page-text {
+    opacity: 70%;
+    text-align: center;
+    color: #7A7A7A;
+}
+
+#homeTransaksi .product-page-judul2 {
+    font-weight: 500;
+}
+
+#homeTransaksi .product-page-card {
+    margin: auto;
+    border: solid 2px rgba(122, 122, 122, 0.2);
+    border-radius: 10px;
+    padding: 28px;
+
+}
+
+#homeTransaksi .product-page-card .btn {
+    border: solid 2px rgba(122, 122, 122, 0.2);
+    border-radius: 50px;
+    color: #7A7A7A;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#homeTransaksi .product-page-card .btn.active {
+    color: white;
+    background-color: #0170ED;
+}
+
+#homeTransaksi .product-page-card button:hover {
+    background-color: #0170ED;
+}
+
+#homeTransaksi .nav-pills .nav-link {
+    border-radius: 50px;
+}
+
+#homeTransaksi .product-page-card .btn:focus {
+    box-shadow: 0 0 0 0;
+}
+
+#homeTransaksi .product-page-card1 {
+    position: relative;
+    display: flex;
+    flex-direction:
+        column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 0 solid;
+    border-radius: .25rem;
+
+    margin: auto 0;
+}
+
+#homeTransaksi .jarak {
+    margin-top: -50px;
+    margin-bottom: -100px;
+}
+
+/* tombol agenda */
+.tombol-agenda {
+    height: 50px;
+    width: 170px;
+    left: 893px;
+    top: 446px;
+    border-radius: 41px;
+    background-color: #F5DE19;
+    padding: 8px;
+    text-align: center;
+}
+
+.tombol-agenda a {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+/* tombol agenda */
+
+#homeTransaksi2 .product-page-card1 {
+    position: relative;
+    display: flex;
+    flex-direction:
+        column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 0 solid;
+    border-radius: .25rem;
+
+    margin: auto 0;
+}
+
+#homeTransaksi2 .product-page-judul {
+    text-align: center;
+}
+
+#homeTransaksi2 .product-page-text {
+    opacity: 70%;
+    text-align: center;
+    color: #7A7A7A;
+}
+
+#homeTransaksi2 .product-page-judul2 {
+    font-weight: 500;
+}
+
+#homeTransaksi2 .product-page-card {
+    margin: auto;
+    border: solid 2px rgba(122, 122, 122, 0.2);
+    border-radius: 10px;
+    padding: 28px;
+
+}
+
+#homeTransaksi2 .product-page-card .btn {
+    border: solid 2px rgba(122, 122, 122, 0.2);
+    border-radius: 50px;
+    color: #7A7A7A;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#homeTransaksi2 .product-page-card .btn.active {
+    color: white;
+    background-color: #0170ED;
+}
+
+#homeTransaksi2 .product-page-card button:hover {
+    background-color: #0170ED;
+}
+
+#homeTransaksi2 .nav-pills .nav-link {
+    border-radius: 50px;
+}
+
+#homeTransaksi2 .product-page-card .btn:focus {
+    box-shadow: 0 0 0 0;
+}
+
+#homeTransaksi2 .jarak {
+    margin-top: -150px;
+    margin-bottom: -100px;
+}
+
+#homeTransaksi3 .product-page-card1 {
+    position: relative;
+    display: flex;
+    flex-direction:
+        column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 0 solid;
+    border-radius: .25rem;
+
+    margin: auto 0;
+}
+
+#homeTransaksi3 .product-page-judul {
+    text-align: center;
+}
+
+#homeTransaksi3 .product-page-text {
+    opacity: 70%;
+    text-align: center;
+    color: #7A7A7A;
+}
+
+#homeTransaksi3 .product-page-judul2 {
+    font-weight: 500;
+}
+
+#homeTransaksi3 .product-page-card {
+    margin: auto;
+    border: solid 2px rgba(122, 122, 122, 0.2);
+    border-radius: 10px;
+    padding: 28px;
+
+}
+
+#homeTransaksi3 .product-page-card .btn {
+    border: solid 2px rgba(122, 122, 122, 0.2);
+    border-radius: 50px;
+    color: #7A7A7A;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#homeTransaksi3 .product-page-card .btn.active {
+    color: white;
+    background-color: #0170ED;
+}
+
+#homeTransaksi3 .product-page-card button:hover {
+    background-color: #0170ED;
+}
+
+#homeTransaksi3 .nav-pills .nav-link {
+    border-radius: 50px;
+}
+
+#homeTransaksi3 .product-page-card .btn:focus {
+    box-shadow: 0 0 0 0;
+}
+
+#homeTransaksi3 .jarak {
+    margin-top: -150px;
+    margin-bottom: -50px;
+}
+
+
+
+
+@media (max-width: 1200px) {
+    #homeTransaksi .jarak {
+        margin-top: -50px;
+        margin-bottom: -70px;
+    }
+
+    #homeTransaksi3 .jarak {
+        margin-top: -110px;
+        margin-bottom: -50px;
+    }
+}
+
+@media (max-width: 992px) {
+    #homeTransaksi .jarak {
+        margin-top: -50px;
+        margin-bottom: -30px;
+    }
+
+    #homeTransaksi3 .jarak {
+        margin-top: -80px;
+        margin-bottom: -50px;
+    }
+}
+
+@media (max-width: 768px) {
+    #homeTransaksi .row {
+        flex-direction: column-reverse;
+    }
+
+    #homeTransaksi .product-page-judul2 {
+        margin-top: 24px;
+    }
+
+    #homeTransaksi .product-page-judul2 {
+        margin-bottom: 24px;
+    }
+
+    #homeTransaksi .product-page-text2 {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    #homeTransaksi .tab-content p {
+        font-size: 16px;
+    }
+
+    #homeTransaksi .product-page-card .btn {
+        width: 70px;
+        height: 40px;
+        font-size: 16px;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    #homeTransaksi .product-page-card {
+        padding: 28px;
+    }
+
+    #homeTransaksi .product-page-card1 {
+        margin-top: -70px;
+    }
+
+    #homeTransaksi .jarak {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    #homeTransaksi2 .tab-content p {
+        font-size: 16px;
+    }
+
+    #homeTransaksi2 .product-page-judul2 {
+        margin-top: 24px;
+    }
+
+    #homeTransaksi2 .product-page-judul2 {
+        margin-bottom: 24px;
+    }
+
+    #homeTransaksi2 .product-page-text2 {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    #homeTransaksi2 .tab-content p {
+        font-size: 16px;
+    }
+
+    #homeTransaksi2 .product-page-card .btn {
+        width: 70px;
+        height: 40px;
+        font-size: 16px;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    #homeTransaksi2 .product-page-card {
+        padding: 28px;
+    }
+
+    #homeTransaksi2 .product-page-card1 {
+        margin-top: -70px;
+    }
+
+    #homeTransaksi2 .jarak {
+        margin-top: 00px;
+        margin-bottom: 0px;
+    }
+
+    #homeTransaksi3 .row {
+        flex-direction: column-reverse;
+    }
+
+    #homeTransaksi3 .product-page-judul2 {
+        margin-top: 24px;
+    }
+
+    #homeTransaksi3 .product-page-judul2 {
+        margin-bottom: 24px;
+    }
+
+    #homeTransaksi3 .product-page-text2 {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    #homeTransaksi3 .tab-content p {
+        font-size: 16px;
+    }
+
+    #homeTransaksi3 .product-page-card .btn {
+        width: 70px;
+        height: 40px;
+        font-size: 16px;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    #homeTransaksi3 .product-page-card {
+        padding: 28px;
+    }
+
+    #homeTransaksi3 .product-page-card1 {
+        margin-top: -70px;
+    }
+
+    #homeTransaksi3 .jarak {
+        margin-top: 0px;
+        margin-bottom: 100px;
+    }
+
+}
+
+@media (max-width: 576px) {}
+
+/* homeTransaksi akhir */
 
 /* registrasi start a*/
 
@@ -3401,11 +4816,10 @@ table.dataTable thead .sorting_desc_disabled {
 }
 
 #tambahNamaPelanggan .tambahNamaPelanggan-gambar1 {
-    position: absolute;
+    position: relative;
     left: 0;
     bottom: 0;
     z-index: 0;
-    margin-bottom: -450px;
 
 }
 
@@ -3517,7 +4931,7 @@ table.dataTable thead .sorting_desc_disabled {
     background-color: #DCC81F;
 }
 
-#tambahNamaPelanggan .tombol a {
+#tambahNamaPelanggan .tombol {
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -4281,7 +5695,8 @@ table.dataTable thead .sorting_desc_disabled {
     right: 0;
     bottom: 0;
     z-index: 0;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
+    margin-bottom: -380px;
 }
 
 #catatIuran .judul3 {
@@ -4635,7 +6050,7 @@ table.dataTable thead .sorting_desc_disabled {
     background-color: #DCC81F;
 }
 
-#tambahNamaAnggota .tombol a {
+#tambahNamaAnggota .tombol {
     font-size: 20px;
     font-style: normal;
     font-weight: 600;

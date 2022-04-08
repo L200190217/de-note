@@ -71,6 +71,10 @@ Route::get('/tambahNamaPelanggan', function () {
     return view('users.tambahNamaPelanggan');
 });
 
+Route::get('/editNamaPelanggan', function () {
+    return view('users.editNamaPelanggan');
+});
+
 Route::get('/catatIuran', function () {
     return view('users.catatIuran');
 });
@@ -78,6 +82,12 @@ Route::get('/catatIuran', function () {
 Route::get('/tambahNamaAnggota', function () {
     return view('users.tambahNamaAnggota');
 });
+
+Route::get('/editNamaAnggota', function () {
+    return view('users.editNamaAnggota');
+});
+
+
 Route::post('/tambahNamaAnggota', [MemberController::class, 'store'])->name('memberStore');
 
 
@@ -89,6 +99,11 @@ Route::get('/agenda', function () {
     return view('users.agenda');
 });
 
+Route::get('/editNamaAgenda', function () {
+    return view('users.editNamaAgenda');
+});
+
+
 Route::get('/editCatatUtang', function () {
     return view('users.editCatatUtang');
 });
@@ -97,7 +112,14 @@ Route::get('/editCatatBayar', function () {
     return view('users.editCatatBayar');
 });
 
-
 Route::get('/coba', function () {
     return view('users.coba');
+});
+
+Route::get('/dashboardPengguna', function () {
+    return view('users.dashboardPengguna');
+});
+
+Route::get('/settingAkun', function () {
+    return view('users.settingAkun');
 });
