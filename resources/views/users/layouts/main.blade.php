@@ -156,10 +156,44 @@
 
     <!-- hilangkan tombol hapus -->
     <script type="text/javascript">
+        var checked = [];
+        var checkedAll = [];
+
+        $(document).ready(function (){
+            // function delete() {
+            //     var _token = "{{ csrf_token() }}";
+            //     var url = '{!! route('deleteAll') !!}';
+            //     $.ajax({
+            //         url: url,
+            //         type:'DELETE',
+            //         data: {_token:_token, data:checked},
+            //         dataType: 'JSON',
+            //         success: function(data) {
+            //             table.ajax.reload();
+            //             if (data.status == 'success') {
+            //                 alert('Success delete transaction');
+            //             } else {
+            //                 alert('Failed delete transaction');
+            //             }
+            //         },
+            //     }); 
+            // }
+            $("#dataTables-example .checkData").each(function (){
+                console.log($(this).val());
+                checkedAll.push($(this).val());
+            });
+        });
+
+        function arrayRemove(arr, value){
+            return arr.filter(function(ele){
+                return ele != value;
+            });
+        }
+
         function checkAll(ele) {
             var checkboxes = document.getElementsByTagName('input');
             let check = document.querySelectorAll('input[type=checkbox]');
-            let hilang5 = document.getElementById('hilang5')
+            let hilang5 = document.getElementById('hilang5');
 
             console.log(check);
             // console.log(checkboxes);/
@@ -171,6 +205,8 @@
                 for (var i = 0; i < checkboxes.length; i++) {
                     if (checkboxes[i].type == 'checkbox') {
                         checkboxes[i].checked = true;
+                        // checkAll.push(checkboxes[i].value);
+                        checked = checkedAll;
                     }
                 }
             } else {
@@ -181,11 +217,11 @@
                 for (var i = 0; i < checkboxes.length; i++) {
                     if (checkboxes[i].type == 'checkbox') {
                         checkboxes[i].checked = false;
+                        checked = [];
                     }
                 }
             }
-
-
+            console.log(checked);
         }
 
         // $(document).ready(function() {
@@ -208,14 +244,9 @@
 
         //     });
         // });
-        function arrayRemove(arr, value){
-            return arr.filter(function(ele){
-                return ele != value;
-            });
-        }
+        
 
         $(document).ready(function() {
-            var checked = []
             var total = 0;
             $("#dataTables-example").on('click', "#boxes input[type='checkbox']",function() {
                 if (jQuery.inArray($(this).val(), checked) !== -1) {
@@ -230,14 +261,14 @@
                 }
                 console.log(checked);
                 
-                $("#boxes input[type='checkbox']:checked").each(function() {
-                    total += parseInt($(this).data("exval"), 10);
-                });
-                $("#result").text(total);
+                // $("#boxes input[type='checkbox']:checked").each(function() {
+                //     total += parseInt($(this).data("exval"), 10);
+                // });
+                // $("#result").text(total);
 
-                var x = total;
+                // var x = total;
                 let hilang5 = document.getElementById('hilang5')
-                if (x > 0) {
+                if (checked.length > 0) {
                     hilang5.classList.add('hilang5');
                     console.log("benar");
                 } else {

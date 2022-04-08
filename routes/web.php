@@ -38,6 +38,7 @@ Route::get('/transaksi3', function () {
 });
 
 Route::get('/transaksi', [TransactionController::class, 'transaction'])->name('index');
+Route::delete('/transaksi', [TransactionController::class, 'deleteAll'])->name('deleteAll');
 
 Route::get('/lupa-password', function () {
     return view('users.konfirmasi-pass');

@@ -113,8 +113,8 @@
                                             </a>
                                             <div id="hilang5">
                                                 <!-- <div id="result"></div> -->
-                                                <a href="#"><i class="fa-solid fa-trash-can"
-                                                        style="color: white;"></i></a>
+                                                <button onclick="delete()"><i class="fa-solid fa-trash-can"
+                                                        style="color: white;"></i></button>
                                             </div>
 
                                         </div>
@@ -122,8 +122,7 @@
                                     <tr class="row100 head">
                                         <th class="cell100 column0">
                                             <input class="form-check-input checkbox-1x ml-3" type="checkbox"
-                                                id="vehicle1" onchange="checkAll(this)" name="chk[]" value="Bike"
-                                                data-exval="1">
+                                                id="vehicle1" onchange="checkAll(this)" name="chk[]" data-exval="1">
                                         </th>
                                         <th class="cell100 column1">Tanggal</th>
                                         <th class="cell100 column2">Pemasukan</th>
@@ -139,8 +138,9 @@
                                 <tbody id="boxes">
                                     @foreach ($transaksi as $tr)
                                     <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox"
-                                                id="vehicle2" name="chk[]" value="{{ $tr->id }}" data-exval="1"></td>
+                                        <td class="cell100 column0"><input class="form-check-input ml-3 checkData"
+                                                type="checkbox" id="vehicle2" name="chk[]" value="{{ $tr->id }}"
+                                                data-exval="1"></td>
                                         <td class="cell100 column1">{{ $tr->date }}</td>
                                         <td class="cell100 column2">Rp {{ $tr->total_income }},-</td>
                                         <td class="cell100 column3">Rp {{ $tr->total_outcome }},-</td>
