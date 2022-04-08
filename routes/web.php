@@ -81,5 +81,24 @@ Route::get('/tambahNamaAnggota', function () {
 });
 Route::post('/tambahNamaAnggota', [MemberController::class, 'store'])->name('memberStore');
 
-Route::get('/tambahNamaAgenda', [AgendaController::class, 'index'])->name('agenda');
-Route::post('/tambahNamaAgenda', [AgendaController::class, 'store'])->name('agendaStore');
+
+Route::get('/laporanAgenda', function () {
+    return view('users.laporanAgenda');
+});
+
+Route::get('/agenda', function () {
+    return view('users.agenda');
+});
+
+Route::get('/editCatatUtang', function () {
+    return view('users.editCatatUtang');
+});
+
+Route::get('/editCatatBayar', function () {
+    return view('users.editCatatBayar');
+});
+
+
+Route::get('/coba', function () {
+    return view('users.coba');
+});
