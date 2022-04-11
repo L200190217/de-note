@@ -53,7 +53,7 @@
 
                                     </div>
                                     <tr class="row100 head">
-                                        <th class="cell100 column1">Nama</th>
+                                        <th class="cell100 column1"></th>
                                     </tr>
                                 </div>
                             </thead>

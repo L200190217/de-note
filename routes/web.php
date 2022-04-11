@@ -124,3 +124,11 @@ Route::get('/dashboardPengguna', function () {
 Route::get('/settingAkun', function () {
     return view('users.settingAkun');
 });
+
+Route::get('/detailPelanggan', function () {
+    return view('users.detailPelanggan');
+});
+
+Route::get('/detailNamaAgenda', function () {
+    return view('users.detailNamaAgenda');
+});

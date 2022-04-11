@@ -45,7 +45,7 @@
                                     <div class="tabel-atas2 row">
                                         <div class="col-3">
                                             <div class="nama">
-                                                <p>Nama Pelanggan</p>
+                                                <p>Daftar Pelanggan</p>
                                             </div>
                                             <div class="per-halaman">
                                                 <p>Rekam per halaman</p>
