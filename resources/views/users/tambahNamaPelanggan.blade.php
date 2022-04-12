@@ -3,16 +3,6 @@
 @section('container')
 
 <section id="tambahNamaPelanggan">
-    <!-- <div class="tombol-kembali">
-        <a href="#">
-            <table>
-                <tr>
-                    <td><img src="image/kembali.svg" alt=""></td>
-                    <td>kembali</td>
-                </tr>
-            </table>
-        </a>
-    </div> -->
     <div class="container">
         <div class="text center row">
             <div>
@@ -67,7 +57,6 @@
                                     </tr>
                                 </div>
                             </thead>
-
 
                             <div class="table100-body js-pscroll" id="checkbox-wrap">
                                 <tbody>

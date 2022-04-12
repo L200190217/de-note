@@ -102,6 +102,10 @@
     margin-left: 160px;
 }
 
+.tombol-kembali a:hover {
+    opacity: 70%;
+}
+
 .tombol-kembali img {
     margin: 10px;
 }
@@ -590,7 +594,7 @@
     color: white;
     padding-left: 10px;
     /* width: 310px; */
-    padding-right: 20px;
+    /* padding-right: 20px; */
     padding-bottom: 10px;
     transition: 0.6s;
 }
@@ -732,7 +736,7 @@
 
 #dashboardPengguna .konten .kartu .kartu2 {
     width: 513px;
-    height: 250px;
+    height: 248px;
     background: white;
     background-image: url(dashboardPengguna-bg.png);
     background-size: 519px 288px;
@@ -746,7 +750,7 @@
 }
 
 #dashboardPengguna .konten .konten2 {
-    min-height: 60vh;
+    /* min-height: 60vh; */
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -787,6 +791,10 @@
     #dashboardPengguna ol,
     ul {
         padding-left: 10% !important;
+    }
+
+    #dashboardPengguna .samping-menu span {
+        font-size: 12px !important;
     }
 }
 
@@ -874,7 +882,10 @@
     }
 
     #dashboardPengguna .tabel2 .bungkus {
-        width: calc(100vw - 60px);
+        overflow: auto
+    }
+
+    #dashboardPengguna .tabel1 .bungkus {
         overflow: auto
     }
 
@@ -902,6 +913,12 @@
         background: #f05462;
         padding: 8px 38px;
         border: 2px solid white; */
+}
+
+@media screen and (max-width:580px) {
+    #dashboardPengguna .search {
+        flex: 2;
+    }
 }
 
 @media screen and (max-width:536px) {
@@ -1064,6 +1081,10 @@ ul {
     border: none;
 }
 
+#dashboardPengguna .employee .input-group {
+    width: 40%;
+}
+
 #dashboardPengguna .employee .form-control {
     border-radius: 0px;
 }
@@ -1079,6 +1100,10 @@ ul {
 
 #dashboardPengguna .kotak2 {
     height: 500px;
+}
+
+#dashboardPengguna .tabel1 td {
+    min-width: 100px;
 }
 
 /* dataPengguna */
@@ -1107,6 +1132,12 @@ ul {
 }
 
 #dashboardPengguna .tabel2 {
+    display: block;
+    width: 90%;
+    overflow: hidden
+}
+
+#dashboardPengguna .tabel1 {
     display: block;
     width: 90%;
     overflow: hidden
@@ -1292,7 +1323,7 @@ ul {
 }
 
 #settingAkun .konten .konten2 {
-    min-height: 60vh;
+    /* min-height: 60vh; */
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -1613,6 +1644,7 @@ ul {
 
 #settingAkun .simpanakun:hover {
     background-color: #DCC81F;
+    transition: 0.3s;
 }
 
 #settingAkun .simpanakun1 {
@@ -1735,6 +1767,17 @@ ul {
     color: black;
 }
 
+#footer .up {
+    position: absolute;
+    right: 8%;
+    margin-top: -70px;
+}
+
+#footer .up:hover {
+    transition: 0.3s;
+    opacity: 50%;
+}
+
 @media (max-width: 1600px) {}
 
 @media (max-width: 1400px) {}
@@ -1760,6 +1803,15 @@ ul {
 
     #footer .kartu3 {
         margin-bottom: 0;
+    }
+
+    #footer .up {
+        right: 20px;
+        margin-top: -220;
+    }
+
+    #footer .kartu3 {
+        margin-top: 90px;
     }
 
 }
@@ -2109,6 +2161,11 @@ ul {
     text-align: center;
 }
 
+.tombol-agenda:hover {
+    background-color: #DCC81F;
+    transition: 0.3s;
+}
+
 .tombol-agenda a {
     font-size: 20px;
     font-style: normal;
@@ -2441,12 +2498,12 @@ ul {
     height: 0px;
     border: solid 0.5px rgba(122, 122, 122, 0.1);
     background-color: rgba(122, 122, 122, 0.1);
-    margin-top: 116px;
+    margin-top: 48px;
     margin-bottom: 24px;
 }
 
 #registrasi {
-    padding: 32px 0 32px 0;
+    padding: 16px 0 32px 0;
 }
 
 #registrasi .tombol-masuk2 {
@@ -2497,6 +2554,10 @@ ul {
     justify-content: end;
 }
 
+.punya-akun a:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
 .punya-akun td {
     /* margin-left: 20px; */
 }
@@ -2521,6 +2582,10 @@ ul {
     color: rgb(0, 0, 0, 0.5);
     text-decoration: none;
     margin-top: 3px;
+}
+
+.registrasi-contact-home a:hover {
+    color: black;
 }
 
 .register-home {
@@ -2577,7 +2642,12 @@ ul {
     margin-top: 39px;
 }
 
-#registrasi .tombol a {
+#registrasi .tombol:hover {
+    background-color: #DCC81F;
+    transition: 0.3s;
+}
+
+#registrasi .tombol {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -2645,8 +2715,8 @@ ul {
     line-height: 28px;
     letter-spacing: 0.05em;
     text-align: center;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
     margin-bottom: 60px;
 
 }
@@ -2656,7 +2726,7 @@ ul {
 }
 
 #login-form {
-    padding: 32px 0 32px 0;
+    padding: 7px 0 32px 0;
 }
 
 #login-form .tombol-masuk2 {
@@ -2677,6 +2747,11 @@ ul {
     border: solid 1px #F5DE19;
 }
 
+#login-form .tombol-masuk2:hover {
+    background-color: #DCC81F;
+    transition: 0.3s;
+}
+
 #login-form .tombol-masuk a {
     font-size: 18px;
     font-style: normal;
@@ -2694,6 +2769,10 @@ ul {
 
 .lupa-pass {
     margin-top: 14px;
+    margin-bottom: 1rem;
+}
+
+.lupa-pass a {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -2701,6 +2780,11 @@ ul {
     letter-spacing: 0em;
     text-align: left;
     color: black;
+    text-decoration: none;
+}
+
+.lupa-pass a:hover {
+    color: rgba(0, 0, 0, 0.5);
 }
 
 #login-form .row {
@@ -2752,7 +2836,12 @@ ul {
     margin-top: 39px;
 }
 
-#login-form .tombol a {
+#login-form .tombol:hover {
+    background-color: #DCC81F;
+    transition: 0.3s;
+}
+
+#login-form .tombol {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -2821,7 +2910,7 @@ ul {
 }
 
 #konfirmasi-pass {
-    padding: 32px 0 32px 0;
+    padding: 16px 0 32px 0;
 }
 
 #konfirmasi-pass .tombol-masuk2 {
@@ -2858,7 +2947,6 @@ ul {
 }
 
 .konfirmasi-pass-text {
-    font-family: Inter;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -2867,6 +2955,7 @@ ul {
     text-align: center;
 
     color: black;
+    padding: 0 60px;
 }
 
 #konfirmasi-pass .row {
@@ -2918,7 +3007,12 @@ ul {
     margin-top: 39px;
 }
 
-#konfirmasi-pass .tombol a {
+#konfirmasi-pass .tombol:hover {
+    background-color: #DCC81F;
+    transition: 0.3s;
+}
+
+#konfirmasi-pass .tombol {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -2947,6 +3041,10 @@ ul {
     #konfirmasi-pass .judul {
         padding-left: 0px;
         padding-right: 0px;
+    }
+
+    .konfirmasi-pass-text {
+        padding: 0 0px;
     }
 }
 
@@ -3515,11 +3613,12 @@ ul {
     padding: 15px;
     border: 1px solid rgba(122, 122, 122, 0.2);
     border-radius: 10px;
-    margin-top: 30px;
+    margin-top: 0px;
 }
 
 #catatTransaksi .tombol:hover {
     background-color: #DCC81F;
+    transition: 0.3s;
 }
 
 #catatTransaksi .tombol {
@@ -4278,6 +4377,7 @@ table.dataTable thead .sorting_desc_disabled {
 
 #utang .tombol-catat:hover {
     background-color: #DCC81F;
+    transition: 0.3s;
 }
 
 #utang .tombol-catat p {
@@ -4432,7 +4532,7 @@ table.dataTable thead .sorting_desc_disabled {
 }
 
 #utang .table100.ver1 td.column2 {
-    color: #14804A;
+    color: black;
 }
 
 #utang .table100.ver1 td.column3 {
@@ -4613,6 +4713,10 @@ table.dataTable thead .sorting_desc_disabled {
         font-size: 20px;
         line-height: 30px;
     }
+
+    #utang #dataTables-example_wrapper .row>* {
+        width: 35%;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -4636,6 +4740,7 @@ table.dataTable thead .sorting_desc_disabled {
         font-size: 34px;
         line-height: 50px;
     }
+
 }
 
 @media (max-width: 768px) {}
@@ -4783,11 +4888,12 @@ table.dataTable thead .sorting_desc_disabled {
     padding: 15px;
     border: 1px solid rgba(122, 122, 122, 0.2);
     border-radius: 10px;
-    margin-top: 30px;
+    margin-top: 0px;
 }
 
 #catatUtang .tombol:hover {
     background-color: #DCC81F;
+    transition: 0.3s;
 }
 
 #catatUtang .tombol {
@@ -4828,6 +4934,11 @@ table.dataTable thead .sorting_desc_disabled {
     background-color: #2264E5;
     text-align: center;
     padding: 10px;
+}
+
+#catatUtang .tombol3:hover {
+    background-color: #2263e5d0;
+    transition: 0.3s;
 }
 
 #catatUtang .tombol3-1 a {
@@ -5029,6 +5140,7 @@ table.dataTable thead .sorting_desc_disabled {
 
 #tambahNamaPelanggan .tombol:hover {
     background-color: #DCC81F;
+    transition: 0.3s;
 }
 
 #tambahNamaPelanggan .tombol {
@@ -5452,6 +5564,15 @@ table.dataTable thead .sorting_desc_disabled {
 
 /* catatUtang2 start */
 
+#catatUtang2 .detail2 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;
+}
+
 #catatUtang2 label {
     font-size: 18px;
     font-style: normal;
@@ -5583,11 +5704,12 @@ table.dataTable thead .sorting_desc_disabled {
     padding: 15px;
     border: 1px solid rgba(122, 122, 122, 0.2);
     border-radius: 10px;
-    margin-top: 30px;
+    margin-top: 0px;
 }
 
 #catatUtang2 .tombol:hover {
     background-color: #DCC81F;
+    transition: 0.3s;
 }
 
 #catatUtang2 .tombol2 {
@@ -5725,7 +5847,11 @@ table.dataTable thead .sorting_desc_disabled {
 
 @media (max-width: 1400px) {}
 
-@media (max-width: 1200px) {}
+@media (max-width: 1200px) {
+    #catatUtang2 #dataTables-example_wrapper .row>* {
+        width: 35% !important;
+    }
+}
 
 @media (max-width: 992px) {}
 
@@ -5757,6 +5883,34 @@ table.dataTable thead .sorting_desc_disabled {
 }
 
 /* catatUtang2 tabel start */
+
+#catatUtang2 #transaksi .column5 .transaksi-titik2 img:hover {
+    opacity: 50%;
+}
+
+#catatUtang2 #dataTables-example_wrapper .row>* {
+    width: 38%;
+}
+
+#catatUtang2 #transaksi th.column0 {
+    padding-left: 5px;
+}
+
+#catatUtang2 #transaksi th.column1 {
+    padding-left: 0;
+}
+
+#catatUtang2 #transaksi th.column2 {
+    padding-left: 0;
+}
+
+#catatUtang2 #transaksi th.column3 {
+    padding-left: 0;
+}
+
+#catatUtang2 #transaksi th.column4 {
+    padding-left: 0;
+}
 
 #catatUtang2 #transaksi .limiter {
     margin-top: 0;
@@ -6034,7 +6188,7 @@ table.dataTable thead .sorting_desc_disabled {
 }
 
 #tambahNamaAnggota {
-    background-image: url(tambahNamaAnggota-bg.png);
+    background-image: url(tambahNamaPelanggan-bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -6043,7 +6197,7 @@ table.dataTable thead .sorting_desc_disabled {
 #tambahNamaAnggota .tambahNamaAnggota-gambar1 {
     position: absolute;
     left: 0;
-    top: 0;
+    bottom: 0;
     z-index: 0;
 
 }
@@ -6154,6 +6308,7 @@ table.dataTable thead .sorting_desc_disabled {
 
 #tambahNamaAnggota .tombol:hover {
     background-color: #DCC81F;
+    transition: 0.3s;
 }
 
 #tambahNamaAnggota .tombol {
@@ -6263,6 +6418,11 @@ table.dataTable thead .sorting_desc_disabled {
 }
 
 /* tambahNamaAnggota tabel start */
+
+#tambahNamaAnggota #dataTables-example_wrapper .row>* {
+    width: 38%;
+}
+
 #tambahNamaAnggota .nama {
     font-size: 20px;
     font-weight: 600;
@@ -6571,6 +6731,12 @@ table.dataTable thead .sorting_desc_disabled {
     #tambahNamaAnggota .container-table100 {
         display: flex;
         justify-content: center;
+    }
+}
+
+@media (max-width: 1158px) {
+    #tambahNamaAnggota #dataTables-example_wrapper .row>* {
+        width: 35%;
     }
 }
 
@@ -7700,6 +7866,7 @@ table.dataTable thead .sorting_desc_disabled {
 
 #agenda .tombol-catat:hover {
     background-color: #DCC81F;
+    transition: 0.3s;
 }
 
 #agenda .tombol-catat p {
@@ -7854,7 +8021,7 @@ table.dataTable thead .sorting_desc_disabled {
 }
 
 #agenda .table100.ver1 td.column2 {
-    color: #14804A;
+    color: black;
 }
 
 #agenda .table100.ver1 td.column3 {
@@ -8252,6 +8419,7 @@ table.dataTable thead .sorting_desc_disabled {
 
 #editCatatUtang .tombol:hover {
     background-color: #DCC81F;
+    transition: 0.3s;
 }
 
 #editCatatUtang .tombol {
@@ -8497,6 +8665,7 @@ table.dataTable thead .sorting_desc_disabled {
 
 #editCatatBayar .tombol:hover {
     background-color: #DCC81F;
+    transition: 0.3s;
 }
 
 #editCatatBayar .tombol {
@@ -8605,6 +8774,16 @@ table.dataTable thead .sorting_desc_disabled {
 /* editCatatBayar end */
 
 /* detailPelanggan start */
+
+#detailPelanggan .detail2 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;
+
+}
 
 #detailPelanggan label {
     font-size: 18px;
@@ -8742,6 +8921,7 @@ table.dataTable thead .sorting_desc_disabled {
 
 #detailPelanggan .tombol:hover {
     background-color: #DCC81F;
+    transition: 0.3s;
 }
 
 #detailPelanggan .tombol2 {
@@ -8991,7 +9171,7 @@ table.dataTable thead .sorting_desc_disabled {
 }
 
 #detailNamaAgenda .products-card-1 {
-    margin-top: 30px;
+    margin-top: 105px;
 }
 
 #detailNamaAgenda .kotak {
@@ -9030,6 +9210,12 @@ table.dataTable thead .sorting_desc_disabled {
     margin-right: 15px;
     margin-top: -4px;
 
+}
+
+@media (max-width: 992px) {
+    #detailNamaAgenda p.rupiah {
+        font-size: 34px;
+    }
 }
 
 /* detailNamaAgenda tabel start */
@@ -9113,10 +9299,6 @@ table.dataTable thead .sorting_desc_disabled {
     text-align: center;
     color: black;
     z-index: 2;
-}
-
-#detailNamaAgenda .products-card-1 {
-    margin-top: 30px;
 }
 
 #detailNamaAgenda .laporanTransaksi-gambar1 {
@@ -9293,7 +9475,7 @@ table.dataTable thead .sorting_desc_disabled {
 }
 
 #detailNamaAgenda .table100.ver1 td.column3 {
-    color: #D12953;
+    color: black;
 }
 
 #detailNamaAgenda th.column0 {

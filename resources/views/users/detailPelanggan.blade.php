@@ -17,11 +17,9 @@
         <div class="text center row">
             <div>
                 <h3 class="judul3">
-                    <!-- Catat Utang -->
-                    <!-- Catatan -->
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-home2">
-                            <h3>Detail Anggota</h3>
+                            <h3 class="detail2">Detail Anggota</h3>
                         </div>
                         <div class="tab-pane fade" id="pills-profile2">
                             <h3>Catat Bayar</h3>
@@ -46,8 +44,8 @@
                             <form action="" method="POST">
                                 <label for="date">Tanggal</label>
                                 <input class="form-control" id="date" name="date" placeholder="pilih tanggal" type="text" autocomplete="off" />
-                                <label for="total">Jumlah Utang</label>
-                                <input class="tanggal" type="number" name="total" placeholder="masukkan jumlah utang">
+                                <label for="total">Jumlah Iuran</label>
+                                <input class="tanggal" type="number" name="total" placeholder="masukkan jumlah iuran">
                                 <label for="note">Catatan</label>
                                 <textarea class="catatan" name="note" id="note" cols="30" rows="10" placeholder="tambahkan catatan"></textarea>
                                 <button class="tombol w-100" type="submit">
@@ -70,10 +68,7 @@
                     <div class="wrap-table100">
                         <div class="table100 ver1 m-b-110">
                             <table class="table table-striped table-bordered table-hover" id="dataTables-example">
-
-
                                 <thead id="boxes">
-
                                     <div class="tabel-atas">
                                         <div class="tabel-atas2 row">
                                             <div class="col-2">
@@ -105,7 +100,6 @@
                                                 </a>
 
                                                 <div id="hilang5">
-                                                    <!-- <div id="result"></div> -->
                                                     <a href="#"><i class="fa-solid fa-trash-can" style="color: white;"></i></a>
                                                 </div>
 
@@ -121,7 +115,6 @@
                                         </tr>
                                     </div>
                                 </thead>
-
 
                                 <div class="table100-body js-pscroll" id="checkbox-wrap">
                                     <tbody id="boxes">
@@ -277,15 +270,12 @@
                                         </tr>
                                     </tbody>
                                 </div>
-
                             </table>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 
     <div class="ubahTransaksiPemasukan-gambar1">
@@ -296,7 +286,5 @@
     </div>
 
 </section>
-
-
 
 @endsection

@@ -12,8 +12,8 @@
             <div class="registrasi-form col-lg-7 col-md-10">
                 <form action="{{ route('memberStore') }}" method="POST">
                     @csrf
-                    <label for="name">Nama Anggota</label>
-                    <input class="pelanggan" type="text" name="name" placeholder="masukkan nama anggota baru">
+                    <label for="name">Nama Agenda</label>
+                    <input class="pelanggan" type="text" name="name" placeholder="masukkan nama agenda baru">
                     <button class="tombol w-100" type="submit">
                         <div class="tombol2">
                             Simpan

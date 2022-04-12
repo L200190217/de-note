@@ -12,12 +12,6 @@
                 </tr>
             </table>
         </a>
-        <!-- <tr>
-            <a href="">
-                <td><img src="image/kembali.svg" alt=""></td>
-                <td>&ensp;Log In</td>
-            </a>
-        </tr> -->
     </div>
     <div class="container">
         <div class="text center row">
@@ -43,7 +37,6 @@
                     @error('note')
                     <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
-                    <!-- <input class="catatan" type="text" placeholder="tambahkan catatan"> -->
                     <button class="tombol w-100" type="submit">
                         <div class="tombol2">
                             Simpan

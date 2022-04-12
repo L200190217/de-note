@@ -24,8 +24,8 @@
         </div>
     </div>
 
-    <div class="tambahNamaAnggota-gambar1">
-        <img src="image/tambahNamaAnggota-gambar1.svg" alt="">
+    <div class="tambahNamaPelanggan-gambar1">
+        <img src="image/tambahNamaPelanggan-gambar1.svg" alt="">
     </div>
 
 </section>

@@ -17,11 +17,9 @@
         <div class="text center row">
             <div>
                 <h3 class="judul3">
-                    <!-- Catat Utang -->
-                    <!-- Catatan -->
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-home2">
-                            <h3>Catat Utang</h3>
+                            <h3 class="detail2">Catat Utang</h3>
                         </div>
                         <div class="tab-pane fade" id="pills-profile2">
                             <h3>Catat Bayar</h3>
@@ -128,7 +126,6 @@
                                                 </a>
 
                                                 <div id="hilang5">
-                                                    <!-- <div id="result"></div> -->
                                                     <a href="#"><i class="fa-solid fa-trash-can" style="color: white;"></i></a>
                                                 </div>
 
@@ -446,7 +443,5 @@
     </div>
 
 </section>
-
-
 
 @endsection

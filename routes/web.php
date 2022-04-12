@@ -113,16 +113,8 @@ Route::get('/editCatatBayar', function () {
     return view('users.editCatatBayar');
 });
 
-Route::get('/coba', function () {
-    return view('users.coba');
-});
-
 Route::get('/dashboardPengguna', function () {
     return view('users.dashboardPengguna');
-});
-
-Route::get('/settingAkun', function () {
-    return view('users.settingAkun');
 });
 
 Route::get('/detailPelanggan', function () {
@@ -131,4 +123,8 @@ Route::get('/detailPelanggan', function () {
 
 Route::get('/detailNamaAgenda', function () {
     return view('users.detailNamaAgenda');
+});
+
+Route::get('/tambahNamaAgenda', function () {
+    return view('users.tambahNamaAgenda');
 });

@@ -9,7 +9,6 @@
 
     <div class="bg-biru">
         <h3 class="judul2"><img class="utang-gambar" src="image/utang-gambar1.svg" alt=""> Utang</h3>
-
         <div class="container">
             <div class="kotak3">
                 <div class="row">
@@ -59,7 +58,6 @@
                                                 <a href="#"><i class="fa-solid fa-trash-can" style="color: white;"></i></a>
                                             </div>
                                         </div>
-
                                     </div>
                                     <tr class="row100 head">
                                         <th class="cell100 column0">
@@ -71,8 +69,6 @@
                                     </tr>
                                 </div>
                             </thead>
-
-
                             <div class="table100-body js-pscroll" id="checkbox-wrap">
                                 <tbody id="boxes">
                                     <tr class="row100 body">
@@ -527,17 +523,12 @@
                                     </tr>
                                 </tbody>
                             </div>
-
                         </table>
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-
     <div class="gambar3">
         <img src="image/utang-gambar3.svg" alt="">
     </div>

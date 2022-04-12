@@ -18,36 +18,32 @@
     </div>
     <div class="kotak">
         <h1 class="judul">Detail Agenda</h1>
-
         <div class="container">
             <div class="products-card-1 row">
                 <div class="products-card col-lg-6 col-md-6">
                     <div class="products-card-2">
                         <div class="products-card-3">
                             <div class="products-judul2">
-                                <img src="image/laporanTransaksi-profits 2.svg" alt="">
+                                <img src="image/detailNamaAgenda-checklist.svg" alt="">
                                 <h3 class="text">Total Iuran</h3>
-                                <p class="rupiah">Rp5.000.000,-</p>
-                                <img class="foto-g" src="image/laporanTransaksi-profits 1.svg" alt="">
+                                <p class="rupiah">Rp 5.000.000,-</p>
+                                <img class="foto-g" src="image/detailNamaAgenda-checklist2.svg" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="products-card col-lg-6 col-md-6">
                     <div class="products-card-2">
                         <div class="products-card-3">
                             <div class="products-judul2">
-                                <img src="image/laporanTransaksi-loss 2.svg" alt="">
+                                <img src="image/detailNamaAgenda-group.svg" alt="">
                                 <h3 class="text">Total Anggota</h3>
-                                <p class="rupiah">Rp1.000.000,-</p>
-                                <img class="foto-g" src="image/laporanTransaksi-loss 1.svg" alt="">
+                                <p class="rupiah">Rp 1.000.000,-</p>
+                                <img class="foto-g" src="image/detailNamaAgenda-group2.svg" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
@@ -83,7 +79,6 @@
                                                 <a href="#"><i class="fa-solid fa-trash-can" style="color: white;"></i></a>
                                             </div>
                                         </div>
-
                                     </div>
                                     <tr class="row100 head">
                                         <th class="cell100 column0">
@@ -96,13 +91,12 @@
                                 </div>
                             </thead>
 
-
                             <div class="table100-body js-pscroll" id="checkbox-wrap">
                                 <tbody id="boxes">
                                     <tr class="row100 body">
                                         <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Agenda 1</td>
-                                        <td class="cell100 column3">10 hari lagi</td>
+                                        <td class="cell100 column1">Azhar Fairuz</td>
+                                        <td class="cell100 column3">Rp 5.000.000</td>
                                         <td class="cell100 column4">
                                             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                                 <div class="btn-group" role="group">
@@ -119,8 +113,8 @@
                                     </tr>
                                     <tr class="row100 body">
                                         <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Agenda 2</td>
-                                        <td class="cell100 column3">10 hari lagi</td>
+                                        <td class="cell100 column1">Azhar Fairuz</td>
+                                        <td class="cell100 column3">Rp 1.090.000</td>
                                         <td class="cell100 column4">
                                             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                                 <div class="btn-group" role="group">
@@ -137,8 +131,8 @@
                                     </tr>
                                     <tr class="row100 body">
                                         <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Agenda 1</td>
-                                        <td class="cell100 column3">10 hari lagi</td>
+                                        <td class="cell100 column1">Azhar Fairuz</td>
+                                        <td class="cell100 column3">Rp 1.500.000</td>
                                         <td class="cell100 column4">
                                             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                                 <div class="btn-group" role="group">
@@ -155,8 +149,8 @@
                                     </tr>
                                     <tr class="row100 body">
                                         <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Agenda 1</td>
-                                        <td class="cell100 column3">12 hari lagi</td>
+                                        <td class="cell100 column1">Azhar Fairuz</td>
+                                        <td class="cell100 column3">Rp 5.000.000</td>
                                         <td class="cell100 column4">
                                             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                                 <div class="btn-group" role="group">
@@ -173,8 +167,8 @@
                                     </tr>
                                     <tr class="row100 body">
                                         <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Agenda 1</td>
-                                        <td class="cell100 column3">10 hari lagi</td>
+                                        <td class="cell100 column1">Azhar Fairuz</td>
+                                        <td class="cell100 column3">Rp 5.000.000</td>
                                         <td class="cell100 column4">
                                             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                                 <div class="btn-group" role="group">
@@ -191,8 +185,8 @@
                                     </tr>
                                     <tr class="row100 body">
                                         <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Agenda 1</td>
-                                        <td class="cell100 column3">10 hari lagi</td>
+                                        <td class="cell100 column1">Azhar Fairuz</td>
+                                        <td class="cell100 column3">Rp 5.000.000</td>
                                         <td class="cell100 column4">
                                             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                                 <div class="btn-group" role="group">
@@ -209,8 +203,8 @@
                                     </tr>
                                     <tr class="row100 body">
                                         <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Agenda 1</td>
-                                        <td class="cell100 column3">10 hari lagi</td>
+                                        <td class="cell100 column1">Azhar Fairuz</td>
+                                        <td class="cell100 column3">Rp 5.000.000</td>
                                         <td class="cell100 column4">
                                             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                                 <div class="btn-group" role="group">
@@ -227,8 +221,8 @@
                                     </tr>
                                     <tr class="row100 body">
                                         <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Agenda 1</td>
-                                        <td class="cell100 column3">10 hari lagi</td>
+                                        <td class="cell100 column1">Azhar Fairuz</td>
+                                        <td class="cell100 column3">Rp 5.000.000</td>
                                         <td class="cell100 column4">
                                             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                                 <div class="btn-group" role="group">
@@ -245,8 +239,8 @@
                                     </tr>
                                     <tr class="row100 body">
                                         <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Agenda 1</td>
-                                        <td class="cell100 column3">10 hari lagi</td>
+                                        <td class="cell100 column1">Azhar Fairuz</td>
+                                        <td class="cell100 column3">Rp 5.000.000</td>
                                         <td class="cell100 column4">
                                             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                                 <div class="btn-group" role="group">
@@ -263,8 +257,8 @@
                                     </tr>
                                     <tr class="row100 body">
                                         <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Agenda 1</td>
-                                        <td class="cell100 column3">10 hari lagi</td>
+                                        <td class="cell100 column1">Azhar Fairuz</td>
+                                        <td class="cell100 column3">Rp 5.000.000</td>
                                         <td class="cell100 column4">
                                             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                                 <div class="btn-group" role="group">
@@ -281,8 +275,8 @@
                                     </tr>
                                     <tr class="row100 body">
                                         <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Agenda 1</td>
-                                        <td class="cell100 column3">10 hari lagi</td>
+                                        <td class="cell100 column1">Azhar Fairuz</td>
+                                        <td class="cell100 column3">Rp 5.000.000</td>
                                         <td class="cell100 column4">
                                             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                                 <div class="btn-group" role="group">
@@ -299,8 +293,8 @@
                                     </tr>
                                     <tr class="row100 body">
                                         <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Agenda 1</td>
-                                        <td class="cell100 column3">10 hari lagi</td>
+                                        <td class="cell100 column1">Azhar Fairuz</td>
+                                        <td class="cell100 column3">Rp 5.000.000</td>
                                         <td class="cell100 column4">
                                             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                                 <div class="btn-group" role="group">
@@ -317,8 +311,8 @@
                                     </tr>
                                     <tr class="row100 body">
                                         <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Agenda 1</td>
-                                        <td class="cell100 column3">10 hari lagi</td>
+                                        <td class="cell100 column1">Azhar Fairuz</td>
+                                        <td class="cell100 column3">Rp 5.000.000</td>
                                         <td class="cell100 column4">
                                             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                                 <div class="btn-group" role="group">
@@ -335,8 +329,8 @@
                                     </tr>
                                     <tr class="row100 body">
                                         <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Agenda 1</td>
-                                        <td class="cell100 column3">10 hari lagi</td>
+                                        <td class="cell100 column1">Azhar Fairuz</td>
+                                        <td class="cell100 column3">Rp 5.000.000</td>
                                         <td class="cell100 column4">
                                             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                                 <div class="btn-group" role="group">
@@ -353,8 +347,8 @@
                                     </tr>
                                     <tr class="row100 body">
                                         <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Agenda 1</td>
-                                        <td class="cell100 column3">10 hari lagi</td>
+                                        <td class="cell100 column1">Azhar Fairuz</td>
+                                        <td class="cell100 column3">Rp 5.000.000</td>
                                         <td class="cell100 column4">
                                             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                                 <div class="btn-group" role="group">
@@ -371,8 +365,8 @@
                                     </tr>
                                     <tr class="row100 body">
                                         <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Agenda 1</td>
-                                        <td class="cell100 column3">10 hari lagi</td>
+                                        <td class="cell100 column1">Azhar Fairuz</td>
+                                        <td class="cell100 column3">Rp 5.000.000</td>
                                         <td class="cell100 column4">
                                             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                                 <div class="btn-group" role="group">
@@ -389,8 +383,8 @@
                                     </tr>
                                     <tr class="row100 body">
                                         <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Agenda 1</td>
-                                        <td class="cell100 column3">10 hari lagi</td>
+                                        <td class="cell100 column1">Azhar Fairuz</td>
+                                        <td class="cell100 column3">Rp 5.000.000</td>
                                         <td class="cell100 column4">
                                             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                                 <div class="btn-group" role="group">
@@ -407,8 +401,8 @@
                                     </tr>
                                     <tr class="row100 body">
                                         <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Agenda 1</td>
-                                        <td class="cell100 column3">10 hari lagi</td>
+                                        <td class="cell100 column1">Azhar Fairuz</td>
+                                        <td class="cell100 column3">Rp 5.000.000</td>
                                         <td class="cell100 column4">
                                             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                                 <div class="btn-group" role="group">
@@ -425,8 +419,8 @@
                                     </tr>
                                     <tr class="row100 body">
                                         <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Agenda 1</td>
-                                        <td class="cell100 column3">10 hari lagi</td>
+                                        <td class="cell100 column1">Azhar Fairuz</td>
+                                        <td class="cell100 column3">Rp 5.000.000</td>
                                         <td class="cell100 column4">
                                             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                                 <div class="btn-group" role="group">
@@ -443,8 +437,8 @@
                                     </tr>
                                     <tr class="row100 body">
                                         <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Agenda 1</td>
-                                        <td class="cell100 column3">10 hari lagi</td>
+                                        <td class="cell100 column1">Azhar Fairuz</td>
+                                        <td class="cell100 column3">Rp 5.000.000</td>
                                         <td class="cell100 column4">
                                             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                                 <div class="btn-group" role="group">
@@ -461,8 +455,8 @@
                                     </tr>
                                     <tr class="row100 body">
                                         <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Agenda 1</td>
-                                        <td class="cell100 column3">10 hari lagi</td>
+                                        <td class="cell100 column1">Azhar Fairuz</td>
+                                        <td class="cell100 column3">Rp 5.000.000</td>
                                         <td class="cell100 column4">
                                             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                                 <div class="btn-group" role="group">
@@ -479,8 +473,8 @@
                                     </tr>
                                     <tr class="row100 body">
                                         <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Agenda 1</td>
-                                        <td class="cell100 column3">10 hari lagi</td>
+                                        <td class="cell100 column1">Azhar Fairuz</td>
+                                        <td class="cell100 column3">Rp 5.000.000</td>
                                         <td class="cell100 column4">
                                             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                                 <div class="btn-group" role="group">
@@ -497,8 +491,8 @@
                                     </tr>
                                     <tr class="row100 body">
                                         <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Agenda 1</td>
-                                        <td class="cell100 column3">10 hari lagi</td>
+                                        <td class="cell100 column1">Azhar Fairuz</td>
+                                        <td class="cell100 column3">Rp 5.000.000</td>
                                         <td class="cell100 column4">
                                             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                                 <div class="btn-group" role="group">
@@ -515,8 +509,8 @@
                                     </tr>
                                     <tr class="row100 body">
                                         <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Agenda 1</td>
-                                        <td class="cell100 column3">10 hari lagi</td>
+                                        <td class="cell100 column1">Azhar Fairuz</td>
+                                        <td class="cell100 column3">Rp 5.000.000</td>
                                         <td class="cell100 column4">
                                             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                                 <div class="btn-group" role="group">
@@ -533,8 +527,8 @@
                                     </tr>
                                     <tr class="row100 body">
                                         <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Agenda 1</td>
-                                        <td class="cell100 column3">10 hari lagi</td>
+                                        <td class="cell100 column1">Azhar Fairuz</td>
+                                        <td class="cell100 column3">Rp 5.000.000</td>
                                         <td class="cell100 column4">
                                             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                                 <div class="btn-group" role="group">
@@ -551,19 +545,15 @@
                                     </tr>
                                 </tbody>
                             </div>
-
                         </table>
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <div class="laporanTransaksi-gambar1">
         <img src="image/laporanTransaksi-gambar1.svg" alt="">
     </div>
-
 </section>
 
 @endsection
