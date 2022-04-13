@@ -128,3 +128,7 @@ Route::get('/detailNamaAgenda', function () {
 Route::get('/tambahNamaAgenda', function () {
     return view('users.tambahNamaAgenda');
 });
+
+Route::get('/tambahAnggota', function () {
+    return view('users.tambahAnggota');
+});
