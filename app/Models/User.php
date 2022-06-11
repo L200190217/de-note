@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Debt;
 use App\Models\Agenda;
 use App\Models\Member;
 use App\Models\Transaction;
@@ -61,5 +62,10 @@ class User extends Authenticatable
     public function agenda()
     {
         return $this->hasMany(Agenda::class);
+    }
+
+    public function debt()
+    {
+        return $this->hasMany(Debt::class);
     }
 }

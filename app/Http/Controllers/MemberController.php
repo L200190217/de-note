@@ -10,8 +10,8 @@ class MemberController extends Controller
 {
     public function index()
     {
-        $member = Member::all();
-        return view('users.member', [
+        $member = Member::where('user_id', auth()->user()->id)->get();
+        return view('users.tambahNamaAnggota', [
             'member' => $member,
             'title' => 'Member'
         ]);
@@ -35,7 +35,7 @@ class MemberController extends Controller
             'name' => $request->name
         ]);
 
-        return redirect()->route('member');
+        return redirect()->route('memberAdd');
     }
 
     public function show(Member $member)

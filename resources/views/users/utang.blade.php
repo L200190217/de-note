@@ -18,7 +18,7 @@
                     </div>
                     <div class="kotak col-lg-7 col-nd-12">
                         <p class="text-lg2">Total Utang</p>
-                        <p class="rupiah">Rp 3.000.000,-</p>
+                        <p class="rupiah">Rp {{ $totalDebt }},-</p>
                     </div>
                 </div>
             </div>
@@ -39,8 +39,10 @@
                                     <div class="tabel-atas2 row">
                                         <div class="pencarian col-7">
                                             <div class="input-group pencarian mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
-                                                <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
+                                                <span class="input-group-text" id="basic-addon1"><i
+                                                        class="fa-solid fa-magnifying-glass"></i></span>
+                                                <input type="text" class="form-control" placeholder="Search"
+                                                    aria-label="Username" aria-describedby="basic-addon1">
                                             </div>
                                             <div class="per-halaman">
                                                 <p>Rekam per halaman</p>
@@ -50,20 +52,23 @@
 
                                         </div>
                                         <div class="tombol-catat1 col-2">
-                                            <a href="#">
+                                            <a href="{{ route('addDebt') }}">
                                                 <div class="tombol-catat">
                                                     <p><i class="fa-solid fa-plus"></i> Catat Transaksi</p>
                                                 </div>
                                             </a>
                                             <div id="hilang5">
-                                                <a href="#"><i class="fa-solid fa-trash-can" style="color: white;"></i></a>
+                                                <a href="#"><i class="fa-solid fa-trash-can"
+                                                        style="color: white;"></i></a>
                                             </div>
                                         </div>
 
                                     </div>
                                     <tr class="row100 head">
                                         <th class="cell100 column0">
-                                            <input class="form-check-input checkbox-1x ml-3" type="checkbox" id="vehicle1" onchange="checkAll(this)" name="chk[]" value="Bike" data-exval="1">
+                                            <input class="form-check-input checkbox-1x ml-3" type="checkbox"
+                                                id="vehicle1" onchange="checkAll(this)" name="chk[]" value="Bike"
+                                                data-exval="1">
                                         </th>
                                         <th class="cell100 column1">Nama</th>
                                         <th class="cell100 column2">Hutang</th>
@@ -75,15 +80,21 @@
 
                             <div class="table100-body js-pscroll" id="checkbox-wrap">
                                 <tbody id="boxes">
+                                    @foreach ($debt as $db)
                                     <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Muhammad</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
+                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox"
+                                                id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
+                                        <td class="cell100 column1">{{ $debt->member->name }}</td>
+                                        <td class="cell100 column2">Rp {{ $total_debt }},-</td>
                                         <td class="cell100 column4">
-                                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                            <div class="btn-group" role="group"
+                                                aria-label="Button group with nested dropdown">
                                                 <div class="btn-group" role="group">
-                                                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <img class="transaksi-titik" src="image/transaksi-edit.svg" alt="">
+                                                    <button id="btnGroupDrop1" type="button"
+                                                        class="btn btn-primary dropdown-toggle"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <img class="transaksi-titik" src="image/transaksi-edit.svg"
+                                                            alt="">
                                                     </button>
                                                     <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
                                                         <li><a class="dropdown-item" href="#1">Lihat Item</a></li>
@@ -93,438 +104,7 @@
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Muhammad</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column4">
-                                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                                <div class="btn-group" role="group">
-                                                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <img class="transaksi-titik" src="image/transaksi-edit.svg" alt="">
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                                        <li><a class="dropdown-item" href="#1">Lihat Item</a></li>
-                                                        <li><a class="dropdown-item" href="#2">Edit Agenda</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Muhammad</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column4">
-                                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                                <div class="btn-group" role="group">
-                                                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <img class="transaksi-titik" src="image/transaksi-edit.svg" alt="">
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                                        <li><a class="dropdown-item" href="#1">Lihat Item</a></li>
-                                                        <li><a class="dropdown-item" href="#2">Edit Agenda</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Muhammad</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column4">
-                                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                                <div class="btn-group" role="group">
-                                                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <img class="transaksi-titik" src="image/transaksi-edit.svg" alt="">
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                                        <li><a class="dropdown-item" href="#1">Lihat Item</a></li>
-                                                        <li><a class="dropdown-item" href="#2">Edit Agenda</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Muhammad</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column4">
-                                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                                <div class="btn-group" role="group">
-                                                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <img class="transaksi-titik" src="image/transaksi-edit.svg" alt="">
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                                        <li><a class="dropdown-item" href="#1">Lihat Item</a></li>
-                                                        <li><a class="dropdown-item" href="#2">Edit Agenda</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Muhammad</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column4">
-                                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                                <div class="btn-group" role="group">
-                                                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <img class="transaksi-titik" src="image/transaksi-edit.svg" alt="">
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                                        <li><a class="dropdown-item" href="#1">Lihat Item</a></li>
-                                                        <li><a class="dropdown-item" href="#2">Edit Agenda</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Didi</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column4">
-                                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                                <div class="btn-group" role="group">
-                                                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <img class="transaksi-titik" src="image/transaksi-edit.svg" alt="">
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                                        <li><a class="dropdown-item" href="#1">Lihat Item</a></li>
-                                                        <li><a class="dropdown-item" href="#2">Edit Agenda</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Muhammad</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column4">
-                                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                                <div class="btn-group" role="group">
-                                                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <img class="transaksi-titik" src="image/transaksi-edit.svg" alt="">
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                                        <li><a class="dropdown-item" href="#1">Lihat Item</a></li>
-                                                        <li><a class="dropdown-item" href="#2">Edit Agenda</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Muhammad</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column4">
-                                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                                <div class="btn-group" role="group">
-                                                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <img class="transaksi-titik" src="image/transaksi-edit.svg" alt="">
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                                        <li><a class="dropdown-item" href="#1">Lihat Item</a></li>
-                                                        <li><a class="dropdown-item" href="#2">Edit Agenda</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Muhammad</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column4">
-                                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                                <div class="btn-group" role="group">
-                                                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <img class="transaksi-titik" src="image/transaksi-edit.svg" alt="">
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                                        <li><a class="dropdown-item" href="#1">Lihat Item</a></li>
-                                                        <li><a class="dropdown-item" href="#2">Edit Agenda</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Haru</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column4">
-                                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                                <div class="btn-group" role="group">
-                                                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <img class="transaksi-titik" src="image/transaksi-edit.svg" alt="">
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                                        <li><a class="dropdown-item" href="#1">Lihat Item</a></li>
-                                                        <li><a class="dropdown-item" href="#2">Edit Agenda</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Muhammad</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column4">
-                                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                                <div class="btn-group" role="group">
-                                                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <img class="transaksi-titik" src="image/transaksi-edit.svg" alt="">
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                                        <li><a class="dropdown-item" href="#1">Lihat Item</a></li>
-                                                        <li><a class="dropdown-item" href="#2">Edit Agenda</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Muhammad</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column4">
-                                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                                <div class="btn-group" role="group">
-                                                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <img class="transaksi-titik" src="image/transaksi-edit.svg" alt="">
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                                        <li><a class="dropdown-item" href="#1">Lihat Item</a></li>
-                                                        <li><a class="dropdown-item" href="#2">Edit Agenda</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Muhammad</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column4">
-                                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                                <div class="btn-group" role="group">
-                                                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <img class="transaksi-titik" src="image/transaksi-edit.svg" alt="">
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                                        <li><a class="dropdown-item" href="#1">Lihat Item</a></li>
-                                                        <li><a class="dropdown-item" href="#2">Edit Agenda</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Muhammad</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column4">
-                                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                                <div class="btn-group" role="group">
-                                                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <img class="transaksi-titik" src="image/transaksi-edit.svg" alt="">
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                                        <li><a class="dropdown-item" href="#1">Lihat Item</a></li>
-                                                        <li><a class="dropdown-item" href="#2">Edit Agenda</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Muhammad</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column4">
-                                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                                <div class="btn-group" role="group">
-                                                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <img class="transaksi-titik" src="image/transaksi-edit.svg" alt="">
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                                        <li><a class="dropdown-item" href="#1">Lihat Item</a></li>
-                                                        <li><a class="dropdown-item" href="#2">Edit Agenda</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Muhammad</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column4">
-                                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                                <div class="btn-group" role="group">
-                                                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <img class="transaksi-titik" src="image/transaksi-edit.svg" alt="">
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                                        <li><a class="dropdown-item" href="#1">Lihat Item</a></li>
-                                                        <li><a class="dropdown-item" href="#2">Edit Agenda</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Muhammad</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column4">
-                                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                                <div class="btn-group" role="group">
-                                                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <img class="transaksi-titik" src="image/transaksi-edit.svg" alt="">
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                                        <li><a class="dropdown-item" href="#1">Lihat Item</a></li>
-                                                        <li><a class="dropdown-item" href="#2">Edit Agenda</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Muhammad</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column4">
-                                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                                <div class="btn-group" role="group">
-                                                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <img class="transaksi-titik" src="image/transaksi-edit.svg" alt="">
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                                        <li><a class="dropdown-item" href="#1">Lihat Item</a></li>
-                                                        <li><a class="dropdown-item" href="#2">Edit Agenda</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Adi</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column4">
-                                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                                <div class="btn-group" role="group">
-                                                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <img class="transaksi-titik" src="image/transaksi-edit.svg" alt="">
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                                        <li><a class="dropdown-item" href="#1">Lihat Item</a></li>
-                                                        <li><a class="dropdown-item" href="#2">Edit Agenda</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Muhammad</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column4">
-                                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                                <div class="btn-group" role="group">
-                                                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <img class="transaksi-titik" src="image/transaksi-edit.svg" alt="">
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                                        <li><a class="dropdown-item" href="#1">Lihat Item</a></li>
-                                                        <li><a class="dropdown-item" href="#2">Edit Agenda</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Muhammad</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column4">
-                                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                                <div class="btn-group" role="group">
-                                                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <img class="transaksi-titik" src="image/transaksi-edit.svg" alt="">
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                                        <li><a class="dropdown-item" href="#1">Lihat Item</a></li>
-                                                        <li><a class="dropdown-item" href="#2">Edit Agenda</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Muhammad</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column4">
-                                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                                <div class="btn-group" role="group">
-                                                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <img class="transaksi-titik" src="image/transaksi-edit.svg" alt="">
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                                        <li><a class="dropdown-item" href="#1">Lihat Item</a></li>
-                                                        <li><a class="dropdown-item" href="#2">Edit Agenda</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Muhammad</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column4">
-                                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                                <div class="btn-group" role="group">
-                                                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <img class="transaksi-titik" src="image/transaksi-edit.svg" alt="">
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                                        <li><a class="dropdown-item" href="#1">Lihat Item</a></li>
-                                                        <li><a class="dropdown-item" href="#2">Edit Agenda</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox" id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">Muhammad</td>
-                                        <td class="cell100 column2">Rp 900.000,-</td>
-                                        <td class="cell100 column4">
-                                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                                <div class="btn-group" role="group">
-                                                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <img class="transaksi-titik" src="image/transaksi-edit.svg" alt="">
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                                        <li><a class="dropdown-item" href="#1">Lihat Item</a></li>
-                                                        <li><a class="dropdown-item" href="#2">Edit Agenda</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                    @endforeach
                                 </tbody>
                             </div>
 

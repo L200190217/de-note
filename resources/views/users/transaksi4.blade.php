@@ -5,7 +5,12 @@
 <section id="transaksi">
 
     <div class="card-up aqua-gradient">
-        <h1>Transaksi<img class="kuning1" src="image/kuning.svg" alt=""></h1>
+        <h1>Transaksi<img class="kuning1" src="image/kuning.svg" alt="">
+            {{-- <form action="{{ route('logout') }}" method="post">
+                @csrf
+                <button type="submit">Log Out</button>
+            </form> --}}
+        </h1>
         <img class="kuning2" src="image/kuning.png" alt="">
 
         <div class="container">
@@ -113,7 +118,7 @@
                                             </a>
                                             <div id="hilang5">
                                                 <!-- <div id="result"></div> -->
-                                                <button onclick="delete()"><i class="fa-solid fa-trash-can"
+                                                <button class="tombol-delete"><i class="fa-solid fa-trash-can"
                                                         style="color: white;"></i></button>
                                             </div>
 
@@ -287,9 +292,6 @@
             });
         });
     </script> -->
-
-
-
 </section>
 
 @endsection

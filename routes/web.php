@@ -3,6 +3,7 @@
 use App\Models\Transaction;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AgendaController;
+use App\Http\Controllers\DebtController;
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\TransactionController;
 
@@ -29,16 +30,16 @@ Route::get('/home', function () {
 //     return view('users.transaksi');
 // });
 
-Route::get('/transaksi2', function () {
-    return view('users.transaksi2');
-});
+// Route::get('/transaksi2', function () {
+//     return view('users.transaksi2');
+// });
 
-Route::get('/transaksi3', function () {
-    return view('users.transaksi3');
-});
+// Route::get('/transaksi3', function () {
+//     return view('users.transaksi3');
+// });
 
 Route::get('/transaksi', [TransactionController::class, 'transaction'])->name('index');
-Route::delete('/transaksi', [TransactionController::class, 'deleteAll'])->name('deleteAll');
+Route::delete('/deleteTransaksi', [TransactionController::class, 'destroyAll'])->name('deleteAll');
 
 Route::get('/lupa-password', function () {
     return view('users.konfirmasi-pass');
@@ -56,13 +57,13 @@ Route::post('/catatTransaksi/outcome', [TransactionController::class, 'outcome']
 
 Route::get('/laporanTransaksi', [TransactionController::class, 'index'])->name('laporanTransaksi');
 
-Route::get('/utang', function () {
-    return view('users.utang');
-});
+// Route::get('/utang', function () {
+//     return view('users.utang');
+// });
+Route::get('/utang', [DebtController::class, 'index'])->name('debt');
+Route::get('/catatUtang', [DebtController::class, 'add'])->name('addDebt');
+Route::post('/catatUtang', [DebtController::class, 'store'])->name('debtStore');
 
-Route::get('/catatUtang', function () {
-    return view('users.catatUtang');
-});
 
 Route::get('/catatUtang2', function () {
     return view('users.catatUtang2');
@@ -76,19 +77,18 @@ Route::get('/catatIuran', function () {
     return view('users.catatIuran');
 });
 
-Route::get('/tambahNamaAnggota', function () {
-    return view('users.tambahNamaAnggota');
-});
+Route::get('/tambahNamaAnggota', [MemberController::class, 'index'])->name('memberAdd');
 Route::post('/tambahNamaAnggota', [MemberController::class, 'store'])->name('memberStore');
+
+Route::get('/tambahNamaAgenda', [AgendaController::class, 'create'])->name('agendaAdd');
+Route::post('/tambahNamaAgenda', [AgendaController::class, 'store'])->name('agendaStore');
 
 
 Route::get('/laporanAgenda', function () {
     return view('users.laporanAgenda');
 });
 
-Route::get('/agenda', function () {
-    return view('users.agenda');
-});
+Route::get('/agenda', [AgendaController::class, 'index'])->name('agenda');
 
 Route::get('/editCatatUtang', function () {
     return view('users.editCatatUtang');

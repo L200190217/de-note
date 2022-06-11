@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Debt;
 use App\Models\Agenda;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -10,8 +11,8 @@ class AgendaController extends Controller
 {
     public function index()
     {
-        $agenda = Agenda::all();
-        return view('users.tambahNamaAgenda', [
+        $agenda = Debt::with('user')->where('user_id', Auth::user()->id)->get();
+        return view('users.agenda', [
             'agenda' => $agenda,
             'title' => 'Agenda'
         ]);
@@ -19,7 +20,7 @@ class AgendaController extends Controller
 
     public function create()
     {
-        return view('agenda.insert', [
+        return view('users.tambahNamaAgenda', [
             'title' => 'Agenda'
         ]);
     }

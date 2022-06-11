@@ -29,7 +29,7 @@
                             <input class="pelanggan" type="text" name="" placeholder="tambahkan nama agenda">
                         </div>
                         <div class="tombol3-1 col-2">
-                            <a class="" href="">
+                            <a class="" href="{{ route('agendaAdd') }}">
                                 <div class="tombol3">
                                     <p><img src="image/catatUtang-plus.svg" alt=""></p>
                                 </div>
@@ -52,7 +52,8 @@
                     <label for="total">Jumlah Iuran</label>
                     <input class="tanggal" type="number" name="total" placeholder="masukkan jumlah iuran">
                     <label for="note">Catatan</label>
-                    <textarea class="catatan" name="note" id="note" cols="30" rows="10" placeholder="tambahkan catatan"></textarea>
+                    <textarea class="catatan" name="note" id="note" cols="30" rows="10"
+                        placeholder="tambahkan catatan"></textarea>
                     <button class="tombol w-100" type="submit">
                         <div class="tombol2">
                             Simpan

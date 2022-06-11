@@ -24,16 +24,21 @@
             <div class="registrasi-form col-lg-7 col-md-10">
                 <form action="" method="POST">
                     <label for="date">Tanggal</label>
-                    <input class="form-control" id="date" name="date" placeholder="pilih tanggal" type="text" autocomplete="off" />
+                    <input class="form-control" id="date" name="date" placeholder="pilih tanggal" type="text"
+                        autocomplete="off" />
                     <label for="total">Total Utang</label>
                     <input class="tanggal" type="number" name="total" placeholder="masukkan utang">
                     <label for="total">Nama Pelanggan</label>
                     <div class="bagitabel row">
                         <div class="col-10">
-                            <input class="pelanggan" type="text" name="" placeholder="tambahkan nama pelanggan">
+                            <select name="member" id="member" class="form-control">
+                                @foreach ($member as $m)
+                                <option value="{{ $m->id }}">{{ $m->name }}</option>
+                                @endforeach
+                            </select>
                         </div>
                         <div class="tombol3-1 col-2">
-                            <a class="" href="">
+                            <a class="" href="{{ route('memberAdd') }}">
                                 <div class="tombol3">
                                     <p><img src="image/catatUtang-plus.svg" alt=""></p>
                                 </div>
@@ -41,7 +46,8 @@
                         </div>
                     </div>
                     <label for="note">Catatan</label>
-                    <textarea class="catatan" name="note" id="note" cols="30" rows="10" placeholder="tambahkan catatan"></textarea>
+                    <textarea class="catatan" name="note" id="note" cols="30" rows="10"
+                        placeholder="tambahkan catatan"></textarea>
                     <button class="tombol w-100" type="submit">
                         <div class="tombol2">
                             Simpan

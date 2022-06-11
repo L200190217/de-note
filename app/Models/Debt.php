@@ -2,17 +2,17 @@
 
 namespace App\Models;
 
-use App\Models\Debt;
 use App\Models\User;
+use App\Models\Member;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Member extends Model
+class Debt extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'name', 'user_id'
+        'id', 'user_id', 'member_id', 'date', 'total_debt', 'note'
     ];
 
     public function user()
@@ -20,8 +20,8 @@ class Member extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function debt()
+    public function member()
     {
-        return $this->hasMany(Debt::class);
+        return $this->belongsTo(Member::class);
     }
 }

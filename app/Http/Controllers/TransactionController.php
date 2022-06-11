@@ -154,8 +154,11 @@ class TransactionController extends Controller
     public function destroyAll(Request $request, Transaction $transaksi)
     {
         $data = $request->data;
-        return $data;
+        $response = [
+            'status' => 'success'
+        ];
+        // return $data;
         Transaction::whereIn('id', $data)->delete();
-        return redirect('/ubahTransaksiPengeluaran');
+        return $response;
     }
 }

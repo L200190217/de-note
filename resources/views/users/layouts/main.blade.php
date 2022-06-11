@@ -71,7 +71,9 @@
 
     <!-- ubah transaksi pemasukan tanggal start -->
     <!-- Menambahkan jQuery -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    {{-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script> --}}
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
     <!-- Menambahakan Date Range Picker -->
     <script type="text/javascript"
@@ -115,7 +117,7 @@
 
 
     <!-- bar page start -->
-    <script src="{{ asset('assets/js/transaksiJs/jquery.min.js') }}"></script>
+    {{-- <script src="{{ asset('assets/js/transaksiJs/jquery.min.js') }}"></script> --}}
     <script src="{{ asset('assets/js/transaksiJs/jquery.dataTables.js') }}"></script>
     <script src="{{ asset('assets/js/transaksiJs/dataTables.bootstrap.js') }}"></script>
     <!-- <script>
@@ -125,13 +127,12 @@
     </script> -->
     <script>
         $(document).ready(function() {
-            $('#dataTables-example').dataTable({
+            var table = $('#dataTables-example').dataTable({
                 "lengthMenu": [
                     [-1, 10, 25, 50],
                     ["All", 10, 25, 50]
                 ] //buat nambahin tambol  filter all
             });
-
         });
     </script>
     <!-- bar page end -->
@@ -160,24 +161,6 @@
         var checkedAll = [];
 
         $(document).ready(function (){
-            // function delete() {
-            //     var _token = "{{ csrf_token() }}";
-            //     var url = '{!! route('deleteAll') !!}';
-            //     $.ajax({
-            //         url: url,
-            //         type:'DELETE',
-            //         data: {_token:_token, data:checked},
-            //         dataType: 'JSON',
-            //         success: function(data) {
-            //             table.ajax.reload();
-            //             if (data.status == 'success') {
-            //                 alert('Success delete transaction');
-            //             } else {
-            //                 alert('Failed delete transaction');
-            //             }
-            //         },
-            //     }); 
-            // }
             $("#dataTables-example .checkData").each(function (){
                 console.log($(this).val());
                 checkedAll.push($(this).val());
@@ -278,6 +261,26 @@
 
             });
         });
+
+        $('.tombol-delete').on('click', function() {
+                var _token = "{{ csrf_token() }}";
+                var url = '{!! route('deleteAll') !!}';
+                $.ajax({
+                    url: url,
+                    type:'DELETE',
+                    data: {_token:_token, data:checked},
+                    dataType: 'JSON',
+                    success: function(data) {
+                        if (data.status == 'success') {
+                            alert('Success delete transaction');
+                            window.location.href = '{!! route("index") !!}';
+                        } else {
+                            alert('Failed delete transaction');
+                        }
+                    },
+                }); 
+            });
+        
     </script>
 </body>
 

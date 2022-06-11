@@ -46,8 +46,10 @@
                                         </div>
                                         <div class="pencarian col-4">
                                             <div class="input-group pencarian mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
-                                                <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
+                                                <span class="input-group-text" id="basic-addon1"><i
+                                                        class="fa-solid fa-magnifying-glass"></i></span>
+                                                <input type="text" class="form-control" placeholder="Search"
+                                                    aria-label="Username" aria-describedby="basic-addon1">
                                             </div>
                                         </div>
 
@@ -61,81 +63,11 @@
 
                             <div class="table100-body js-pscroll" id="checkbox-wrap">
                                 <tbody>
+                                    @foreach ($member as $mb)
                                     <tr class="row100 body">
-                                        <td class="cell100 column1">Muhammad</td>
+                                        <td class="cell100 column1">{{ $mb->name }}</td>
                                     </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column1">Muhammad</td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column1">Muhammad</td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column1">Muhammad</td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column1">Muhammad</td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column1">Muhammad</td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column1">Didi</td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column1">Muhammad</td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column1">Muhammad</td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column1">Muhammad</td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column1">Haru</td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column1">Muhammad</td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column1">Muhammad</td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column1">Muhammad</td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column1">Muhammad</td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column1">Muhammad</td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column1">Muhammad</td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column1">Muhammad</td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column1">Muhammad</td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column1">Adi</td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column1">Muhammad</td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column1">Muhammad</td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column1">Muhammad</td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column1">Muhammad</td>
-                                    </tr>
-                                    <tr class="row100 body">
-                                        <td class="cell100 column1">Muhammad</td>
-                                    </tr>
+                                    @endforeach
                                 </tbody>
                             </div>
                         </table>
