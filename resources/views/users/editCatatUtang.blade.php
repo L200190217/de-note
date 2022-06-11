@@ -24,11 +24,14 @@
             <div class="registrasi-form col-lg-7 col-md-10">
                 <form action="" method="POST">
                     <label for="date">Tanggal</label>
-                    <input class="form-control" id="date" name="date" placeholder="pilih tanggal" type="text" autocomplete="off" />
+                    <input class="form-control" id="date" name="date" value="{{ $debt->date }}"
+                        placeholder="pilih tanggal" type="text" autocomplete="off" />
                     <label for="total">Jumlah Utang</label>
-                    <input class="tanggal" type="number" name="total" placeholder="masukkan jumlah utang">
+                    <input class="tanggal" type="number" value="{{ $debt->total_debt }}" name="total"
+                        placeholder="masukkan jumlah utang">
                     <label for="note">Catatan</label>
-                    <textarea class="catatan" name="note" id="note" cols="30" rows="10" placeholder="tambahkan catatan"></textarea>
+                    <textarea class="catatan" name="note" id="note" cols="30" rows="10"
+                        placeholder="tambahkan catatan">{{ $debt->note }}</textarea>
                     <button class="tombol w-100" type="submit">
                         <div class="tombol2">
                             Simpan

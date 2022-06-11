@@ -63,6 +63,8 @@ Route::get('/laporanTransaksi', [TransactionController::class, 'index'])->name('
 Route::get('/utang', [DebtController::class, 'index'])->name('debt');
 Route::get('/catatUtang', [DebtController::class, 'add'])->name('addDebt');
 Route::post('/catatUtang', [DebtController::class, 'store'])->name('debtStore');
+Route::get('/catatUtang/edit/{debt}', [DebtController::class, 'edit'])->name('editDebt');
+Route::post('/catatUtang/edit/{debt}', [DebtController::class, 'update'])->name('updateDebt');
 Route::delete('/deleteUtang', [DebtController::class, 'destroy'])->name('deleteDebt');
 
 

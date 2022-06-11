@@ -57,7 +57,7 @@ class DebtController extends Controller
     public function edit(Debt $debt)
     {
         $member = Member::with('user')->where('user_id', Auth::user()->id)->get();
-        return view('debt.edit', ['debt' => $debt, 'member' => $member, 'title' => 'Debt']);
+        return view('users.editCatatUtang', ['debt' => $debt, 'member' => $member, 'title' => 'Debt']);
     }
 
     public function update(Request $request, Debt $debt)

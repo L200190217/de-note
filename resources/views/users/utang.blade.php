@@ -97,7 +97,9 @@
                                                     </button>
                                                     <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
                                                         <li><a class="dropdown-item" href="#1">Lihat Item</a></li>
-                                                        <li><a class="dropdown-item" href="#2">Edit Agenda</a></li>
+                                                        <li><a class="dropdown-item"
+                                                                href="{{ route('editDebt', $db->id) }}">Edit
+                                                                Utang</a></li>
                                                     </ul>
                                                 </div>
                                             </div>

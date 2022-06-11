@@ -20,20 +20,23 @@
                 <h3 class="judul3-1">Pemasukan.</h3>
             </div>
             <div class="registrasi-form col-lg-7 col-md-10">
-                <form action="{{ route('incomeEdit', ['transaksi' => $income->id]) }}" method="POST">
+                <form action="{{ route('incomeEdit',$income->id) }}" method="POST">
                     @csrf
                     <label for="date">Tanggal</label>
-                    <input class="form-control @error('date') is-invalid @enderror" id="date" name="date" placeholder="pilih tanggal" type="text" autocomplete="off" />
+                    <input class="form-control @error('date') is-invalid @enderror" id="date" name="date"
+                        placeholder="pilih tanggal" type="text" autocomplete="off" value="{{ $income->date }}" />
                     @error('date')
                     <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
                     <label for="total">Total Pemasukan</label>
-                    <input class="tanggal @error('total') is-invalid @enderror" type="number" name="total" placeholder="masukkan pemasukan">
+                    <input class="tanggal @error('total') is-invalid @enderror" type="number" name="total"
+                        placeholder="masukkan pemasukan" value="{{ $income->total_income }}">
                     @error('total')
                     <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
                     <label for="note">Catatan</label>
-                    <textarea class="catatan @error('note') is-invalid @enderror" name="note" id="note" cols="30" rows="10" placeholder="tambahkan catatan"></textarea>
+                    <textarea class="catatan @error('note') is-invalid @enderror" name="note" id="note" cols="30"
+                        rows="10" placeholder="tambahkan catatan">{{ $income->note}} </textarea>
                     @error('note')
                     <div class="alert alert-danger">{{ $message }}</div>
                     @enderror

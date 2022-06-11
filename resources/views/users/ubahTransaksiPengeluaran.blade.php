@@ -20,20 +20,23 @@
                 <h3 class="judul3-1">Pengeluaran.</h3>
             </div>
             <div class="registrasi-form col-lg-7 col-md-10">
-                <form action="{{ route('outcomeEdit') }}" method="POST">
+                <form action="{{ route('outcomeEdit', $outcome->id) }}" method="POST">
                     @csrf
                     <label for="date">Tanggal</label>
-                    <input class="form-control @error('date') is-invalid @enderror" id="date" name="date" placeholder="pilih tanggal" type="text" autocomplete="off" />
+                    <input class="form-control @error('date') is-invalid @enderror" id="date" name="date"
+                        placeholder="pilih tanggal" type="text" autocomplete="off" value="{{ $outcome->date }}" />
                     @error('date')
                     <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
                     <label for="total">Total Pengeluaran</label>
-                    <input class="tanggal @error('total') is-invalid @enderror" type="number" name="total" placeholder="masukkan pengeluaran">
+                    <input class="tanggal @error('total') is-invalid @enderror" type="number" name="total"
+                        placeholder="masukkan pengeluaran" value="{{ $outcome->total_outcome }}">
                     @error('total')
                     <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
                     <label for="note">Catatan</label>
-                    <textarea class="catatan @error('note') is-invalid @enderror" name="note" id="note" cols="30" rows="10" placeholder="tambahkan catatan"></textarea>
+                    <textarea class="catatan @error('note') is-invalid @enderror" name="note" id="note" cols="30"
+                        rows="10" placeholder="tambahkan catatan">{{ $outcome->note }}</textarea>
                     @error('note')
                     <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
