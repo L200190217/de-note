@@ -42,7 +42,6 @@
                                             </div>
                                         </div>
                                         <div class="col-5">
-
                                         </div>
                                         <div class="pencarian col-4">
                                             <div class="input-group pencarian mb-3">
@@ -52,14 +51,12 @@
                                                     aria-label="Username" aria-describedby="basic-addon1">
                                             </div>
                                         </div>
-
                                     </div>
                                     <tr class="row100 head">
-                                        <th class="cell100 column1">Nama</th>
+                                        <th class="cell100 column1"></th>
                                     </tr>
                                 </div>
                             </thead>
-
 
                             <div class="table100-body js-pscroll" id="checkbox-wrap">
                                 <tbody>

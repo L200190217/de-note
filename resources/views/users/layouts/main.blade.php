@@ -56,7 +56,6 @@
 
     <link rel="stylesheet" href="{{ asset('assets/css/users/style2.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/users/style3.css') }}">
-    <!-- <link rel="stylesheet" href="{{ asset('assets/css/users/style.css') }}"> -->
 
 
     <title>Document</title>
@@ -120,11 +119,6 @@
     {{-- <script src="{{ asset('assets/js/transaksiJs/jquery.min.js') }}"></script> --}}
     <script src="{{ asset('assets/js/transaksiJs/jquery.dataTables.js') }}"></script>
     <script src="{{ asset('assets/js/transaksiJs/dataTables.bootstrap.js') }}"></script>
-    <!-- <script>
-        $(document).ready(function() {
-            $('#dataTables-example').dataTable();
-        });
-    </script> -->
     <script>
         $(document).ready(function() {
             var table = $('#dataTables-example').dataTable({
@@ -137,11 +131,10 @@
     </script>
     <!-- bar page end -->
 
-
-
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
 
+    <!-- tanggal -->
     <script>
         $(document).ready(function() {
             var date_input = $('input[id="date"]');
@@ -155,20 +148,20 @@
         })
     </script>
 
-    <!-- hilangkan tombol hapus -->
+    <!-- hilangkan tombol hapus start-->
     <script type="text/javascript">
         var checked = [];
         var checkedAll = [];
 
-        $(document).ready(function (){
-            $("#dataTables-example .checkData").each(function (){
+        $(document).ready(function() {
+            $("#dataTables-example .checkData").each(function() {
                 console.log($(this).val());
                 checkedAll.push($(this).val());
             });
         });
 
-        function arrayRemove(arr, value){
-            return arr.filter(function(ele){
+        function arrayRemove(arr, value) {
+            return arr.filter(function(ele) {
                 return ele != value;
             });
         }
@@ -207,49 +200,20 @@
             console.log(checked);
         }
 
-        // $(document).ready(function() {
-        //     $("#boxes input[type='checkbox']").click(function() {
-        //         var total = 0;
-        //         $("#boxes input[type='checkbox']:checked").each(function() {
-        //             total += parseInt($(this).data("exval"), 10);
-        //         });
-        //         $("#result").text(total);
-
-        //         var x = total;
-        //         let hilang5 = document.getElementById('hilang5')
-        //         if (x > 0) {
-        //             hilang5.classList.add('hilang5');
-        //             console.log("benar");
-        //         } else {
-        //             hilang5.classList.remove('hilang5');
-        //             console.log("salah")
-        //         }
-
-        //     });
-        // });
-        
-
         $(document).ready(function() {
             var total = 0;
-            $("#dataTables-example").on('click', "#boxes input[type='checkbox']",function() {
+            $("#dataTables-example").on('click', "#boxes input[type='checkbox']", function() {
                 if (jQuery.inArray($(this).val(), checked) !== -1) {
                     checked = arrayRemove(checked, $(this).val());
-                }else{
-                    if($(this).prop("checked") == true){
+                } else {
+                    if ($(this).prop("checked") == true) {
                         checked.push($(this).val());
-                    }
-                    else if($(this).prop("checked") == false){
+                    } else if ($(this).prop("checked") == false) {
                         checked = arrayRemove(checked, $(this).val());
                     }
                 }
                 console.log(checked);
-                
-                // $("#boxes input[type='checkbox']:checked").each(function() {
-                //     total += parseInt($(this).data("exval"), 10);
-                // });
-                // $("#result").text(total);
 
-                // var x = total;
                 let hilang5 = document.getElementById('hilang5')
                 if (checked.length > 0) {
                     hilang5.classList.add('hilang5');
@@ -282,6 +246,7 @@
             });
         
     </script>
+    <!-- hilangkan tombol hapus end-->
 </body>
 
 </html>

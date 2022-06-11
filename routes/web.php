@@ -73,6 +73,10 @@ Route::get('/tambahNamaPelanggan', function () {
     return view('users.tambahNamaPelanggan');
 });
 
+Route::get('/editNamaPelanggan', function () {
+    return view('users.editNamaPelanggan');
+});
+
 Route::get('/catatIuran', function () {
     return view('users.catatIuran');
 });
@@ -90,6 +94,11 @@ Route::get('/laporanAgenda', function () {
 
 Route::get('/agenda', [AgendaController::class, 'index'])->name('agenda');
 
+Route::get('/editNamaAgenda', function () {
+    return view('users.editNamaAgenda');
+});
+
+
 Route::get('/editCatatUtang', function () {
     return view('users.editCatatUtang');
 });
@@ -98,7 +107,22 @@ Route::get('/editCatatBayar', function () {
     return view('users.editCatatBayar');
 });
 
+Route::get('/dashboardPengguna', function () {
+    return view('users.dashboardPengguna');
+});
 
-Route::get('/coba', function () {
-    return view('users.coba');
+Route::get('/detailPelanggan', function () {
+    return view('users.detailPelanggan');
+});
+
+Route::get('/detailNamaAgenda', function () {
+    return view('users.detailNamaAgenda');
+});
+
+Route::get('/tambahNamaAgenda', function () {
+    return view('users.tambahNamaAgenda');
+});
+
+Route::get('/tambahAnggota', function () {
+    return view('users.tambahAnggota');
 });

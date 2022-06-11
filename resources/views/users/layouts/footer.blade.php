@@ -27,6 +27,9 @@
                             </div>
                         </div>
                     </div>
+                    <div class="up">
+                        <a href="#home"><img src="image/footer-up.svg" alt=""></a>
+                    </div>
                 </div>
             </div>
         </div>

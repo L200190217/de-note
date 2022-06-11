@@ -18,7 +18,6 @@
     </div>
     <div class="kotak">
         <h1 class="judul">Laporan Transaksi</h1>
-
         <div class="container">
             <div class="products-card-1 row">
                 <div class="products-card col-lg-4 col-md-6">
@@ -33,7 +32,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="products-card col-lg-4 col-md-6">
                     <div class="products-card-2">
                         <div class="products-card-3">
@@ -46,7 +44,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="products-card col-lg-4 col-md-6">
                     <div class="products-card-2">
                         <div class="products-card-3">
@@ -60,8 +57,6 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
@@ -77,11 +72,9 @@
                                     <div class="tabel-atas2 row">
                                         <div class="col-2">
                                             <div class="input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i
-                                                        class="fa-solid fa-filter"></i></span>
+                                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-filter"></i></span>
                                                 <!-- <input id="input-date" type="date" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"> -->
-                                                <input class="form-control" id="date" name="date"
-                                                    placeholder="Tanggal Mulai" type="text" />
+                                                <input class="form-control" id="date" name="date" placeholder="Tanggal Mulai" type="text" />
                                             </div>
                                             <div class="per-halaman">
                                                 <p>Rekam per halaman</p>
@@ -89,19 +82,15 @@
                                         </div>
                                         <div class="col-2">
                                             <div class="input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i
-                                                        class="fa-solid fa-filter"></i></span>
+                                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-filter"></i></span>
                                                 <!-- <input id="input-date" type="date" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"> -->
-                                                <input class="form-control" id="date" name="date"
-                                                    placeholder="Tanggal Akhir" type="text" />
+                                                <input class="form-control" id="date" name="date" placeholder="Tanggal Akhir" type="text" />
                                             </div>
                                         </div>
                                         <div class="pencarian col-6">
                                             <div class="input-group pencarian mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i
-                                                        class="fa-solid fa-magnifying-glass"></i></span>
-                                                <input type="text" class="form-control" placeholder="Search"
-                                                    aria-label="Username" aria-describedby="basic-addon1">
+                                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                                <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
                                             </div>
                                         </div>
                                         <div class="tombol-catat1 col-2">
@@ -121,8 +110,6 @@
                                     </tr>
                                 </div>
                             </thead>
-
-
                             <div class="table100-body js-pscroll" id="checkbox-wrap">
                                 <tbody>
                                     @foreach ($transaksi as $tr)
