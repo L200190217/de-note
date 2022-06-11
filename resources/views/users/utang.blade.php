@@ -57,8 +57,9 @@
                                                 </div>
                                             </a>
                                             <div id="hilang5">
-                                                <a href="#"><i class="fa-solid fa-trash-can"
-                                                        style="color: white;"></i></a>
+                                                <!-- <div id="result"></div> -->
+                                                <button class="tombol-delete-utang"><i class="fa-solid fa-trash-can"
+                                                        style="color: white;"></i></button>
                                             </div>
                                         </div>
                                     </div>
@@ -78,10 +79,12 @@
                                 <tbody id="boxes">
                                     @foreach ($debt as $db)
                                     <tr class="row100 body">
-                                        <td class="cell100 column0"><input class="form-check-input ml-3" type="checkbox"
-                                                id="vehicle2" name="vehicle1" value="1" data-exval="1"></td>
-                                        <td class="cell100 column1">{{ $debt->member->name }}</td>
-                                        <td class="cell100 column2">Rp {{ $total_debt }},-</td>
+                                        <td class="cell100 column0"><input class="form-check-input ml-3 checkData"
+                                                type="checkbox" id="vehicle2" name="chk[]" value="{{ $db->id }}"
+                                                data-exval="1">
+                                        </td>
+                                        <td class="cell100 column1">{{ $db->member->name }}</td>
+                                        <td class="cell100 column2">Rp {{ $totalDebt }},-</td>
                                         <td class="cell100 column4">
                                             <div class="btn-group" role="group"
                                                 aria-label="Button group with nested dropdown">

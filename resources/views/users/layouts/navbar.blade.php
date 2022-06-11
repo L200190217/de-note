@@ -7,7 +7,7 @@
                         <p>De Note.</p>
                     </div>
                     <div class="home1 text center">
-                        <a class="home" href="#">Home</a>
+                        <a class="home" href="{{ route('home') }}">Home</a>
                         <a class="contact" href="#">Contact Us</a>
                     </div>
                     <div class="transaksi">

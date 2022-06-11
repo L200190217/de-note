@@ -8,7 +8,7 @@
             </div>
             <div class="col-lg-4">
                 <div class="registrasi-contact-home text center">
-                    <a class="register-home" href="#">Home</a>
+                    <a class="register-home" href="{{ route('home') }}">Home</a>
                     <a class="register-contact" href="#">Contact Us</a>
                 </div>
             </div>

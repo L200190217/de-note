@@ -1,9 +1,11 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Models\Transaction;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AgendaController;
 use App\Http\Controllers\DebtController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\TransactionController;
 
@@ -22,9 +24,7 @@ Route::get('/', function () {
     return view('users.auth.login');
 });
 
-Route::get('/home', function () {
-    return view('users.home');
-});
+Route::get('/home', [HomeController::class, 'home'])->name('home');
 
 // Route::get('/transaksi', function () {
 //     return view('users.transaksi');
@@ -45,10 +45,10 @@ Route::get('/lupa-password', function () {
     return view('users.konfirmasi-pass');
 });
 
-Route::get('/ubahTransaksiPemasukan', [TransactionController::class, 'editIncome'])->name('editIncome');
+Route::get('/ubahTransaksiPemasukan/{transaksi}', [TransactionController::class, 'editIncome'])->name('editIncome');
 Route::post('/ubahTransaksiPemasukan/{transaksi}', [TransactionController::class, 'updateIncome'])->name('incomeEdit');
 
-Route::get('/ubahTransaksiPengeluaran',  [TransactionController::class, 'editOutcome'])->name('editOutcome');
+Route::get('/ubahTransaksiPengeluaran/{transaksi}',  [TransactionController::class, 'editOutcome'])->name('editOutcome');
 Route::post('/ubahTransaksiPengeluaran/{transaksi}', [TransactionController::class, 'updateOutcome'])->name('outcomeEdit');
 
 Route::get('/catatTransaksi', [TransactionController::class, 'create'])->name('transaction');
@@ -63,6 +63,7 @@ Route::get('/laporanTransaksi', [TransactionController::class, 'index'])->name('
 Route::get('/utang', [DebtController::class, 'index'])->name('debt');
 Route::get('/catatUtang', [DebtController::class, 'add'])->name('addDebt');
 Route::post('/catatUtang', [DebtController::class, 'store'])->name('debtStore');
+Route::delete('/deleteUtang', [DebtController::class, 'destroy'])->name('deleteDebt');
 
 
 Route::get('/catatUtang2', function () {
@@ -93,6 +94,7 @@ Route::get('/laporanAgenda', function () {
 });
 
 Route::get('/agenda', [AgendaController::class, 'index'])->name('agenda');
+Route::get('/tambahNamaAgenda', [AgendaController::class, 'create'])->name('agendaAdd');
 
 Route::get('/editNamaAgenda', function () {
     return view('users.editNamaAgenda');
@@ -107,9 +109,7 @@ Route::get('/editCatatBayar', function () {
     return view('users.editCatatBayar');
 });
 
-Route::get('/dashboardPengguna', function () {
-    return view('users.dashboardPengguna');
-});
+Route::get('/dashboardPengguna', [AdminController::class, 'index'])->name('adminDashboard');
 
 Route::get('/detailPelanggan', function () {
     return view('users.detailPelanggan');
@@ -117,10 +117,6 @@ Route::get('/detailPelanggan', function () {
 
 Route::get('/detailNamaAgenda', function () {
     return view('users.detailNamaAgenda');
-});
-
-Route::get('/tambahNamaAgenda', function () {
-    return view('users.tambahNamaAgenda');
 });
 
 Route::get('/tambahAnggota', function () {

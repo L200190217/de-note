@@ -31,7 +31,7 @@ class DebtController extends Controller
 
     public function store(Request $request)
     {
-        $request->validate([
+        $data = $request->validate([
             'member' => 'required',
             'date' => 'required',
             'total' => 'required',
@@ -46,7 +46,7 @@ class DebtController extends Controller
             'note' => $request->note,
         ]);
 
-        return redirect('/debt');
+        return redirect('/utang');
     }
 
     public function show(Debt $debt)
@@ -80,9 +80,14 @@ class DebtController extends Controller
         return redirect('/debt');
     }
 
-    public function destroy(Debt $debt)
+    public function destroy(Request $request)
     {
-        $debt->delete();
-        return redirect('/debt');
+        $data = $request->data;
+        $response = [
+            'status' => 'success'
+        ];
+        // return $data;
+        Debt::whereIn('id', $data)->delete();
+        return $response;
     }
 }

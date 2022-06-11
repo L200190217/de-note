@@ -121,7 +121,6 @@
                                                 <button class="tombol-delete"><i class="fa-solid fa-trash-can"
                                                         style="color: white;"></i></button>
                                             </div>
-
                                         </div>
                                     </div>
                                     <tr class="row100 head">
@@ -152,9 +151,9 @@
                                         <td class="cell100 column4">{{ $tr->note }}</td>
                                         <td class="cell100 column5"><a href="<?php 
                                             if($tr->status == 'Pemasukan'){
-                                                echo route('editIncome', ['transaksi' => $tr->id]);
+                                                echo route('editIncome', $tr->id);
                                             }else{
-                                                echo route('editOutcome', ['transaksi' => $tr->id]);
+                                                echo route('editOutcome', $tr->id);
                                             }
                                         ?>">
                                                 <div class="transaksi-titik2"> <img class="transaksi-titik"

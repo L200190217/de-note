@@ -22,7 +22,8 @@
                 <h3 class="judul3">Catat Utang</h3>
             </div>
             <div class="registrasi-form col-lg-7 col-md-10">
-                <form action="" method="POST">
+                <form action="{{route('debtStore')}}" method="POST">
+                    @csrf
                     <label for="date">Tanggal</label>
                     <input class="form-control" id="date" name="date" placeholder="pilih tanggal" type="text"
                         autocomplete="off" />

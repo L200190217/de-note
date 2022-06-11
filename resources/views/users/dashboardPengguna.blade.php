@@ -16,10 +16,19 @@
 
         <div class="kotak2">
             <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                <li class="spasi" role="presentation"><a class="active" href="" id="pills-home-tab3" data-bs-toggle="pill" data-bs-target="#pills-home3" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><img src="image/dashboardPengguna-dashboard.svg" alt=""><span>Dashboard</span></a></li>
-                <li role="presentation"><a href="" id="pills-profile-tab3" data-bs-toggle="pill" data-bs-target="#pills-profile3" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><img src="image/dashboardPengguna-file.svg" alt=""><span>Data Pengguna</span></a></li>
+                <li class="spasi" role="presentation"><a class="active" href="" id="pills-home-tab3"
+                        data-bs-toggle="pill" data-bs-target="#pills-home3" type="button" role="tab"
+                        aria-controls="pills-home" aria-selected="true"><img src="image/dashboardPengguna-dashboard.svg"
+                            alt=""><span>Dashboard</span></a></li>
+                <li role="presentation"><a href="" id="pills-profile-tab3" data-bs-toggle="pill"
+                        data-bs-target="#pills-profile3" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false"><img src="image/dashboardPengguna-file.svg" alt=""><span>Data
+                            Pengguna</span></a></li>
 
-                <li class="setting" role="presentation"><a href="" id="pills-profile-tab3" data-bs-toggle="pill" data-bs-target="#pills-setting3" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><img src="image/dashboardPengguna-setting.svg" alt=""><span>Setting</span></a></li>
+                <li class="setting" role="presentation"><a href="" id="pills-profile-tab3" data-bs-toggle="pill"
+                        data-bs-target="#pills-setting3" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false"><img src="image/dashboardPengguna-setting.svg"
+                            alt=""><span>Setting</span></a></li>
                 <li><a href=""><img src="image/dashboardPengguna-keluar.svg" alt=""><span>keluar</span></a></li>
             </ul>
         </div>
@@ -37,7 +46,8 @@
 
         <div class="registrasi-form">
             <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home3" role="tabpanel2" aria-labelledby="pills-home-tab3">
+                <div class="tab-pane fade show active" id="pills-home3" role="tabpanel2"
+                    aria-labelledby="pills-home-tab3">
 
                     <div class="header1">
                         <div class="navbar1">
@@ -59,11 +69,11 @@
                                 </div>
                                 <div class="">
                                     <p class="total">Total Pengguna</p>
-                                    <p class="jumlah">200</p>
+                                    <p class="jumlah">{{ $user->count() }}</p>
                                 </div>
 
                             </div>
-                            <div class="kartu2">
+                            {{-- <div class="kartu2">
                                 <div class="">
                                     <img src="image/dashboardPengguna-Users.svg" alt="">
                                 </div>
@@ -71,7 +81,7 @@
                                     <p class="total">Total Pengunjung</p>
                                     <p class="jumlah">200</p>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                         <p class="dash">History</p>
                         <div class="konten2">
@@ -80,38 +90,38 @@
                                     <div class="text3">
                                         <ul class="nav nav-pills" id="pills-tab" role="tablist">
                                             <li class="btn-group" role="presentation">
-                                                <button type="button" class="btn active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Data Pengguna</button>
-                                                <button type="button" class="btn" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Data Pengunjung</button>
+                                                <button type="button" class="btn active" id="pills-home-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#pills-home" type="button"
+                                                    role="tab" aria-controls="pills-home" aria-selected="true">Data
+                                                    Pengguna</button>
+                                                {{-- <button type="button" class="btn" id="pills-profile-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#pills-profile" type="button"
+                                                    role="tab" aria-controls="pills-profile" aria-selected="false">Data
+                                                    Pengunjung</button> --}}
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="registrasi-form">
                                         <div class="tab-content" id="pills-tabContent">
-                                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                                aria-labelledby="pills-home-tab">
                                                 <table>
                                                     <tr>
                                                         <th>Today</th>
                                                         <th></th>
                                                         <th></th>
                                                     </tr>
+                                                    @foreach ($user as $us)
                                                     <tr>
-                                                        <td>Jane Maria</td>
-                                                        <td>janemaria99@gmail.com</td>
+                                                        <td>{{ $us->name }}</td>
+                                                        <td>{{ $us->email }}</td>
                                                         <td>2 menit lalu</td>
                                                     </tr>
-                                                    <tr>
-                                                        <td>Jane Maria</td>
-                                                        <td>janemaria99@gmail.com</td>
-                                                        <td>2 menit lalu</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Jane Maria</td>
-                                                        <td>janemaria99@gmail.com</td>
-                                                        <td>2 menit lalu</td>
-                                                    </tr>
+                                                    @endforeach
                                                 </table>
                                             </div>
-                                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                            {{-- <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                                aria-labelledby="pills-profile-tab">
                                                 <table>
                                                     <tr>
                                                         <th>Today</th>
@@ -138,7 +148,7 @@
                                                         <td>2 menit lalu</td>
                                                     </tr>
                                                 </table>
-                                            </div>
+                                            </div> --}}
                                         </div>
                                     </div>
                                 </div>
@@ -163,9 +173,12 @@
                         <form action="">
                             <div class="employee">
                                 <div class="input-group flex-nowrap">
-                                    <span class="input-group-text" id="addon-wrapping"><button><i class="fa-solid fa-magnifying-glass"></i></button></span>
-                                    <input type="text" class="form-control" placeholder="Employee" aria-label="Username" aria-describedby="addon-wrapping">
-                                    <span class="input-group-text" id="addon-wrapping"><button><i class="fa-solid fa-xmark"></i></button></span>
+                                    <span class="input-group-text" id="addon-wrapping"><button><i
+                                                class="fa-solid fa-magnifying-glass"></i></button></span>
+                                    <input type="text" class="form-control" placeholder="Employee" aria-label="Username"
+                                        aria-describedby="addon-wrapping">
+                                    <span class="input-group-text" id="addon-wrapping"><button><i
+                                                class="fa-solid fa-xmark"></i></button></span>
                                 </div>
                             </div>
                         </form>
@@ -174,7 +187,8 @@
                                 <div class="bungkus">
                                     <div class="registrasi-form">
                                         <div class="tab-content" id="pills-tabContent">
-                                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                                aria-labelledby="pills-home-tab">
                                                 <table>
                                                     <tr>
                                                         <th>Nama</th>
@@ -182,31 +196,14 @@
                                                         <th>Username</th>
                                                         <th>No HP</th>
                                                     </tr>
+                                                    @foreach ($user as $us)
                                                     <tr>
-                                                        <td>Darlene Robertson</td>
-                                                        <td>janemaria99@gmail.com</td>
-                                                        <td>Trung12</td>
-                                                        <td>089235674896</td>
+                                                        <td>{{ $us->name }}</td>
+                                                        <td>{{ $us->email }}</td>
+                                                        <td>{{ $us->username }}</td>
+                                                        <td>{{ $us->no_telp }}</td>
                                                     </tr>
-                                                    <tr>
-                                                        <td>Devon Lane</td>
-                                                        <td>janemaria99@gmail.com</td>
-                                                        <td>Nutethuy</td>
-                                                        <td>089235674896</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Darlene Robertson</td>
-                                                        <td>janemaria99@gmail.com</td>
-                                                        <td>Trung12</td>
-                                                        <td>089235674896</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Devon Lane</td>
-                                                        <td>janemaria99@gmail.com</td>
-                                                        <td>Nutethuy</td>
-                                                        <td>089235674896</td>
-                                                    </tr>
-
+                                                    @endforeach
                                                 </table>
                                             </div>
                                         </div>
@@ -240,23 +237,19 @@
                                         <table>
                                             <tr>
                                                 <td class="name">Email</td>
-                                                <td><input type="text"></td>
+                                                <td><input type="text" readonly></td>
                                             </tr>
                                             <tr>
                                                 <td class="name">Username</td>
-                                                <td><input type="text"></td>
+                                                <td><input type="text" readonly></td>
                                             </tr>
                                             <tr>
                                                 <td class="name">No Hp</td>
-                                                <td><input type="text"></td>
+                                                <td><input type="text" readonly></td>
                                             </tr>
                                             <tr>
                                                 <td class="name">Email</td>
-                                                <td><input type="text"></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="name">Password</td>
-                                                <td><input type="text"></td>
+                                                <td><input type="text" readonly></td>
                                             </tr>
                                         </table>
                                     </form>
@@ -268,14 +261,21 @@
                                     <div class="text3">
                                         <ul class="nav nav-pills" id="pills-tab" role="tablist">
                                             <li class="btn-group" role="presentation">
-                                                <button type="button" class="btn active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home5" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Ubah Akun</button>
-                                                <button type="button" class="btn" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile5" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Ubah Password</button>
+                                                <button type="button" class="btn active" id="pills-home-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#pills-home5" type="button"
+                                                    role="tab" aria-controls="pills-home" aria-selected="true">Ubah
+                                                    Akun</button>
+                                                <button type="button" class="btn" id="pills-profile-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#pills-profile5" type="button"
+                                                    role="tab" aria-controls="pills-profile" aria-selected="false">Ubah
+                                                    Password</button>
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="registrasi-form">
                                         <div class="tab-content" id="pills-tabContent">
-                                            <div class="tab-pane fade show active" id="pills-home5" role="tabpanel" aria-labelledby="pills-home-tab">
+                                            <div class="tab-pane fade show active" id="pills-home5" role="tabpanel"
+                                                aria-labelledby="pills-home-tab">
                                                 <form action="" method="POST">
                                                     <table>
                                                         <tr>
@@ -300,7 +300,8 @@
                                                     <button class="simpanakun">simpan</button>
                                                 </div>
                                             </div>
-                                            <div class="tab-pane fade" id="pills-profile5" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                            <div class="tab-pane fade" id="pills-profile5" role="tabpanel"
+                                                aria-labelledby="pills-profile-tab">
                                                 <form action="" method="POST">
                                                     <table>
                                                         <tr>

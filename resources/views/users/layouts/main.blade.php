@@ -140,7 +140,7 @@
             var date_input = $('input[id="date"]');
             var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
             date_input.datepicker({
-                format: 'mm/dd/yyyy',
+                format: 'yyyy-mm-dd',
                 container: container,
                 todayHighlight: true,
                 autoclose: true,
@@ -243,7 +243,26 @@
                         }
                     },
                 }); 
+        });
+        $('.tombol-delete-utang').on('click', function() {
+                var _token = "{{ csrf_token() }}";
+                var url = '{!! route('deleteDebt') !!}';
+                $.ajax({
+                    url: url,
+                    type:'DELETE',
+                    data: {_token:_token, data:checked},
+                    dataType: 'JSON',
+                    success: function(data) {
+                        if (data.status == 'success') {
+                            alert('Success delete debt');
+                            window.location.href = '{!! route("debt") !!}';
+                        } else {
+                            alert('Failed delete debt');
+                        }
+                    },
+                }); 
             });
+        
         
     </script>
     <!-- hilangkan tombol hapus end-->
