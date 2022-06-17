@@ -1,0 +1,331 @@
+/* tabel */
+
+.container-table100 {
+    background-color: transparent;
+}
+
+.row100 {
+    border: solid 0px transparent;
+}
+
+.table100.ver1 .table100-body tr {
+    background-color: white !important;
+    border-bottom: solid 0.5px #E9ECF8;
+}
+
+.cell100.column0 {
+    padding-left: 20px;
+    width: 0px;
+}
+
+.table100-body td {
+    /* padding: 0; */
+    width: 55px;
+}
+
+th,
+td {
+    padding: 0;
+}
+
+.table100.ver1 th {
+    background-color: #363AA7;
+}
+
+#laporanTransaksi th {
+    height: 40px;
+}
+
+#laporanTransaksi .tombol-catat {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    background-color: #F5DE19;
+    color: black;
+    text-decoration: none;
+
+    height: 36px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#laporanTransaksi .tombol-catat1 {
+    padding-right: 5px;
+}
+
+#laporanTransaksi a {
+    text-decoration: none;
+}
+
+#laporanTransaksi .tombol-laporan {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: #F5DE19;
+    text-decoration: none;
+
+    height: 36px;
+    width: 100%;
+    border-radius: 10px;
+    border: solid 2px #F5DE19;
+    padding-top: -20px;
+}
+
+#laporanTransaksi .tabel-atas {
+    background-color: #363AA7;
+}
+
+#laporanTransaksi th.cell100 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: white;
+}
+
+#laporanTransaksi .table100.ver1 td {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1C1E53;
+}
+
+#laporanTransaksi .table100.ver1 td.column2 {
+    color: #14804A;
+}
+
+#laporanTransaksi .table100.ver1 td.column3 {
+    color: #D12953;
+}
+
+#laporanTransaksi th.column0 {
+    /* padding-right: 70px; */
+    width: 70px;
+}
+
+#laporanTransaksi .table100.ver1 td {
+    background-color: #F2F5FF;
+}
+
+.form-check-input[type=checkbox] {
+    border: solid 1px rgb(167, 167, 167) !important;
+}
+
+/* 
+#laporanTransaksi th.column0 {
+    padding-right: 100px;
+    width: 70px;
+} */
+
+/* #laporanTransaksi .column5 .transaksi-titik2 {
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+} */
+
+.table100.ver1 {
+    padding: 0;
+    background-color: #363AA7;
+}
+
+.tabel-atas2 {
+    padding: 30px;
+}
+
+.date {
+    border: solid 1px red;
+}
+
+.date {
+    border: solid 1px red;
+}
+
+.input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3),
+.input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.bootstrap-iso {
+    background-color: transparent;
+}
+
+.bootstrap-iso .input-group-addon {
+    border: solid 0 red;
+}
+
+.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.bootstrap-iso .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.tabel-atas .row>* {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.table {
+    --bs-table-bg: red;
+    --bs-table-hover-bg: rgba(255, 255, 255, 0.075);
+}
+
+table.dataTable thead .sorting:after {
+    background-color: red;
+    color: red;
+}
+
+
+/* pencarian */
+
+
+.pencarian input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    height: 36px;
+}
+
+
+/* transaksi versi2 start */
+
+#dataTables-example_filter {
+    display: none;
+}
+
+#dataTables-example_filter input {
+    border-radius: 50px;
+}
+
+.dataTables_length {
+    /* display: none; */
+}
+
+.dataTables_info {
+    color: white;
+}
+
+/* #dataTables-example_previous a{
+    color: white ;
+} */
+
+.paginate_button a {
+    color: white;
+
+}
+
+.paginate_button {}
+
+#laporanTransaksi .table100.ver1 td {
+    background-color: #F2F5FF;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    box-shadow: none;
+}
+
+
+/* previous dan next start */
+.pagination>li>a,
+.pagination>li>span {
+    margin-right: 20px;
+    /* border: 1px solid #ddd; */
+    padding: 0px;
+    color: transparent;
+}
+
+li#dataTables-example_next.paginate_button.next {
+    height: 20px;
+    width: 24px;
+    background-image: url(laporanTransaksi-Button\ kanan.svg);
+}
+
+li#dataTables-example_previous.paginate_button.previous {
+    margin-right: 10px;
+    height: 20px;
+    width: 24px;
+    background-image: url(laporanTransaksi-Button\ kiri.svg);
+}
+
+.pagination {
+    margin-bottom: 20px;
+    margin-left: 600px;
+}
+
+/* li.paginate_button{
+    background-color: red;
+} */
+
+/* halaman 1 dari 10 */
+
+#dataTables-example_info.dataTables_info {
+    margin-left: 20px;
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+    text-align: left;
+
+    color: white;
+
+}
+
+#dataTables-example_wrapper .row>* {
+    width: 40%;
+}
+
+
+/* pilih jumlah halaman tampil */
+#dataTables-example_length.dataTables_length label {
+    padding-left: 20px;
+    width: 170px;
+    height: 38px;
+    color: transparent;
+}
+
+select.form-control.input-sm {
+    border-radius: 10px;
+}
+
+
+.per-halaman {
+    margin-top: 40px;
+    margin-bottom: -20px;
+    color: white;
+    text-align: left !important;
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+
+/* transaksi end */
